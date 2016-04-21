@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <title>
+        PytonQt.private.BrainVoyagerScriptAccess - HackMD
+    </title>
+    <link rel="icon" type="image/png" href="https://hackmd.io/favicon.png">
+    <link rel="apple-touch-icon" href="https://hackmd.io/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/8.8.0/styles/github-gist.min.css">
+    <style>
+        .markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid #eee}.vimeo iframe,.youtube iframe,.youtube img{top:0;left:0;height:100%;position:absolute}.markdown-body{font-size:1pc;line-height:1.6;word-wrap:break-word}.markdown-body>:first-child{margin-top:0!important}.markdown-body>:last-child{margin-bottom:0!important}.markdown-body .absent{color:#c00}.markdown-body .anchor{display:inline-block;padding-right:2px;margin-left:-18.36px}.markdown-body .anchor:focus{outline:0}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{margin-top:1em;margin-bottom:1pc;font-weight:700;line-height:1.4}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{color:#000;vertical-align:middle;visibility:hidden}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{text-decoration:none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{visibility:visible}.markdown-body h1 code,.markdown-body h1 tt,.markdown-body h2 code,.markdown-body h2 tt,.markdown-body h3 code,.markdown-body h3 tt,.markdown-body h4 code,.markdown-body h4 tt,.markdown-body h5 code,.markdown-body h5 tt,.markdown-body h6 code,.markdown-body h6 tt{font-size:inherit}.markdown-body h1{font-size:2.25em;line-height:1.2}.markdown-body h1 .anchor{line-height:1}.markdown-body h2{font-size:1.75em;line-height:1.225}.markdown-body h2 .anchor{line-height:1}.markdown-body h3{font-size:1.5em;line-height:1.43}.markdown-body h3 .anchor,.markdown-body h4 .anchor{line-height:1.2}.markdown-body h4{font-size:1.25em}.markdown-body h5 .anchor,.markdown-body h6 .anchor{line-height:1.1}.markdown-body h5{font-size:1em}.markdown-body h6{font-size:1em;color:#777}.markdown-body blockquote,.markdown-body dl,.markdown-body ol,.markdown-body p,.markdown-body pre,.markdown-body table,.markdown-body ul{margin-top:0;margin-bottom:1pc}.markdown-body hr{height:4px;padding:0;margin:1pc 0;background-color:#e7e7e7;border:0}.markdown-body ol,.markdown-body ul{padding-left:2em}.markdown-body ol.no-list,.markdown-body ul.no-list{padding:0;list-style-type:none}.markdown-body ol ol,.markdown-body ol ul,.markdown-body ul ol,.markdown-body ul ul{margin-top:0;margin-bottom:0}.markdown-body li>p{margin-top:1pc}.markdown-body dl{padding:0}.markdown-body dl dt{padding:0;margin-top:1pc;font-size:1em;font-style:italic;font-weight:700}.markdown-body dl dd{padding:0 1pc;margin-bottom:1pc}.markdown-body blockquote{padding:0 15px;color:#777;border-left:4px solid #ddd}.markdown-body blockquote>:first-child{margin-top:0}.markdown-body blockquote>:last-child{margin-bottom:0}.markdown-body table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}.markdown-body table th{font-weight:700}.markdown-body table td,.markdown-body table th{padding:6px 13px;border:1px solid #ddd}.markdown-body table tr{background-color:#fff;border-top:1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%;-moz-box-sizing:border-box;box-sizing:border-box}.markdown-body .emoji{width:20px;height:20px;max-width:none;margin-bottom:0}.markdown-body span.frame{display:block;overflow:hidden}.markdown-body span.frame>span{display:block;float:left;width:auto;padding:7px;margin:13px 0 0;overflow:hidden;border:1px solid #ddd}.markdown-body span.frame span img{display:block;float:left}.markdown-body span.frame span span{display:block;padding:5px 0 0;clear:both;color:#333}.markdown-body span.align-center{display:block;overflow:hidden;clear:both}.markdown-body span.align-center>span{display:block;margin:13px auto 0;overflow:hidden;text-align:center}.markdown-body span.align-center span img{margin:0 auto;text-align:center}.markdown-body span.align-right{display:block;overflow:hidden;clear:both}.markdown-body span.align-right>span{display:block;margin:13px 0 0;overflow:hidden;text-align:right}.markdown-body span.align-right span img{margin:0;text-align:right}.markdown-body span.float-left{display:block;float:left;margin-right:13px;overflow:hidden}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{display:block;float:right;margin-left:13px;overflow:hidden}.markdown-body span.float-right>span{display:block;margin:13px auto 0;overflow:hidden;text-align:right}.markdown-body code,.markdown-body tt{padding:.2em 0;margin:0;font-size:85%;background-color:rgba(0,0,0,.04);border-radius:3px}.markdown-body code:after,.markdown-body code:before,.markdown-body tt:after,.markdown-body tt:before{letter-spacing:-.2em;content:"\00a0"}.markdown-body code br,.markdown-body tt br{display:none}.markdown-body del code{text-decoration:inherit}.markdown-body pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:0 0;border:0}.markdown-body .highlight{margin-bottom:1pc}.markdown-body .highlight pre,.markdown-body pre{padding:1pc;overflow:auto;font-size:85%;line-height:1.45;background-color:#f7f7f7;border-radius:3px}.markdown-body .highlight pre{margin-bottom:0;word-break:normal}.markdown-body pre code,.markdown-body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}.markdown-body pre code:after,.markdown-body pre code:before,.markdown-body pre tt:after,.markdown-body pre tt:before{content:normal}.markdown-body .csv-data td,.markdown-body .csv-data th{padding:5px;overflow:hidden;font-size:9pt;line-height:1;text-align:left;white-space:nowrap}.markdown-body .csv-data .blob-line-num{padding:10px 8px 9px;text-align:right;background:#fff;border:0}.markdown-body .csv-data tr{border-top:0}.markdown-body .csv-data th{font-weight:700;background:#f8f8f8;border-top:0}.markdown-body kbd{display:inline-block;padding:3px 5px;font-size:11px;line-height:10px;color:#555;vertical-align:middle;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.news .alert .markdown-body blockquote{padding:0 0 0 40px;border:0}.activity-tab .news .alert .commits,.activity-tab .news .markdown-body blockquote{padding-left:0}.task-list-item{list-style-type:none}.task-list-item label{font-weight:400}.task-list-item.enabled label{cursor:pointer}.task-list-item+.task-list-item{margin-top:3px}.task-list-item-checkbox{float:left;margin:.31em 0 .2em -1.3em!important;vertical-align:middle;cursor:default!important}.markdown-body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;padding-top:40px;padding-bottom:40px;max-width:758px;overflow:visible!important}.markdown-body pre{word-wrap:normal;border:inherit!important}.markdown-body code{color:inherit!important}.markdown-body pre code .wrapper{display:-webkit-inline-flex;display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex}.markdown-body pre code .gutter{float:left;overflow:hidden;-webkit-user-select:none;user-select:none}.markdown-body pre code .gutter.linenumber{text-align:right;position:relative;display:inline-block;cursor:default;z-index:4;padding:0 8px 0 0;min-width:20px;box-sizing:content-box;color:#afafaf!important;border-right:3px solid #6ce26c!important}.markdown-body pre code .gutter.linenumber>span:before{content:attr(data-linenumber)}.markdown-body pre code .code{float:left;margin:0 0 0 1pc}.markdown-body .gist .line-numbers{border-left:none;border-top:none;border-bottom:none}.markdown-body .gist .line-data{border:none}.markdown-body .gist table{border-spacing:0;border-collapse:inherit!important}.markdown-body code[data-gist-id]{background:0 0;padding:0}.ui-user-icon,.vimeo,.youtube{background-position:center center;background-repeat:no-repeat;background-size:contain}.markdown-body code[data-gist-id]:after,.markdown-body code[data-gist-id]:before{content:''}.markdown-body[dir=rtl] pre{direction:ltr}.markdown-body[dir=rtl] code{direction:ltr;unicode-bidi:embed}.markdown-body .alert>p{margin-bottom:0}.markdown-body pre.flow-chart,.markdown-body pre.graphviz,.markdown-body pre.mermaid,.markdown-body pre.sequence-diagram{text-align:center;background-color:inherit;border-radius:0;white-space:inherit}.markdown-body pre.flow-chart>code,.markdown-body pre.graphviz>code,.markdown-body pre.mermaid>code,.markdown-body pre.sequence-diagram>code{text-align:left}.markdown-body pre.flow-chart>svg,.markdown-body pre.graphviz>svg,.markdown-body pre.mermaid>svg,.markdown-body pre.sequence-diagram>svg{max-width:100%;height:100%}.vimeo,.youtube{position:relative;cursor:pointer;display:table;width:100%;text-align:center;background-color:#000;overflow:hidden}.youtube{position:relative;width:100%;padding-bottom:56.25%}.vimeo img{width:100%;object-fit:contain;z-index:0}.youtube img{width:100%;object-fit:cover;z-index:0}.vimeo iframe,.youtube iframe{width:100%;vertical-align:middle;z-index:1}.vimeo .icon,.youtube .icon{position:absolute;height:auto;width:auto;top:50%;left:50%;margin-top:-40px;margin-left:-40px;color:#fff;opacity:.3;-webkit-transition:opacity .2s;transition:opacity .2s;z-index:0}.vimeo:hover .icon,.youtube:hover .icon{opacity:.6;-webkit-transition:opacity .2s;transition:opacity .2s}.slideshare .inner,.speakerdeck .inner{position:relative;width:100%}.slideshare .inner iframe,.speakerdeck .inner iframe{position:absolute;top:0;bottom:0;left:0;right:0;width:100%;height:100%}.ui-infobar{max-width:758px;margin-top:25px;margin-bottom:-25px;color:#777}.ui-toc{position:fixed;bottom:20px;z-index:10000}.ui-toc-label{opacity:.3;background-color:#ccc;border:none;-webkit-transition:opacity .2s;transition:opacity .2s}.ui-toc .open .ui-toc-label{opacity:1;color:#fff;-webkit-transition:opacity .2s;transition:opacity .2s}.ui-toc-label:focus{opacity:.3;background-color:#ccc;color:#000}.ui-toc-label:hover{opacity:1;background-color:#ccc;-webkit-transition:opacity .2s;transition:opacity .2s}.ui-toc-dropdown{margin-top:23px;margin-bottom:20px;padding-left:10px;padding-right:10px;max-width:45vw;width:25vw;max-height:65vh;overflow:auto;text-align:inherit}.ui-toc-dropdown[dir=rtl] .nav{padding-right:0;letter-spacing:.0029em}.ui-toc-dropdown a{overflow:hidden;text-overflow:ellipsis;white-space:pre}.ui-toc-dropdown .nav>li>a{display:block;padding:4px 20px;font-size:13px;font-weight:500;color:#767676}.ui-toc-dropdown .nav>li>a:focus,.ui-toc-dropdown .nav>li>a:hover{padding-left:19px;color:#000;text-decoration:none;background-color:transparent;border-left:1px solid #000}.ui-toc-dropdown[dir=rtl] .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav>li>a:hover{padding-right:19px;border-left:none;border-right:1px solid #000}.ui-toc-dropdown .nav>.active:focus>a,.ui-toc-dropdown .nav>.active:hover>a,.ui-toc-dropdown .nav>.active>a{padding-left:18px;font-weight:700;color:#000;background-color:transparent;border-left:2px solid #000}.ui-toc-dropdown[dir=rtl] .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav>.active>a{padding-right:18px;border-left:none;border-right:2px solid #000}.ui-toc-dropdown .nav .nav{display:none;padding-bottom:10px}.ui-toc-dropdown .nav>.active>ul,.ui-user-icon{display:block}.ui-toc-dropdown .nav .nav>li>a{padding-top:1px;padding-bottom:1px;padding-left:30px;font-size:9pt;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a{padding-right:30px}.ui-toc-dropdown .nav .nav>li>ul>li>a{padding-top:1px;padding-bottom:1px;padding-left:40px;font-size:9pt;font-weight:400}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a{padding-right:40px}.ui-toc-dropdown .nav .nav>li>a:focus,.ui-toc-dropdown .nav .nav>li>a:hover{padding-left:29px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>a:hover{padding-right:29px}.ui-toc-dropdown .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown .nav .nav>li>ul>li>a:hover{padding-left:39px}.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:focus,.ui-toc-dropdown[dir=rtl] .nav .nav>li>ul>li>a:hover{padding-right:39px}.ui-toc-dropdown .nav .nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>a{padding-left:28px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>a{padding-right:28px}.ui-toc-dropdown .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown .nav .nav>.active>.nav>.active>a{padding-left:38px;font-weight:500}.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:focus>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active:hover>a,.ui-toc-dropdown[dir=rtl] .nav .nav>.active>.nav>.active>a{padding-right:38px}.markdown-body[lang^=ja]{font-family:"Helvetica Neue",Helvetica,Arial,Meiryo,"MS Gothic","ＭＳ ゴシック",sans-serif}.ui-toc-dropdown[lang^=ja]{font-family:"Source Sans Pro",Helvetica,Arial,"Meiryo UI","MS PGothic","ＭＳ Ｐゴシック",sans-serif}.markdown-body[lang=zh-tw]{font-family:"Helvetica Neue",Helvetica,Arial,"Microsoft JhengHei","微軟正黑",sans-serif}.ui-toc-dropdown[lang=zh-tw]{font-family:"Source Sans Pro",Helvetica,Arial,"Microsoft JhengHei UI","微軟正黑UI",sans-serif}.markdown-body[lang=zh-cn]{font-family:"Helvetica Neue",Helvetica,Arial,"Microsoft YaHei","微软雅黑",sans-serif}.ui-toc-dropdown[lang=zh-cn]{font-family:"Source Sans Pro",Helvetica,Arial,"Microsoft YaHei UI","微软雅黑UI",sans-serif}.ui-affix-toc{position:fixed;top:0;max-width:15vw;max-height:70vh;overflow:auto}.back-to-top,.go-to-bottom{display:block;padding:4px 10px;margin-top:10px;margin-left:10px;font-size:9pt;font-weight:500;color:#999}.back-to-top:focus,.back-to-top:hover,.go-to-bottom:focus,.go-to-bottom:hover{color:#563d7c;text-decoration:none}.go-to-bottom{margin-top:0}.ui-user-icon{width:20px;height:20px;border-radius:3px;margin-top:2px;margin-bottom:2px;margin-right:5px}.ui-user-icon.small,small .dropdown{display:inline-block}.ui-user-icon.small{width:18px;height:18px;vertical-align:middle;margin:0 0 .2em}small span{line-height:22px}small .dropdown a:focus,small .dropdown a:hover{text-decoration:none}.unselectable{-moz-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-o-user-select:none;user-select:none}@media print{blockquote,div,img,pre,table{page-break-inside:avoid!important}a[href]:after{font-size:9pt!important}}body{font-smoothing:subpixel-antialiased!important;-webkit-font-smoothing:subpixel-antialiased!important;-moz-osx-font-smoothing:auto!important;text-shadow:1px 1px 1px rgba(0,0,0,.004);-webkit-overflow-scrolling:touch;font-family:"Source Sans Pro",Helvetica,Arial,sans-serif;letter-spacing:.025em}:focus{outline:0!important}::-moz-focus-inner{border:0!important}body.modal-open{overflow-y:auto;padding-right:0!important}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.2.0/es5-shim.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="doc" class="markdown-body container-fluid"><h1 id="pytonqtprivatebrainvoyagerscriptaccess"><a title="pytonqtprivatebrainvoyagerscriptaccess" href="#pytonqtprivatebrainvoyagerscriptaccess" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>PytonQt.private.BrainVoyagerScriptAccess</h1><p>The readily available object <code>BrainVoyager</code> is an instance of this class.</p><h2 id="attributes"><a title="attributes" href="#attributes" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Attributes</h2><h3 id="activedocument"><a title="activedocument" href="#activedocument" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>ActiveDocument</h3><p>This is a <a target="_blank" href="/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a> object.</p><h3 id="buildnumber"><a title="buildnumber" href="#buildnumber" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>BuildNumber</h3><p>This is an int.</p><h3 id="currentdirectory"><a title="currentdirectory" href="#currentdirectory" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>CurrentDirectory</h3><p>This is a str.</p><h3 id="documents"><a title="documents" href="#documents" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Documents</h3><p>This is a <a target="_blank" href="/PythonQt.private.DocumentListScriptAccess">PythonQt.private.DocumentListScriptAccess</a></p><h3 id="is64bits"><a title="is64bits" href="#is64bits" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Is64Bits</h3><p>This is a bool.</p><h3 id="pathtodata"><a title="pathtodata" href="#pathtodata" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>PathToData</h3><p>This is a str.</p><h3 id="pathtosampledata"><a title="pathtosampledata" href="#pathtosampledata" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>PathToSampleData</h3><p>This is a str.</p><h3 id="versionmajor"><a title="versionmajor" href="#versionmajor" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>VersionMajor</h3><p>This is an int.</p><h3 id="versionminor"><a title="versionminor" href="#versionminor" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>VersionMinor</h3><p>This is an int.</p><h3 id="versionpatch"><a title="versionpatch" href="#versionpatch" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>VersionPatch</h3><p>This is an int.</p><h3 id="voifilename"><a title="voifilename" href="#voifilename" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>VOIFileName</h3><p>This is a str.</p><h3 id="h"><a title="h" href="#h" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>h</h3><p>This is an int.</p><h3 id="w"><a title="w" href="#w" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>w</h3><p>This is an int.</p><h3 id="x"><a title="x" href="#x" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>x</h3><p>This is an int.</p><h3 id="y"><a title="y" href="#y" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>y</h3><p>This is an int.</p><h3 id="objectname"><a title="objectname" href="#objectname" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>objectName</h3><p>This is a str.</p><h3 id="value"><a title="value" href="#value" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>value</h3><p>This is an int.</p><h3 id="visible"><a title="visible" href="#visible" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>visible</h3><p>This is a bool.</p><h2 id="methods"><a title="methods" href="#methods" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Methods</h2><h3 id="browsedirectory"><a title="browsedirectory" href="#browsedirectory" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>BrowseDirectory</h3><pre><code>x = BrainVoyager.BrowseDirectory(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the path (e.g. <code>"./Desktop"</code>)</dd>
+<dt>x : str</dt>
+<dd>the selected directory</dd>
+</dl><h3 id="browsefile"><a title="browsefile" href="#browsefile" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>BrowseFile</h3><pre><code>x = BrainVoyager.BrowseFile(a, b)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the path (e.g. <code>"./Desktop/"</code>)</dd>
+<dt>b : str</dt>
+<dd>a filemask (e.g. <code>"*.txt"</code>)</dd>
+<dt>x : str</dt>
+<dd>the selcted file</dd>
+</dl><h3 id="callpluginfunction"><a title="callpluginfunction" href="#callpluginfunction" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>CallPluginFunction</h3><pre><code>x = BrainVoyager.CallPluginFunction(a)
+</code></pre><dl>
+<dt>a : str (?)</dt>
+<dd>the path (e.g. <code>"./Desktop/"</code>)</dd>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="createprojectamr"><a title="createprojectamr" href="#createprojectamr" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>CreateProjectAMR</h3><pre><code>x = BrainVoyager.CreateProjectAMR(a, b, c, d, e, f, g)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the filetype (<code>"DICOM"</code>, <code>"SIEMENS"</code>, <code>"GE_I"</code> (no parameters for +20 logic like in GUI), <code>"GE_MR"</code>, <code>"PHILIPS_REC"</code> or <code>"ANALYZE"</code>)</dd>
+<dt>b : str</dt>
+<dd>the full path to first file</dd>
+<dt>c : int</dt>
+<dd>the number of volumes</dd>
+<dt>d : bool</dt>
+<dd>swap byte order (<code>True</code> or <code>False</code>)</dd>
+<dt>e : int</dt>
+<dd>the size of the image along x-axis</dd>
+<dt>f : int</dt>
+<dd>the size of the image along y-axis</dd>
+<dt>g : int</dt>
+<dd>the number of bytes per pixel</dd>
+<dt>x : <a target="_blank" href="/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
+<dd>the document</dd>
+</dl><h3 id="createprojectdmr"><a title="createprojectdmr" href="#createprojectdmr" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>CreateProjectDMR</h3><pre><code>x = BrainVoyager.CreateProjectDMR(a, b, c, d, e, f, g, h, i, j, k, l)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the filetype (<code>"DICOM"</code>, <code>"PHILIPS_REC"</code> or <code>"ANALYZE"</code>)</dd>
+<dt>b : str</dt>
+<dd>the full path to first file</dd>
+<dt>c : int</dt>
+<dd>the number of volumes</dd>
+<dt>d : int</dt>
+<dd>the number of volumes to skip</dd>
+<dt>e : bool</dt>
+<dd>create AMR (<code>True</code> or <code>False</code>)</dd>
+<dt>f : int</dt>
+<dd>the number of slices in a volume</dd>
+<dt>g : str</dt>
+<dd>the STC prefix</dd>
+<dt>h : bool</dt>
+<dd>swap byte order (<code>True</code> or <code>False</code>)</dd>
+<dt>i : int</dt>
+<dd>the size of the image along x-axis</dd>
+<dt>j : int</dt>
+<dd>the size of the image along y-axis</dd>
+<dt>k : int</dt>
+<dd>the number of bytes per pixel</dd>
+<dt>l : str</dt>
+<dd>the directory to save to</dd>
+<dt>x : <a target="_blank" href="/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
+<dd>The document</dd>
+</dl><h3 id="createprojectfmr"><a title="createprojectfmr" href="#createprojectfmr" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>CreateProjectFMR</h3><pre><code>x = BrainVoyager.CreateProjectFMR(a, b, c, d, e, f, g, h, i, j, k, l)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the filetype (<code>"DICOM"</code>, <code>"SIEMENS"</code>, <code>"GE_I"</code> (no parameters for +20 logic like in GUI), <code>"GE_MR"</code>, <code>"PHILIPS_REC"</code> or <code>"ANALYZE"</code>)</dd>
+<dt>b : str</dt>
+<dd>the full path to first file</dd>
+<dt>c : int</dt>
+<dd>the number of volumes</dd>
+<dt>d : int</dt>
+<dd>the number of volumes to skip</dd>
+<dt>e : bool</dt>
+<dd>create AMR (<code>True</code> or <code>False</code>)</dd>
+<dt>f : int</dt>
+<dd>the number of slices in a volume</dd>
+<dt>g : str</dt>
+<dd>the STC prefix</dd>
+<dt>h : bool</dt>
+<dd>swap byte order (<code>True</code> or <code>False</code>)</dd>
+<dt>i : int</dt>
+<dd>the size of the image along x-axis</dd>
+<dt>j : int</dt>
+<dd>the size of the image along y-axis</dd>
+<dt>k : int</dt>
+<dd>the number of bytes per pixel</dd>
+<dt>l : str</dt>
+<dd>the directory to save to</dd>
+<dt>x : <a target="_blank" href="/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
+<dd>The document</dd>
+</dl><h3 id="createprojectfmrslicestimelooping"><a title="createprojectfmrslicestimelooping" href="#createprojectfmrslicestimelooping" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>CreateProjectFMRSlicesTimeLooping</h3><pre><code>x = BrainVoyager.CreateProjectFMRSlicesTimeLooping(a, b, c, d, e, f, g, h, i, j, k, l)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the filetype (<code>"DICOM"</code>, <code>"SIEMENS"</code>, <code>"GE_I"</code> (no parameters for +20 logic like in GUI), <code>"GE_MR"</code>, <code>"PHILIPS_REC"</code> or <code>"ANALYZE"</code>)</dd>
+<dt>b : str</dt>
+<dd>the full path to first file</dd>
+<dt>c : int</dt>
+<dd>the number of volumes</dd>
+<dt>d : int</dt>
+<dd>the number of volumes to skip</dd>
+<dt>e : bool</dt>
+<dd>create AMR (<code>True</code> or <code>False</code>)</dd>
+<dt>f : int</dt>
+<dd>the number of slices in a volume</dd>
+<dt>g : str</dt>
+<dd>the STC prefix</dd>
+<dt>h : bool</dt>
+<dd>swap byte order (<code>True</code> or <code>False</code>)</dd>
+<dt>i : int</dt>
+<dd>the size of the image along x-axis</dd>
+<dt>j : int</dt>
+<dd>the size of the image along y-axis</dd>
+<dt>k : int</dt>
+<dd>the number of bytes per pixel</dd>
+<dt>l : str</dt>
+<dd>the directory to save to</dd>
+<dt>x : <a target="_blank" href="/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
+<dd>The document</dd>
+</dl><h3 id="createprojectmosaicdmr"><a title="createprojectmosaicdmr" href="#createprojectmosaicdmr" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>CreateProjectMosaicDMR</h3><pre><code>x = BrainVoyager.CreateProjectMosaicDMR(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the filetype (<code>"DICOM"</code>, <code>"SIEMENS"</code>, <code>"GE_I"</code> (no parameters for +20 logic like in GUI), <code>"GE_MR"</code>, <code>"PHILIPS_REC"</code> or <code>"ANALYZE"</code>)</dd>
+<dt>b : str</dt>
+<dd>the full path to first file</dd>
+<dt>c : int</dt>
+<dd>the number of volumes</dd>
+<dt>d : int</dt>
+<dd>the number of volumes to skip</dd>
+<dt>e : bool</dt>
+<dd>create AMR (<code>True</code> or <code>False</code>)</dd>
+<dt>f : int</dt>
+<dd>the number of slices in a volume</dd>
+<dt>g : str</dt>
+<dd>the STC prefix</dd>
+<dt>h : bool</dt>
+<dd>swap byte order (<code>True</code> or <code>False</code>)</dd>
+<dt>i : int</dt>
+<dd>the mosaic size of images in volume along x-axis</dd>
+<dt>j : int</dt>
+<dd>the mosaic size of the images in volume along y-axis</dd>
+<dt>k : int</dt>
+<dd>the number of bytes per pixel</dd>
+<dt>l : str</dt>
+<dd>the directory to save to</dd>
+<dt>m : int</dt>
+<dd>the number of volumes per image</dd>
+<dt>n : int</dt>
+<dd>the dimension of image along x-axis</dd>
+<dt>o : int</dt>
+<dd>the dimension of image along y-axis</dd>
+<dt>x : <a target="_blank" href="/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
+<dd>the document</dd>
+</dl><h3 id="createprojectmosaicfmr"><a title="createprojectmosaicfmr" href="#createprojectmosaicfmr" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>CreateProjectMosaicFMR</h3><pre><code>x = BrainVoyager.CreateProjectMosaicFMR(a, b, c, d, e, f, g, h, i, j, k, l, m, n, o)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the filetype (<code>"DICOM"</code>, <code>"SIEMENS"</code>, <code>"GE_I"</code> (no parameters for +20 logic like in GUI), <code>"GE_MR"</code>, <code>"PHILIPS_REC"</code> or <code>"ANALYZE"</code>)</dd>
+<dt>b : str</dt>
+<dd>the full path to first file</dd>
+<dt>c : int</dt>
+<dd>the number of volumes</dd>
+<dt>d : int</dt>
+<dd>the number of volumes to skip</dd>
+<dt>e : bool</dt>
+<dd>create AMR (<code>True</code> or <code>False</code>)</dd>
+<dt>f : int</dt>
+<dd>the number of slices in a volume</dd>
+<dt>g : str</dt>
+<dd>the STC prefix</dd>
+<dt>h : bool</dt>
+<dd>swap byte order (<code>True</code> or <code>False</code>)</dd>
+<dt>i : int</dt>
+<dd>the mosaic size of images in volume along x-axis</dd>
+<dt>j : int</dt>
+<dd>the mosaic size of the images in volume along y-axis</dd>
+<dt>k : int</dt>
+<dd>the number of bytes per pixel</dd>
+<dt>l : str</dt>
+<dd>the directory to save to</dd>
+<dt>m : int</dt>
+<dd>the number of volumes per image</dd>
+<dt>n : int</dt>
+<dd>the dimension of image along x-axis</dd>
+<dt>o : int</dt>
+<dd>the dimension of image along y-axis</dd>
+<dt>x : <a target="_blank" href="/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
+<dd>the document</dd>
+</dl><h3 id="createprojectvmr"><a title="createprojectvmr" href="#createprojectvmr" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>CreateProjectVMR</h3><pre><code>x = BrainVoyager.CreateProjectVMR(a, b, c, d, e, f, g)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the filetype (<code>"DICOM"</code>, <code>"SIEMENS"</code>, <code>"GE_I"</code> (no parameters for +20 logic like in GUI), <code>"GE_MR"</code>, <code>"PHILIPS_REC"</code> or <code>"ANALYZE"</code>)</dd>
+<dt>b : str</dt>
+<dd>the full path to first file</dd>
+<dt>c : int</dt>
+<dd>the number of volumes</dd>
+<dt>d : bool</dt>
+<dd>swap byte order (<code>True</code> or <code>False</code>)</dd>
+<dt>e : int</dt>
+<dd>the size of the image along x-axis</dd>
+<dt>f : int</dt>
+<dd>the size of the image along y-axis</dd>
+<dt>g : int</dt>
+<dd>the number of bytes per pixel</dd>
+<dt>x : <a target="_blank" href="/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
+<dd>the document</dd>
+</dl><h3 id="executeplugin"><a title="executeplugin" href="#executeplugin" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>ExecutePlugin</h3><pre><code>x = BrainVoyager.ExecutePlugin()
+</code></pre><dl>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="exit"><a title="exit" href="#exit" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Exit</h3><pre><code>BrainVoyager.Exit()
+</code></pre><h3 id="findchild"><a title="findchild" href="#findchild" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>FindChild</h3><pre><code>x = BrainVoyager.FindChild(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the widget name</dd>
+<dt>x : QObject</dt>
+<dd><code>PythonQt.private.QObject</code></dd>
+</dl><h3 id="getpluginfloatparameter"><a title="getpluginfloatparameter" href="#getpluginfloatparameter" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>GetPluginFloatParameter</h3><pre><code>x = BrainVoyager.GetPluginFloatParameter(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the parameter name</dd>
+<dt>x : float</dt>
+<dd>the parameter value</dd>
+</dl><h3 id="getpluginintparameter"><a title="getpluginintparameter" href="#getpluginintparameter" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>GetPluginIntParameter</h3><pre><code>x = BrainVoyager.GetPluginIntParameter(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the parameter name</dd>
+<dt>x : int</dt>
+<dd>the paramter value</dd>
+</dl><h3 id="getpluginstringparameter"><a title="getpluginstringparameter" href="#getpluginstringparameter" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>GetPluginStringParameter</h3><pre><code>x = BrainVoyager.GetPluginStringParameter(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the parameter name</dd>
+<dt>x : str</dt>
+<dd>the parameter value</dd>
+</dl><h3 id="getvtcsofmdm"><a title="getvtcsofmdm" href="#getvtcsofmdm" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>GetVTCsOfMDM</h3><pre><code>x = BrainVoyager.GetVTCsOfMDM(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the MDM filename</dd>
+<dt>x : tuple</dt>
+<dd>the VTCs</dd>
+</dl><h3 id="hidescriptswindow"><a title="hidescriptswindow" href="#hidescriptswindow" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>HideScriptsWindow</h3><pre><code>BrainVoyager.HideScriptsWindow()
+</code></pre><h3 id="messagebox"><a title="messagebox" href="#messagebox" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>MessageBox</h3><pre><code>BrainVoyager.MessageBox(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the message</dd>
+</dl><h3 id="movewindow"><a title="movewindow" href="#movewindow" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>MoveWindow</h3><pre><code>BrainVoyager.MoveWindow(a, b)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the new x position</dd>
+<dt>b : int</dt>
+<dd>the new y position</dd>
+</dl><h3 id="opendocument"><a title="opendocument" href="#opendocument" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>OpenDocument</h3><pre><code>x = BrainVoyager.OpenDocument(a)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the full path to file</dd>
+<dt>x : <a target="_blank" href="/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
+<dd>the document</dd>
+</dl><h3 id="printtolog"><a title="printtolog" href="#printtolog" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>PrintToLog</h3><pre><code>BrainVoyager.PrintToLog(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the content to print</dd>
+</dl><h3 id="renamedicomfilesindirectory"><a title="renamedicomfilesindirectory" href="#renamedicomfilesindirectory" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>RenameDicomFilesInDirectory</h3><pre><code>BrainVoyager.RenameDicomFilesInDirectory(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the new name</dd>
+</dl><h3 id="resizewindow"><a title="resizewindow" href="#resizewindow" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>ResizeWindow</h3><pre><code>BrainVoyager.ResizeWindow(a, b)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the new x size</dd>
+<dt>b : int</dt>
+<dd>the new y size</dd>
+</dl><h3 id="setpluginfloatparameter"><a title="setpluginfloatparameter" href="#setpluginfloatparameter" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>SetPluginFloatParameter</h3><pre><code>BrainVoyager.SetPluginFloatParameter(a, b)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the parameter name</dd>
+<dt>b : float</dt>
+<dd>the paramter value</dd>
+</dl><h3 id="setpluginintparameter"><a title="setpluginintparameter" href="#setpluginintparameter" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>SetPluginIntParameter</h3><pre><code>BrainVoyager.SetPluginIntParameter(a, b)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the parameter name</dd>
+<dt>b : int</dt>
+<dd>the paramter value</dd>
+</dl><h3 id="setpluginstringparameter"><a title="setpluginstringparameter" href="#setpluginstringparameter" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>SetPluginStringParameter</h3><pre><code>BrainVoyager.SetPluginStringParameter(a, b)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the parameter name</dd>
+<dt>b : str</dt>
+<dd>the paramter value</dd>
+</dl><h3 id="showlogtab"><a title="showlogtab" href="#showlogtab" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>ShowLogTab</h3><pre><code>BrainVoyager.ShowLogTab()
+</code></pre><h3 id="showscriptswindow"><a title="showscriptswindow" href="#showscriptswindow" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>ShowScriptsWindow</h3><pre><code>BrainVoyager.ShowScriptsWindow()
+</code></pre><h3 id="timeoutmessagebox"><a title="timeoutmessagebox" href="#timeoutmessagebox" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>TimeOutMessageBox</h3><pre><code>x = BrainVoyager.TimeOutMessageBox(a, b)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the message</dd>
+<dt>b : int</dt>
+<dd>the duration</dd>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="blocksignals"><a title="blocksignals" href="#blocksignals" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>blockSignals</h3><pre><code>x = BrainVoyager.blockSignals(a)
+</code></pre><dl>
+<dt>a : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+<dt>x : bool</dt>
+<dd>state before change (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="childevent"><a title="childevent" href="#childevent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>childEvent</h3><pre><code>BrainVoyager.childEvent(a, b)
+</code></pre><dl>
+<dt>a : QChildEvent</dt>
+<dd>?</dd>
+<dt>b : ?</dt>
+<dd>?</dd>
+</dl><h3 id="children"><a title="children" href="#children" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>children</h3><pre><code>x = BrainVoyager.children()
+</code></pre><dl>
+<dt>x : tuple</dt>
+<dd>a tuple with <a target="_blank" href="/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a> objects (?)</dd>
+</dl><h3 id="classname"><a title="classname" href="#classname" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>className</h3><pre><code>x = BrainVoyager.className()
+</code></pre><dl>
+<dt>x : str</dt>
+<dd><code>'BrainVoyagerScriptAccess'</code></dd>
+</dl><h3 id="connect"><a title="connect" href="#connect" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>connect</h3><pre><code>x = BrainVoyager.connect(a, b, c, d, e)
+</code></pre><dl>
+<dt>a : QObject (?)</dt>
+<dd>the sender</dd>
+<dt>b : QByteArray (?)</dt>
+<dd>the signal</dd>
+<dt>c : QObject (?)</dt>
+<dd>the receiver</dd>
+<dt>d : QByteArray (?)</dt>
+<dd>the slot</dd>
+<dt>e : Qt::ConnectionType (?)</dt>
+<dd>the connection type</dd>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="customevent"><a title="customevent" href="#customevent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>customEvent</h3><pre><code>BrainVoyager.customEvent(a, b)
+</code></pre><dl>
+<dt>a : QEvent</dt>
+<dd>?</dd>
+<dt>b : ?</dt>
+<dd>?</dd>
+</dl><h3 id="delete"><a title="delete" href="#delete" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>delete</h3><pre><code>BrainVoyager.delete()
+</code></pre><h3 id="deletelater"><a title="deletelater" href="#deletelater" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>deleteLater</h3><pre><code>BrainVoyager.deleteLater()
+</code></pre><h3 id="destroyed"><a title="destroyed" href="#destroyed" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>destroyed</h3><pre><code>BrainVoyager.distroyed()
+</code></pre><h3 id="disconnect"><a title="disconnect" href="#disconnect" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>disconnect</h3><pre><code>x = BrainVoyager.disconnect(a, b, c, d)
+</code></pre><dl>
+<dt>a : QObject (?)</dt>
+<dd>the sender (?)</dd>
+<dt>b : QByteArray (?)</dt>
+<dd>the signal (?)</dd>
+<dt>c : QObject (?)</dt>
+<dd>the receiver (?)</dd>
+<dt>d : QByteArray (?)</dt>
+<dd>the slot (?)</dd>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="dumpobjectinfo"><a title="dumpobjectinfo" href="#dumpobjectinfo" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>dumpObjectInfo</h3><pre><code>BrainVoyager.dumpObjectInfo(a)
+</code></pre><dl>
+<dt>a : ?</dt>
+<dd>?</dd>
+</dl><h3 id="dumpobjecttree"><a title="dumpobjecttree" href="#dumpobjecttree" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>dumpObjectTree</h3><pre><code>BrainVoyager.dumpObjectTree(a)
+</code></pre><dl>
+<dt>a : ?</dt>
+<dd>?</dd>
+</dl><h3 id="dynamicpropertynames"><a title="dynamicpropertynames" href="#dynamicpropertynames" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>dynamicPropertyNames</h3><pre><code>BrainVoyager.dynamicPropertyNames(a)
+</code></pre><dl>
+<dt>a : ?</dt>
+<dd>?</dd>
+</dl><h3 id="event"><a title="event" href="#event" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>event</h3><pre><code>x = BrainVoyager.event(a)
+</code></pre><dl>
+<dt>a : QEvent (?)</dt>
+<dd>the event</dd>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="eventfilter"><a title="eventfilter" href="#eventfilter" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>eventFilter</h3><pre><code>x = BrainVoyager.eventFilter(a, b)
+</code></pre><dl>
+<dt>a : QObject (?)</dt>
+<dd>?</dd>
+<dt>b : QEvent (?)</dt>
+<dd>the event</dd>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="findchild1"><a title="findchild" href="#findchild" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>findChild</h3><pre><code>x = BrainVoyager.findChild(a, b)
+</code></pre><dl>
+<dt>a : PyObject (?)</dt>
+<dd>?</dd>
+<dt>b : str</dt>
+<dd>the name (?)</dd>
+<dt>x : QObject (?)</dt>
+<dd>the child</dd>
+</dl><h3 id="findchildren"><a title="findchildren" href="#findchildren" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>findChildren</h3><pre><code>x = BrainVoyager.findChildren(a, b)
+</code></pre><dl>
+<dt>a : PyObject (?)</dt>
+<dd>?</dd>
+<dt>b : str</dt>
+<dd>the name (?)</dd>
+<dt>x : tuple</dt>
+<dd>the children</dd>
+</dl><h3 id="help"><a title="help" href="#help" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>help</h3><pre><code>BrainVoyager.help()
+</code></pre><h3 id="inherits"><a title="inherits" href="#inherits" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>inherits</h3><pre><code>BrainVoyager.inherits()
+</code></pre><h3 id="installeventfilter"><a title="installeventfilter" href="#installeventfilter" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>installEventFilter</h3><pre><code>BrainVoyager.installEventFilter(a)
+</code></pre><dl>
+<dt>a : QObject (?)</dt>
+<dd>?</dd>
+</dl><h3 id="issignalconnected"><a title="issignalconnected" href="#issignalconnected" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>isSignalConnected</h3><pre><code>x = BrainVoyager.isSignalConnected(a)
+</code></pre><dl>
+<dt>a : QMethodSignal (?)</dt>
+<dd>the signal</dd>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="iswidgettype"><a title="iswidgettype" href="#iswidgettype" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>isWidgetType</h3><pre><code>x = BrainVoyager.isWidgetType()
+</code></pre><dl>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="iswindowtype"><a title="iswindowtype" href="#iswindowtype" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>isWindowType</h3><pre><code>x = BrainVoyager.isWindowType()
+</code></pre><dl>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="killtimer"><a title="killtimer" href="#killtimer" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>killTimer</h3><pre><code>BrainVoyager.killTimer(a)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the id</dd>
+</dl><h3 id="metaobject"><a title="metaobject" href="#metaobject" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>metaObject</h3><pre><code>x = BrainVoyager.metaObject()
+</code></pre><dl>
+<dt>x : PythonQt.QtCore.QMetaObject (?)</dt>
+<dd>?</dd>
+</dl><h3 id="movetothread"><a title="movetothread" href="#movetothread" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>moveToThread</h3><pre><code>BrainVoyager.moveToThread(a)
+</code></pre><dl>
+<dt>a : QThread</dt>
+<dd>the thread</dd>
+</dl><h3 id="objectnamechanged"><a title="objectnamechanged" href="#objectnamechanged" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>objectNameChanged</h3><pre><code>BrainVoyager.objectNameChanged(a)
+</code></pre><dl>
+<dt>a : str (?)</dt>
+<dd>?</dd>
+</dl><h3 id="parent"><a title="parent" href="#parent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>parent</h3><pre><code>x = BrainVoyager.parent()
+</code></pre><dl>
+<dt>x : PythonQt.private.QObject (?)</dt>
+<dd>?</dd>
+</dl><h3 id="property"><a title="property" href="#property" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>property</h3><pre><code>x = BrainVoyager.property(a)
+</code></pre><dl>
+<dt>a : str (?)</dt>
+<dd>the name</dd>
+<dt>x : ?</dt>
+<dd>?</dd>
+</dl><h3 id="removeeventfilter"><a title="removeeventfilter" href="#removeeventfilter" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>removeEventFilter</h3><pre><code>BrainVoyager.removeEventFilter(a)
+</code></pre><dl>
+<dt>a : QObject (?)</dt>
+<dd>?</dd>
+</dl><h3 id="sender"><a title="sender" href="#sender" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>sender</h3><pre><code>BrainVoyager.sender()
+</code></pre><dl>
+<dt>x : PythonQt.private.QObject (?)</dt>
+<dd>?</dd>
+</dl><h3 id="sendersignalindex"><a title="sendersignalindex" href="#sendersignalindex" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>senderSignalIndex</h3><pre><code>BrainVoyager.senderSignalIndex()
+</code></pre><dl>
+<dt>x : int</dt>
+<dd>the index</dd>
+</dl><h3 id="setobjectname"><a title="setobjectname" href="#setobjectname" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>setObjectName</h3><pre><code>BrainVoyager.setObjectName(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the name</dd>
+</dl><h3 id="setparent"><a title="setparent" href="#setparent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>setParent</h3><pre><code>BrainVoyager.setParent(a)
+</code></pre><dl>
+<dt>a : QObject</dt>
+<dd>the parent</dd>
+</dl><h3 id="setproperty"><a title="setproperty" href="#setproperty" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>setProperty</h3><pre><code>BrainVoyager.setProperty(a)
+</code></pre><dl>
+<dt>a : str (?)</dt>
+<dd>the property name</dd>
+<dt>b : ?</dt>
+<dd>the property value</dd>
+</dl><h3 id="signalsblocked"><a title="signalsblocked" href="#signalsblocked" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>signalsBlocked</h3><pre><code>x = BrainVoyager.signalsBlocked()
+</code></pre><dl>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="starttimer"><a title="starttimer" href="#starttimer" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>startTimer</h3><pre><code>x = BrainVoyager.startTimer(a)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the interval</dd>
+<dt>b : QT::TimeType (?)</dt>
+<dd>the timer type (?)</dd>
+<dt>x : int</dt>
+<dd>?</dd>
+</dl><h3 id="thread"><a title="thread" href="#thread" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>thread</h3><pre><code>BrainVoyager.thread()
+</code></pre><h3 id="timerevent"><a title="timerevent" href="#timerevent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>timerEvent</h3><pre><code>BrainVoyager.timerEvent(a)
+</code></pre><dl>
+<dt>a : QTimerEvent (?)</dt>
+<dd>?</dd>
+</dl><h3 id="tr"><a title="tr" href="#tr" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>tr</h3><pre><code>x = BrainVoyager.tr(a, b, c)
+</code></pre><dl>
+<dt>a : QByteArray (?)</dt>
+<dd>?</dd>
+<dt>b : QByteArray (?)</dt>
+<dd>?</dd>
+<dt>c : int</dt>
+<dd>?</dd>
+<dt>x : str</dt>
+<dd>?</dd>
+</dl></div>
+    <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
+        <div class="pull-right dropdown">
+            <a id="tocLabel" class="ui-toc-label btn btn-default" data-target="#" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
+                <i class="fa fa-bars"></i>
+            </a>
+            <ul id="toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
+                <div class="toc"><ul class="nav"><li class=""><a smoothhashscroll="" href="#pytonqtprivatebrainvoyagerscriptaccess">PytonQt.private.BrainVoyagerScriptAccess</a><ul class="nav"><li class=""><a smoothhashscroll="" href="#attributes">Attributes</a><ul class="nav"><li><a smoothhashscroll="" href="#activedocument">ActiveDocument</a></li><li class=""><a smoothhashscroll="" href="#buildnumber">BuildNumber</a></li><li><a smoothhashscroll="" href="#currentdirectory">CurrentDirectory</a></li><li><a smoothhashscroll="" href="#documents">Documents</a></li><li class=""><a smoothhashscroll="" href="#is64bits">Is64Bits</a></li><li><a smoothhashscroll="" href="#pathtodata">PathToData</a></li><li class=""><a smoothhashscroll="" href="#pathtosampledata">PathToSampleData</a></li><li><a smoothhashscroll="" href="#versionmajor">VersionMajor</a></li><li><a smoothhashscroll="" href="#versionminor">VersionMinor</a></li><li><a smoothhashscroll="" href="#versionpatch">VersionPatch</a></li><li class=""><a smoothhashscroll="" href="#voifilename">VOIFileName</a></li><li><a smoothhashscroll="" href="#h">h</a></li><li class=""><a smoothhashscroll="" href="#w">w</a></li><li><a smoothhashscroll="" href="#x">x</a></li><li><a smoothhashscroll="" href="#y">y</a></li><li><a smoothhashscroll="" href="#objectname">objectName</a></li><li><a smoothhashscroll="" href="#value">value</a></li><li><a smoothhashscroll="" href="#visible">visible</a></li></ul></li><li class=""><a smoothhashscroll="" href="#methods">Methods</a><ul class="nav"><li class=""><a smoothhashscroll="" href="#browsedirectory">BrowseDirectory</a></li><li class=""><a smoothhashscroll="" href="#browsefile">BrowseFile</a></li><li><a smoothhashscroll="" href="#callpluginfunction">CallPluginFunction</a></li><li class=""><a smoothhashscroll="" href="#createprojectamr">CreateProjectAMR</a></li><li class=""><a smoothhashscroll="" href="#createprojectdmr">CreateProjectDMR</a></li><li class=""><a smoothhashscroll="" href="#createprojectfmr">CreateProjectFMR</a></li><li class=""><a smoothhashscroll="" href="#createprojectfmrslicestimelooping">CreateProjectFMRSlicesTimeLooping</a></li><li class=""><a smoothhashscroll="" href="#createprojectmosaicdmr">CreateProjectMosaicDMR</a></li><li class=""><a smoothhashscroll="" href="#createprojectmosaicfmr">CreateProjectMosaicFMR</a></li><li class=""><a smoothhashscroll="" href="#createprojectvmr">CreateProjectVMR</a></li><li class=""><a smoothhashscroll="" href="#executeplugin">ExecutePlugin</a></li><li><a smoothhashscroll="" href="#exit">Exit</a></li><li><a smoothhashscroll="" href="#findchild">FindChild</a></li><li class=""><a smoothhashscroll="" href="#getpluginfloatparameter">GetPluginFloatParameter</a></li><li><a smoothhashscroll="" href="#getpluginintparameter">GetPluginIntParameter</a></li><li class=""><a smoothhashscroll="" href="#getpluginstringparameter">GetPluginStringParameter</a></li><li class=""><a smoothhashscroll="" href="#getvtcsofmdm">GetVTCsOfMDM</a></li><li class=""><a smoothhashscroll="" href="#hidescriptswindow">HideScriptsWindow</a></li><li><a smoothhashscroll="" href="#messagebox">MessageBox</a></li><li class=""><a smoothhashscroll="" href="#movewindow">MoveWindow</a></li><li class=""><a smoothhashscroll="" href="#opendocument">OpenDocument</a></li><li><a smoothhashscroll="" href="#printtolog">PrintToLog</a></li><li class=""><a smoothhashscroll="" href="#renamedicomfilesindirectory">RenameDicomFilesInDirectory</a></li><li class=""><a smoothhashscroll="" href="#resizewindow">ResizeWindow</a></li><li class=""><a smoothhashscroll="" href="#setpluginfloatparameter">SetPluginFloatParameter</a></li><li class=""><a smoothhashscroll="" href="#setpluginintparameter">SetPluginIntParameter</a></li><li><a smoothhashscroll="" href="#setpluginstringparameter">SetPluginStringParameter</a></li><li><a smoothhashscroll="" href="#showlogtab">ShowLogTab</a></li><li><a smoothhashscroll="" href="#showscriptswindow">ShowScriptsWindow</a></li><li class=""><a smoothhashscroll="" href="#timeoutmessagebox">TimeOutMessageBox</a></li><li class=""><a smoothhashscroll="" href="#blocksignals">blockSignals</a></li><li><a smoothhashscroll="" href="#childevent">childEvent</a></li><li class=""><a smoothhashscroll="" href="#children">children</a></li><li><a smoothhashscroll="" href="#classname">className</a></li><li class=""><a smoothhashscroll="" href="#connect">connect</a></li><li class=""><a smoothhashscroll="" href="#customevent">customEvent</a></li><li class=""><a smoothhashscroll="" href="#delete">delete</a></li><li><a smoothhashscroll="" href="#deletelater">deleteLater</a></li><li class=""><a smoothhashscroll="" href="#destroyed">destroyed</a></li><li class=""><a smoothhashscroll="" href="#disconnect">disconnect</a></li><li class=""><a smoothhashscroll="" href="#dumpobjectinfo">dumpObjectInfo</a></li><li class=""><a smoothhashscroll="" href="#dumpobjecttree">dumpObjectTree</a></li><li><a smoothhashscroll="" href="#dynamicpropertynames">dynamicPropertyNames</a></li><li class=""><a smoothhashscroll="" href="#event">event</a></li><li class=""><a smoothhashscroll="" href="#eventfilter">eventFilter</a></li><li class=""><a smoothhashscroll="" href="#findchild1">findChild</a></li><li class=""><a smoothhashscroll="" href="#findchildren">findChildren</a></li><li><a smoothhashscroll="" href="#help">help</a></li><li class=""><a smoothhashscroll="" href="#inherits">inherits</a></li><li><a smoothhashscroll="" href="#installeventfilter">installEventFilter</a></li><li><a smoothhashscroll="" href="#issignalconnected">isSignalConnected</a></li><li class=""><a smoothhashscroll="" href="#iswidgettype">isWidgetType</a></li><li class=""><a smoothhashscroll="" href="#iswindowtype">isWindowType</a></li><li class=""><a smoothhashscroll="" href="#killtimer">killTimer</a></li><li class=""><a smoothhashscroll="" href="#metaobject">metaObject</a></li><li class=""><a smoothhashscroll="" href="#movetothread">moveToThread</a></li><li class=""><a smoothhashscroll="" href="#objectnamechanged">objectNameChanged</a></li><li class=""><a smoothhashscroll="" href="#parent">parent</a></li><li class=""><a smoothhashscroll="" href="#property">property</a></li><li class=""><a smoothhashscroll="" href="#removeeventfilter">removeEventFilter</a></li><li class=""><a smoothhashscroll="" href="#sender">sender</a></li><li><a smoothhashscroll="" href="#sendersignalindex">senderSignalIndex</a></li><li class=""><a smoothhashscroll="" href="#setobjectname">setObjectName</a></li><li><a smoothhashscroll="" href="#setparent">setParent</a></li><li class=""><a smoothhashscroll="" href="#setproperty">setProperty</a></li><li class=""><a smoothhashscroll="" href="#signalsblocked">signalsBlocked</a></li><li class=""><a smoothhashscroll="" href="#starttimer">startTimer</a></li><li class=""><a smoothhashscroll="" href="#thread">thread</a></li><li><a smoothhashscroll="" href="#timerevent">timerEvent</a></li><li class=""><a smoothhashscroll="" href="#tr">tr</a></li></ul></li></ul></li></ul></div><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a>
+            </ul>
+        </div>
+    </div>
+    <div id="toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
+        <div class="toc"><ul class="nav"><li class=""><a smoothhashscroll="" href="#pytonqtprivatebrainvoyagerscriptaccess">PytonQt.private.BrainVoyagerScriptAccess</a><ul class="nav"><li class=""><a smoothhashscroll="" href="#attributes">Attributes</a><ul class="nav"><li><a smoothhashscroll="" href="#activedocument">ActiveDocument</a></li><li class=""><a smoothhashscroll="" href="#buildnumber">BuildNumber</a></li><li><a smoothhashscroll="" href="#currentdirectory">CurrentDirectory</a></li><li><a smoothhashscroll="" href="#documents">Documents</a></li><li class=""><a smoothhashscroll="" href="#is64bits">Is64Bits</a></li><li><a smoothhashscroll="" href="#pathtodata">PathToData</a></li><li class=""><a smoothhashscroll="" href="#pathtosampledata">PathToSampleData</a></li><li><a smoothhashscroll="" href="#versionmajor">VersionMajor</a></li><li><a smoothhashscroll="" href="#versionminor">VersionMinor</a></li><li><a smoothhashscroll="" href="#versionpatch">VersionPatch</a></li><li class=""><a smoothhashscroll="" href="#voifilename">VOIFileName</a></li><li><a smoothhashscroll="" href="#h">h</a></li><li class=""><a smoothhashscroll="" href="#w">w</a></li><li><a smoothhashscroll="" href="#x">x</a></li><li><a smoothhashscroll="" href="#y">y</a></li><li><a smoothhashscroll="" href="#objectname">objectName</a></li><li><a smoothhashscroll="" href="#value">value</a></li><li><a smoothhashscroll="" href="#visible">visible</a></li></ul></li><li class=""><a smoothhashscroll="" href="#methods">Methods</a><ul class="nav"><li class=""><a smoothhashscroll="" href="#browsedirectory">BrowseDirectory</a></li><li class=""><a smoothhashscroll="" href="#browsefile">BrowseFile</a></li><li><a smoothhashscroll="" href="#callpluginfunction">CallPluginFunction</a></li><li class=""><a smoothhashscroll="" href="#createprojectamr">CreateProjectAMR</a></li><li class=""><a smoothhashscroll="" href="#createprojectdmr">CreateProjectDMR</a></li><li class=""><a smoothhashscroll="" href="#createprojectfmr">CreateProjectFMR</a></li><li class=""><a smoothhashscroll="" href="#createprojectfmrslicestimelooping">CreateProjectFMRSlicesTimeLooping</a></li><li class=""><a smoothhashscroll="" href="#createprojectmosaicdmr">CreateProjectMosaicDMR</a></li><li class=""><a smoothhashscroll="" href="#createprojectmosaicfmr">CreateProjectMosaicFMR</a></li><li class=""><a smoothhashscroll="" href="#createprojectvmr">CreateProjectVMR</a></li><li class=""><a smoothhashscroll="" href="#executeplugin">ExecutePlugin</a></li><li><a smoothhashscroll="" href="#exit">Exit</a></li><li><a smoothhashscroll="" href="#findchild">FindChild</a></li><li class=""><a smoothhashscroll="" href="#getpluginfloatparameter">GetPluginFloatParameter</a></li><li><a smoothhashscroll="" href="#getpluginintparameter">GetPluginIntParameter</a></li><li class=""><a smoothhashscroll="" href="#getpluginstringparameter">GetPluginStringParameter</a></li><li class=""><a smoothhashscroll="" href="#getvtcsofmdm">GetVTCsOfMDM</a></li><li class=""><a smoothhashscroll="" href="#hidescriptswindow">HideScriptsWindow</a></li><li><a smoothhashscroll="" href="#messagebox">MessageBox</a></li><li class=""><a smoothhashscroll="" href="#movewindow">MoveWindow</a></li><li class=""><a smoothhashscroll="" href="#opendocument">OpenDocument</a></li><li><a smoothhashscroll="" href="#printtolog">PrintToLog</a></li><li class=""><a smoothhashscroll="" href="#renamedicomfilesindirectory">RenameDicomFilesInDirectory</a></li><li class=""><a smoothhashscroll="" href="#resizewindow">ResizeWindow</a></li><li class=""><a smoothhashscroll="" href="#setpluginfloatparameter">SetPluginFloatParameter</a></li><li class=""><a smoothhashscroll="" href="#setpluginintparameter">SetPluginIntParameter</a></li><li><a smoothhashscroll="" href="#setpluginstringparameter">SetPluginStringParameter</a></li><li><a smoothhashscroll="" href="#showlogtab">ShowLogTab</a></li><li><a smoothhashscroll="" href="#showscriptswindow">ShowScriptsWindow</a></li><li class=""><a smoothhashscroll="" href="#timeoutmessagebox">TimeOutMessageBox</a></li><li class=""><a smoothhashscroll="" href="#blocksignals">blockSignals</a></li><li><a smoothhashscroll="" href="#childevent">childEvent</a></li><li class=""><a smoothhashscroll="" href="#children">children</a></li><li><a smoothhashscroll="" href="#classname">className</a></li><li class=""><a smoothhashscroll="" href="#connect">connect</a></li><li class=""><a smoothhashscroll="" href="#customevent">customEvent</a></li><li class=""><a smoothhashscroll="" href="#delete">delete</a></li><li><a smoothhashscroll="" href="#deletelater">deleteLater</a></li><li class=""><a smoothhashscroll="" href="#destroyed">destroyed</a></li><li class=""><a smoothhashscroll="" href="#disconnect">disconnect</a></li><li class=""><a smoothhashscroll="" href="#dumpobjectinfo">dumpObjectInfo</a></li><li class=""><a smoothhashscroll="" href="#dumpobjecttree">dumpObjectTree</a></li><li><a smoothhashscroll="" href="#dynamicpropertynames">dynamicPropertyNames</a></li><li class=""><a smoothhashscroll="" href="#event">event</a></li><li class=""><a smoothhashscroll="" href="#eventfilter">eventFilter</a></li><li class=""><a smoothhashscroll="" href="#findchild1">findChild</a></li><li class=""><a smoothhashscroll="" href="#findchildren">findChildren</a></li><li><a smoothhashscroll="" href="#help">help</a></li><li class=""><a smoothhashscroll="" href="#inherits">inherits</a></li><li><a smoothhashscroll="" href="#installeventfilter">installEventFilter</a></li><li><a smoothhashscroll="" href="#issignalconnected">isSignalConnected</a></li><li class=""><a smoothhashscroll="" href="#iswidgettype">isWidgetType</a></li><li class=""><a smoothhashscroll="" href="#iswindowtype">isWindowType</a></li><li class=""><a smoothhashscroll="" href="#killtimer">killTimer</a></li><li class=""><a smoothhashscroll="" href="#metaobject">metaObject</a></li><li class=""><a smoothhashscroll="" href="#movetothread">moveToThread</a></li><li class=""><a smoothhashscroll="" href="#objectnamechanged">objectNameChanged</a></li><li class=""><a smoothhashscroll="" href="#parent">parent</a></li><li class=""><a smoothhashscroll="" href="#property">property</a></li><li class=""><a smoothhashscroll="" href="#removeeventfilter">removeEventFilter</a></li><li class=""><a smoothhashscroll="" href="#sender">sender</a></li><li><a smoothhashscroll="" href="#sendersignalindex">senderSignalIndex</a></li><li class=""><a smoothhashscroll="" href="#setobjectname">setObjectName</a></li><li><a smoothhashscroll="" href="#setparent">setParent</a></li><li class=""><a smoothhashscroll="" href="#setproperty">setProperty</a></li><li class=""><a smoothhashscroll="" href="#signalsblocked">signalsBlocked</a></li><li class=""><a smoothhashscroll="" href="#starttimer">startTimer</a></li><li class=""><a smoothhashscroll="" href="#thread">thread</a></li><li><a smoothhashscroll="" href="#timerevent">timerEvent</a></li><li class=""><a smoothhashscroll="" href="#tr">tr</a></li></ul></li></ul></li></ul></div><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.2/gist-embed.min.js" defer></script>
+    <script>
+        var markdown = $(".markdown-body");
+        //smooth all hash trigger scrolling
+        function smoothHashScroll() {
+            var hashElements = $("a[href^='#']").toArray();
+            for (var i = 0; i < hashElements.length; i++) {
+                var element = hashElements[i];
+                var $element = $(element);
+                var hash = element.hash;
+                if (hash) {
+                    $element.on('click', function (e) {
+                        // store hash
+                        var hash = this.hash;
+                        if ($(hash).length <= 0) return;
+                        // prevent default anchor click behavior
+                        e.preventDefault();
+                        // animate
+                        $('body, html').stop(true, true).animate({
+                            scrollTop: $(hash).offset().top
+                        }, 100, "linear", function () {
+                            // when done, add hash to url
+                            // (default click behaviour)
+                            window.location.hash = hash;
+                        });
+                    });
+                }
+            }
+        }
+
+        smoothHashScroll();
+        var toc = $('.ui-toc');
+        var tocAffix = $('.ui-affix-toc');
+        var tocDropdown = $('.ui-toc-dropdown');
+        //toc
+        tocDropdown.click(function (e) {
+            e.stopPropagation();
+        });
+
+        var enoughForAffixToc = true;
+
+        function generateScrollspy() {
+            $(document.body).scrollspy({
+                target: ''
+            });
+            $(document.body).scrollspy('refresh');
+            if (enoughForAffixToc) {
+                toc.hide();
+                tocAffix.show();
+            } else {
+                tocAffix.hide();
+                toc.show();
+            }
+            $(document.body).scroll();
+        }
+
+        function windowResize() {
+            //toc right
+            var paddingRight = parseFloat(markdown.css('padding-right'));
+            var right = ($(window).width() - (markdown.offset().left + markdown.outerWidth() - paddingRight));
+            toc.css('right', right + 'px');
+            //affix toc left
+            var newbool;
+            var rightMargin = (markdown.parent().outerWidth() - markdown.outerWidth()) / 2;
+            //for ipad or wider device
+            if (rightMargin >= 133) {
+                newbool = true;
+                var affixLeftMargin = (tocAffix.outerWidth() - tocAffix.width()) / 2;
+                var left = markdown.offset().left + markdown.outerWidth() - affixLeftMargin;
+                tocAffix.css('left', left + 'px');
+            } else {
+                newbool = false;
+            }
+            if (newbool != enoughForAffixToc) {
+                enoughForAffixToc = newbool;
+                generateScrollspy();
+            }
+        }
+        $(window).resize(function () {
+            windowResize();
+        });
+        $(document).ready(function () {
+            windowResize();
+            generateScrollspy();
+        });
+
+        //remove hash
+        function removeHash() {
+            window.location.hash = '';
+        }
+
+        var backtotop = $('.back-to-top');
+        var gotobottom = $('.go-to-bottom');
+
+        backtotop.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToTop)
+                scrollToTop();
+            removeHash();
+        });
+        gotobottom.click(function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            if (scrollToBottom)
+                scrollToBottom();
+            removeHash();
+        });
+
+        function scrollToTop() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: 0
+            }, 100, "linear");
+        }
+
+        function scrollToBottom() {
+            $('body, html').stop(true, true).animate({
+                scrollTop: $(document.body)[0].scrollHeight
+            }, 100, "linear");
+        }
+    </script>
+</body>
+
+</html>
