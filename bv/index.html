@@ -38,7 +38,7 @@
 with <em>Numpy</em> arrays.</p><p>It has to be imported before it can be used by calling <code>import bv</code>.</p><h2 id="methods"><a title="methods" href="#methods" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Methods</h2><h3 id="fmrarray-t"><a title="fmrarray-t" href="#fmrarray-t" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>fmrarray_t</h3><p>Get volume for specified time point t of FMR document as a contigous 1D numpy array.<br>
 <strong>Note</strong>: This provides direct access to the original (float32) memory block (no copy).</p><pre><code>x = bv.fmrarray_t(a, b)
 </code></pre><dl>
-<dt>a : <a target="_blank" href="/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
+<dt>a : <a target="_blank" href="/BVPython/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
 <dd>the document</dd>
 <dt>b : int</dt>
 <dd>the time point</dd>
@@ -47,7 +47,7 @@ with <em>Numpy</em> arrays.</p><p>It has to be imported before it can be used by
 </dl><h3 id="mesharrays"><a title="mesharrays" href="#mesharrays" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>mesharrays</h3><p>Get three arrays of the x, y, z coordinates of the vertices of a mesh (SRF) document as contigous 1D numpy arrays.<br>
 <strong>Note</strong>: This function provides direct access to the original (float32) memory blocks (no copy).</p><pre><code>x, y, z = bv.mesharrays(a)
 </code></pre><dl>
-<dt>a : <a target="_blank" href="/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
+<dt>a : <a target="_blank" href="/BVPython/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
 <dd>the document</dd>
 <dt>x : numpy.ndarray</dt>
 <dd>the x coordinates of the vertices of the mesh</dd>
@@ -57,7 +57,7 @@ with <em>Numpy</em> arrays.</p><p>It has to be imported before it can be used by
 <dd>the z coordinates of the vertices of the mesh</dd>
 </dl><h3 id="set-fmrarray-t"><a title="set-fmrarray-t" href="#set-fmrarray-t" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>set_fmrarray_t</h3><p>Sets the values of the volume for the specified time point t of FMR document from provided float32 numpy array.</p><pre><code>x = bv.set_fmrarray_t(a, b ,c)
 </code></pre><dl>
-<dt>a : <a target="_blank" href="/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
+<dt>a : <a target="_blank" href="/BVPython/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
 <dd>the document</dd>
 <dt>b : int</dt>
 <dd>the time point</dd>
@@ -67,7 +67,7 @@ with <em>Numpy</em> arrays.</p><p>It has to be imported before it can be used by
 <dd>success (<code>True</code> or <code>False</code>)</dd>
 </dl><h3 id="set-mesharrays"><a title="set-mesharrays" href="#set-mesharrays" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>set_mesharrays</h3><p>Sets the values of the x, y, z coordinates of the vertices of a mesh (SRF) document from 3 provided float32 numpy arrays.</p><pre><code>x = bv.set_mesharrays(a, b, c, d)
 </code></pre><dl>
-<dt>a : <a target="_blank" href="/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
+<dt>a : <a target="_blank" href="/BVPython/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
 <dd>the document</dd>
 <dt>b : numpy.ndarray</dt>
 <dd>The values of the x coordinates of the vertices of the mesh</dd>
@@ -79,7 +79,7 @@ with <em>Numpy</em> arrays.</p><p>It has to be imported before it can be used by
 <dd>success (<code>True</code> or <code>False</code>)</dd>
 </dl><h3 id="set-smparray-i"><a title="set-smparray-i" href="#set-smparray-i" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>set_smparray_i</h3><p>Sets the values of surface map specified with index i of hosting VMR-SRF document from provided float32 numpy array.</p><pre><code>x = bv.set_smparray_i(1, b, c)
 </code></pre><dl>
-<dt>a : <a target="_blank" href="/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
+<dt>a : <a target="_blank" href="/BVPython/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
 <dd>the document</dd>
 <dt>b : int</dt>
 <dd>the index</dd>
@@ -89,7 +89,7 @@ with <em>Numpy</em> arrays.</p><p>It has to be imported before it can be used by
 <dd>success (<code>True</code> or <code>False</code>)</dd>
 </dl><h3 id="set-vmparray-i"><a title="set-vmparray-i" href="#set-vmparray-i" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>set_vmparray_i</h3><p>Sets the values of volume map specified with index i of hosting VMR document from provided float32 numpy array.</p><pre><code>x = bv.set_vmparray_i(a, b, c)
 </code></pre><dl>
-<dt>a : <a target="_blank" href="/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
+<dt>a : <a target="_blank" href="/BVPython/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
 <dd>the document</dd>
 <dt>b : int</dt>
 <dd>the index</dd>
@@ -99,7 +99,7 @@ with <em>Numpy</em> arrays.</p><p>It has to be imported before it can be used by
 <dd>success (<code>True</code> or <code>False</code>)</dd>
 </dl><h3 id="set-vrmarray"><a title="set-vrmarray" href="#set-vrmarray" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>set_vrmarray</h3><p>Sets the values of the volume of VMR document from provided uint8 numpy array.</p><pre><code>x = bv.set_vmrarray(a, b, c)
 </code></pre><dl>
-<dt>a : <a target="_blank" href="/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
+<dt>a : <a target="_blank" href="/BVPython/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
 <dd>the document</dd>
 <dt>b : numpy.ndarray</dt>
 <dd>The values of the volume</dd>
@@ -108,7 +108,7 @@ with <em>Numpy</em> arrays.</p><p>It has to be imported before it can be used by
 </dl><h3 id="smparray-i"><a title="smparray-i" href="#smparray-i" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>smparray_i</h3><p>Get surface map for specified index i of hosting VMR-SRF document as a contigous 1D numpy array.<br>
 <strong>Note</strong>: This function provides direct access to the original (float32) memory block (no copy).</p><pre><code>x = bv.smparray_i(a, b)
 </code></pre><dl>
-<dt>a : <a target="_blank" href="/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
+<dt>a : <a target="_blank" href="/BVPython/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
 <dd>the document</dd>
 <dt>b : int</dt>
 <dd>the index</dd>
@@ -117,7 +117,7 @@ with <em>Numpy</em> arrays.</p><p>It has to be imported before it can be used by
 </dl><h3 id="vmparray-i"><a title="vmparray-i" href="#vmparray-i" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>vmparray_i</h3><p>Get volume map for specified index i of hosting VMR document as a contigous 1D numpy array.<br>
 <strong>Note</strong>: This provides direct access to the original (float32) memory block (no copy).</p><pre><code>x = bv.vmparray_i(a, b)
 </code></pre><dl>
-<dt>a : <a target="_blank" href="/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
+<dt>a : <a target="_blank" href="/BVPython/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
 <dd>the document</dd>
 <dt>b : int</dt>
 <dd>the index</dd>
@@ -126,7 +126,7 @@ with <em>Numpy</em> arrays.</p><p>It has to be imported before it can be used by
 </dl><h3 id="vmrarray"><a title="vmrarray" href="#vmrarray" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>vmrarray</h3><p>Get the volume of VMR document as a contigous 1D numpy array.<br>
 <strong>Note</strong>: This provides direct access to the original byte (uint8) memory block (no copy).</p><pre><code>x = bv.vmparray_i(a)
 </code></pre><dl>
-<dt>a : <a target="_blank" href="/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
+<dt>a : <a target="_blank" href="/BVPython/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
 <dd>the document</dd>
 <dt>x : numpy.ndarray</dt>
 <dd>the volume map</dd>
@@ -137,12 +137,12 @@ with <em>Numpy</em> arrays.</p><p>It has to be imported before it can be used by
                 <i class="fa fa-bars"></i>
             </a>
             <ul id="toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
-                <div class="toc"><ul class="nav"><li class=""><a smoothhashscroll="" href="#bv">bv</a><ul class="nav"><li class=""><a smoothhashscroll="" href="#methods">Methods</a><ul class="nav"><li class=""><a smoothhashscroll="" href="#fmrarray-t">fmrarray_t</a></li><li class=""><a smoothhashscroll="" href="#mesharrays">mesharrays</a></li><li class=""><a smoothhashscroll="" href="#set-fmrarray-t">set_fmrarray_t</a></li><li class=""><a smoothhashscroll="" href="#set-mesharrays">set_mesharrays</a></li><li class=""><a smoothhashscroll="" href="#set-smparray-i">set_smparray_i</a></li><li class=""><a smoothhashscroll="" href="#set-vmparray-i">set_vmparray_i</a></li><li class=""><a smoothhashscroll="" href="#set-vrmarray">set_vrmarray</a></li><li class=""><a smoothhashscroll="" href="#smparray-i">smparray_i</a></li><li><a smoothhashscroll="" href="#vmparray-i">vmparray_i</a></li><li><a smoothhashscroll="" href="#vmrarray">vmrarray</a></li></ul></li></ul></li></ul></div><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a>
+                <div class="toc"><ul class="nav"><li class=""><a smoothhashscroll="" href="#bv">bv</a><ul class="nav"><li><a smoothhashscroll="" href="#methods">Methods</a><ul class="nav"><li><a smoothhashscroll="" href="#fmrarray-t">fmrarray_t</a></li><li><a smoothhashscroll="" href="#mesharrays">mesharrays</a></li><li><a smoothhashscroll="" href="#set-fmrarray-t">set_fmrarray_t</a></li><li><a smoothhashscroll="" href="#set-mesharrays">set_mesharrays</a></li><li><a smoothhashscroll="" href="#set-smparray-i">set_smparray_i</a></li><li><a smoothhashscroll="" href="#set-vmparray-i">set_vmparray_i</a></li><li><a smoothhashscroll="" href="#set-vrmarray">set_vrmarray</a></li><li><a smoothhashscroll="" href="#smparray-i">smparray_i</a></li><li><a smoothhashscroll="" href="#vmparray-i">vmparray_i</a></li><li><a smoothhashscroll="" href="#vmrarray">vmrarray</a></li></ul></li></ul></li></ul></div><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a>
             </ul>
         </div>
     </div>
     <div id="toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
-        <div class="toc"><ul class="nav"><li class=""><a smoothhashscroll="" href="#bv">bv</a><ul class="nav"><li class=""><a smoothhashscroll="" href="#methods">Methods</a><ul class="nav"><li class=""><a smoothhashscroll="" href="#fmrarray-t">fmrarray_t</a></li><li class=""><a smoothhashscroll="" href="#mesharrays">mesharrays</a></li><li class=""><a smoothhashscroll="" href="#set-fmrarray-t">set_fmrarray_t</a></li><li class=""><a smoothhashscroll="" href="#set-mesharrays">set_mesharrays</a></li><li class=""><a smoothhashscroll="" href="#set-smparray-i">set_smparray_i</a></li><li class=""><a smoothhashscroll="" href="#set-vmparray-i">set_vmparray_i</a></li><li class=""><a smoothhashscroll="" href="#set-vrmarray">set_vrmarray</a></li><li class=""><a smoothhashscroll="" href="#smparray-i">smparray_i</a></li><li><a smoothhashscroll="" href="#vmparray-i">vmparray_i</a></li><li><a smoothhashscroll="" href="#vmrarray">vmrarray</a></li></ul></li></ul></li></ul></div><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a>
+        <div class="toc"><ul class="nav"><li class=""><a smoothhashscroll="" href="#bv">bv</a><ul class="nav"><li><a smoothhashscroll="" href="#methods">Methods</a><ul class="nav"><li><a smoothhashscroll="" href="#fmrarray-t">fmrarray_t</a></li><li><a smoothhashscroll="" href="#mesharrays">mesharrays</a></li><li><a smoothhashscroll="" href="#set-fmrarray-t">set_fmrarray_t</a></li><li><a smoothhashscroll="" href="#set-mesharrays">set_mesharrays</a></li><li><a smoothhashscroll="" href="#set-smparray-i">set_smparray_i</a></li><li><a smoothhashscroll="" href="#set-vmparray-i">set_vmparray_i</a></li><li><a smoothhashscroll="" href="#set-vrmarray">set_vrmarray</a></li><li><a smoothhashscroll="" href="#smparray-i">smparray_i</a></li><li><a smoothhashscroll="" href="#vmparray-i">vmparray_i</a></li><li><a smoothhashscroll="" href="#vmrarray">vmrarray</a></li></ul></li></ul></li></ul></div><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" defer></script>
