@@ -34,35 +34,35 @@
 </head>
 
 <body>
-    <div id="doc" class="markdown-body container-fluid"><h1 id="pythonqtprivatedocumentlistscriptaccess"><a title="pythonqtprivatedocumentlistscriptaccess" href="#pythonqtprivatedocumentlistscriptaccess" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>PythonQt.private.DocumentListScriptAccess</h1><p><code>BrainVoyager.Documents</code> is an instance of this class.</p><h2 id="attributes"><a title="attributes" href="#attributes" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Attributes</h2><h3 id="count"><a title="count" href="#count" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Count</h3><p>This is an int.</p><h3 id="objectname"><a title="objectname" href="#objectname" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>objectName</h3><p>This is a str.</p><h2 id="methods"><a title="methods" href="#methods" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Methods</h2><h3 id="item"><a title="item" href="#item" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Item</h3><p><code>x = BrainVoyager.Documents.Item(a)</code></p><dl>
+    <div id="doc" class="markdown-body container-fluid"><h1 id="pythonqtprivatedocumentlistscriptaccess"><a title="pythonqtprivatedocumentlistscriptaccess" href="#pythonqtprivatedocumentlistscriptaccess" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>PythonQt.private.DocumentListScriptAccess</h1><p>For example, `document_list = document_list…</p><h2 id="attributes"><a title="attributes" href="#attributes" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Attributes</h2><h3 id="count"><a title="count" href="#count" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Count</h3><p>This is an int.</p><h3 id="objectname"><a title="objectname" href="#objectname" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>objectName</h3><p>This is a str.</p><h2 id="methods"><a title="methods" href="#methods" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Methods</h2><h3 id="item"><a title="item" href="#item" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Item</h3><p><code>x = document_list.Item(a)</code></p><dl>
 <dt>a : int</dt>
 <dd>the index</dd>
 <dt>x : <a target="_blank" href="/BVPython/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a></dt>
 <dd>the document</dd>
-</dl><h3 id="size"><a title="size" href="#size" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Size</h3><p><code>x = BrainVoyager.Documents.Size()</code></p><dl>
+</dl><h3 id="size"><a title="size" href="#size" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Size</h3><p><code>x = document_list.Size()</code></p><dl>
 <dt>x : int</dt>
 <dd>the number of documents</dd>
-</dl><h3 id="blocksignals"><a title="blocksignals" href="#blocksignals" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>blockSignals</h3><pre><code>x = BrainVoyager.Documents.blockSignals(a)
+</dl><h3 id="blocksignals"><a title="blocksignals" href="#blocksignals" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>blockSignals</h3><pre><code>x = document_list.blockSignals(a)
 </code></pre><dl>
 <dt>a : bool</dt>
 <dd><code>True</code> or <code>False</code></dd>
 <dt>x : bool</dt>
 <dd>state before change (<code>True</code> or <code>False</code>)</dd>
-</dl><h3 id="childevent"><a title="childevent" href="#childevent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>childEvent</h3><pre><code>BrainVoyager.Documents.childEvent(a, b)
+</dl><h3 id="childevent"><a title="childevent" href="#childevent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>childEvent</h3><pre><code>document_list.childEvent(a, b)
 </code></pre><dl>
 <dt>a : QChildEvent</dt>
 <dd>?</dd>
 <dt>b : ?</dt>
 <dd>?</dd>
-</dl><h3 id="children"><a title="children" href="#children" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>children</h3><pre><code>x = BrainVoyager.Documents.children()
+</dl><h3 id="children"><a title="children" href="#children" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>children</h3><pre><code>x = document_list.children()
 </code></pre><dl>
 <dt>x : tuple</dt>
-<dd>a tuple with <a target="_blank" href="/BVPython/PythonQt.private.DocumentScriptAccess">PythonQt.private.DocumentScriptAccess</a> objects (?)</dd>
-</dl><h3 id="classname"><a title="classname" href="#classname" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>className</h3><pre><code>x = BrainVoyager.Documents.className()
+<dd>?</dd>
+</dl><h3 id="classname"><a title="classname" href="#classname" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>className</h3><pre><code>x = document_list.className()
 </code></pre><dl>
 <dt>x : str</dt>
 <dd><code>'DocumentListScriptAccess'</code></dd>
-</dl><h3 id="connect"><a title="connect" href="#connect" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>connect</h3><pre><code>x = BrainVoyager.Documents.connect(a, b, c, d, e)
+</dl><h3 id="connect"><a title="connect" href="#connect" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>connect</h3><pre><code>x = document_list.connect(a, b, c, d, e)
 </code></pre><dl>
 <dt>a : QObject (?)</dt>
 <dd>the sender</dd>
@@ -76,16 +76,16 @@
 <dd>the connection type</dd>
 <dt>x : bool</dt>
 <dd><code>True</code> or <code>False</code></dd>
-</dl><h3 id="customevent"><a title="customevent" href="#customevent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>customEvent</h3><pre><code>BrainVoyager.Documents.customEvent(a, b)
+</dl><h3 id="customevent"><a title="customevent" href="#customevent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>customEvent</h3><pre><code>document_list.customEvent(a, b)
 </code></pre><dl>
 <dt>a : QEvent</dt>
 <dd>?</dd>
 <dt>b : ?</dt>
 <dd>?</dd>
-</dl><h3 id="delete"><a title="delete" href="#delete" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>delete</h3><pre><code>BrainVoyager.Documents.delete()
-</code></pre><h3 id="deletelater"><a title="deletelater" href="#deletelater" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>deleteLater</h3><pre><code>BrainVoyager.Documents.deleteLater()
-</code></pre><h3 id="destroyed"><a title="destroyed" href="#destroyed" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>destroyed</h3><pre><code>BrainVoyager.Documents.distroyed()
-</code></pre><h3 id="disconnect"><a title="disconnect" href="#disconnect" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>disconnect</h3><pre><code>x = BrainVoyager.Documents.disconnect(a, b, c, d)
+</dl><h3 id="delete"><a title="delete" href="#delete" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>delete</h3><pre><code>document_list.delete()
+</code></pre><h3 id="deletelater"><a title="deletelater" href="#deletelater" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>deleteLater</h3><pre><code>document_list.deleteLater()
+</code></pre><h3 id="destroyed"><a title="destroyed" href="#destroyed" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>destroyed</h3><pre><code>document_list.distroyed()
+</code></pre><h3 id="disconnect"><a title="disconnect" href="#disconnect" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>disconnect</h3><pre><code>x = document_list.disconnect(a, b, c, d)
 </code></pre><dl>
 <dt>a : QObject (?)</dt>
 <dd>the sender (?)</dd>
@@ -97,25 +97,25 @@
 <dd>the slot (?)</dd>
 <dt>x : bool</dt>
 <dd><code>True</code> or <code>False</code></dd>
-</dl><h3 id="dumpobjectinfo"><a title="dumpobjectinfo" href="#dumpobjectinfo" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>dumpObjectInfo</h3><pre><code>BrainVoyager.Documents.dumpObjectInfo(a)
+</dl><h3 id="dumpobjectinfo"><a title="dumpobjectinfo" href="#dumpobjectinfo" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>dumpObjectInfo</h3><pre><code>document_list.dumpObjectInfo(a)
 </code></pre><dl>
 <dt>a : ?</dt>
 <dd>?</dd>
-</dl><h3 id="dumpobjecttree"><a title="dumpobjecttree" href="#dumpobjecttree" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>dumpObjectTree</h3><pre><code>BrainVoyager.Documents.dumpObjectTree(a)
+</dl><h3 id="dumpobjecttree"><a title="dumpobjecttree" href="#dumpobjecttree" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>dumpObjectTree</h3><pre><code>document_list.dumpObjectTree(a)
 </code></pre><dl>
 <dt>a : ?</dt>
 <dd>?</dd>
-</dl><h3 id="dynamicpropertynames"><a title="dynamicpropertynames" href="#dynamicpropertynames" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>dynamicPropertyNames</h3><pre><code>BrainVoyager.Documents.dynamicPropertyNames(a)
+</dl><h3 id="dynamicpropertynames"><a title="dynamicpropertynames" href="#dynamicpropertynames" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>dynamicPropertyNames</h3><pre><code>document_list.dynamicPropertyNames(a)
 </code></pre><dl>
 <dt>a : ?</dt>
 <dd>?</dd>
-</dl><h3 id="event"><a title="event" href="#event" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>event</h3><pre><code>x = BrainVoyager.Documents.event(a)
+</dl><h3 id="event"><a title="event" href="#event" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>event</h3><pre><code>x = document_list.event(a)
 </code></pre><dl>
 <dt>a : QEvent (?)</dt>
 <dd>the event</dd>
 <dt>x : bool</dt>
 <dd><code>True</code> or <code>False</code></dd>
-</dl><h3 id="eventfilter"><a title="eventfilter" href="#eventfilter" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>eventFilter</h3><pre><code>x = BrainVoyager.Documents.eventFilter(a, b)
+</dl><h3 id="eventfilter"><a title="eventfilter" href="#eventfilter" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>eventFilter</h3><pre><code>x = document_list.eventFilter(a, b)
 </code></pre><dl>
 <dt>a : QObject (?)</dt>
 <dd>?</dd>
@@ -123,7 +123,7 @@
 <dd>the event</dd>
 <dt>x : bool</dt>
 <dd><code>True</code> or <code>False</code></dd>
-</dl><h3 id="findchild"><a title="findchild" href="#findchild" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>findChild</h3><pre><code>x = BrainVoyager.Documents.findChild(a, b)
+</dl><h3 id="findchild"><a title="findchild" href="#findchild" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>findChild</h3><pre><code>x = document_list.findChild(a, b)
 </code></pre><dl>
 <dt>a : PyObject (?)</dt>
 <dd>?</dd>
@@ -131,7 +131,7 @@
 <dd>the name (?)</dd>
 <dt>x : QObject (?)</dt>
 <dd>the child</dd>
-</dl><h3 id="findchildren"><a title="findchildren" href="#findchildren" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>findChildren</h3><pre><code>x = BrainVoyager.Documents.findChildren(a, b)
+</dl><h3 id="findchildren"><a title="findchildren" href="#findchildren" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>findChildren</h3><pre><code>x = document_list.findChildren(a, b)
 </code></pre><dl>
 <dt>a : PyObject (?)</dt>
 <dd>?</dd>
@@ -139,83 +139,83 @@
 <dd>the name (?)</dd>
 <dt>x : tuple</dt>
 <dd>the children</dd>
-</dl><h3 id="help"><a title="help" href="#help" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>help</h3><pre><code>BrainVoyager.Documents.help()
-</code></pre><h3 id="inherits"><a title="inherits" href="#inherits" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>inherits</h3><pre><code>BrainVoyager.Documents.inherits()
-</code></pre><h3 id="installeventfilter"><a title="installeventfilter" href="#installeventfilter" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>installEventFilter</h3><pre><code>BrainVoyager.Documents.installEventFilter(a)
+</dl><h3 id="help"><a title="help" href="#help" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>help</h3><pre><code>document_list.help()
+</code></pre><h3 id="inherits"><a title="inherits" href="#inherits" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>inherits</h3><pre><code>document_list.inherits()
+</code></pre><h3 id="installeventfilter"><a title="installeventfilter" href="#installeventfilter" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>installEventFilter</h3><pre><code>document_list.installEventFilter(a)
 </code></pre><dl>
 <dt>a : QObject (?)</dt>
 <dd>?</dd>
-</dl><h3 id="issignalconnected"><a title="issignalconnected" href="#issignalconnected" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>isSignalConnected</h3><pre><code>x = BrainVoyager.Documents.isSignalConnected(a)
+</dl><h3 id="issignalconnected"><a title="issignalconnected" href="#issignalconnected" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>isSignalConnected</h3><pre><code>x = document_list.isSignalConnected(a)
 </code></pre><dl>
 <dt>a : QMethodSignal (?)</dt>
 <dd>the signal</dd>
 <dt>x : bool</dt>
 <dd><code>True</code> or <code>False</code></dd>
-</dl><h3 id="iswidgettype"><a title="iswidgettype" href="#iswidgettype" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>isWidgetType</h3><pre><code>x = BrainVoyager.Documents.isWidgetType()
+</dl><h3 id="iswidgettype"><a title="iswidgettype" href="#iswidgettype" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>isWidgetType</h3><pre><code>x = document_list.isWidgetType()
 </code></pre><dl>
 <dt>x : bool</dt>
 <dd><code>True</code> or <code>False</code></dd>
-</dl><h3 id="iswindowtype"><a title="iswindowtype" href="#iswindowtype" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>isWindowType</h3><pre><code>x = BrainVoyager.Documents.isWindowType()
+</dl><h3 id="iswindowtype"><a title="iswindowtype" href="#iswindowtype" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>isWindowType</h3><pre><code>x = document_list.isWindowType()
 </code></pre><dl>
 <dt>x : bool</dt>
 <dd><code>True</code> or <code>False</code></dd>
-</dl><h3 id="killtimer"><a title="killtimer" href="#killtimer" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>killTimer</h3><pre><code>BrainVoyager.Documents.killTimer(a)
+</dl><h3 id="killtimer"><a title="killtimer" href="#killtimer" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>killTimer</h3><pre><code>document_list.killTimer(a)
 </code></pre><dl>
 <dt>a : int</dt>
 <dd>the id</dd>
-</dl><h3 id="metaobject"><a title="metaobject" href="#metaobject" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>metaObject</h3><pre><code>x = BrainVoyager.Documents.metaObject()
+</dl><h3 id="metaobject"><a title="metaobject" href="#metaobject" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>metaObject</h3><pre><code>x = document_list.metaObject()
 </code></pre><dl>
 <dt>x : PythonQt.QtCore.QMetaObject (?)</dt>
 <dd>?</dd>
-</dl><h3 id="movetothread"><a title="movetothread" href="#movetothread" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>moveToThread</h3><pre><code>BrainVoyager.Documents.moveToThread(a)
+</dl><h3 id="movetothread"><a title="movetothread" href="#movetothread" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>moveToThread</h3><pre><code>document_list.moveToThread(a)
 </code></pre><dl>
 <dt>a : QThread</dt>
 <dd>the thread</dd>
-</dl><h3 id="objectnamechanged"><a title="objectnamechanged" href="#objectnamechanged" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>objectNameChanged</h3><pre><code>BrainVoyager.Documents.objectNameChanged(a)
+</dl><h3 id="objectnamechanged"><a title="objectnamechanged" href="#objectnamechanged" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>objectNameChanged</h3><pre><code>document_list.objectNameChanged(a)
 </code></pre><dl>
 <dt>a : str (?)</dt>
 <dd>?</dd>
-</dl><h3 id="parent"><a title="parent" href="#parent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>parent</h3><pre><code>x = BrainVoyager.Documents.parent()
+</dl><h3 id="parent"><a title="parent" href="#parent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>parent</h3><pre><code>x = document_list.parent()
 </code></pre><dl>
 <dt>x : PythonQt.private.QObject (?)</dt>
 <dd>?</dd>
-</dl><h3 id="property"><a title="property" href="#property" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>property</h3><pre><code>x = BrainVoyager.Documents.property(a)
+</dl><h3 id="property"><a title="property" href="#property" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>property</h3><pre><code>x = document_list.property(a)
 </code></pre><dl>
 <dt>a : str (?)</dt>
 <dd>the name</dd>
 <dt>x : ?</dt>
 <dd>?</dd>
-</dl><h3 id="removeeventfilter"><a title="removeeventfilter" href="#removeeventfilter" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>removeEventFilter</h3><pre><code>BrainVoyager.Documents.removeEventFilter(a)
+</dl><h3 id="removeeventfilter"><a title="removeeventfilter" href="#removeeventfilter" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>removeEventFilter</h3><pre><code>document_list.removeEventFilter(a)
 </code></pre><dl>
 <dt>a : QObject (?)</dt>
 <dd>?</dd>
-</dl><h3 id="sender"><a title="sender" href="#sender" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>sender</h3><pre><code>BrainVoyager.Documents.sender()
+</dl><h3 id="sender"><a title="sender" href="#sender" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>sender</h3><pre><code>document_list.sender()
 </code></pre><dl>
 <dt>x : PythonQt.private.QObject (?)</dt>
 <dd>?</dd>
-</dl><h3 id="sendersignalindex"><a title="sendersignalindex" href="#sendersignalindex" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>senderSignalIndex</h3><pre><code>BrainVoyager.Documents.senderSignalIndex()
+</dl><h3 id="sendersignalindex"><a title="sendersignalindex" href="#sendersignalindex" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>senderSignalIndex</h3><pre><code>document_list.senderSignalIndex()
 </code></pre><dl>
 <dt>x : int</dt>
 <dd>the index</dd>
-</dl><h3 id="setobjectname"><a title="setobjectname" href="#setobjectname" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>setObjectName</h3><pre><code>BrainVoyager.Documents.setObjectName(a)
+</dl><h3 id="setobjectname"><a title="setobjectname" href="#setobjectname" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>setObjectName</h3><pre><code>document_list.setObjectName(a)
 </code></pre><dl>
 <dt>a : str</dt>
 <dd>the name</dd>
-</dl><h3 id="setparent"><a title="setparent" href="#setparent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>setParent</h3><pre><code>BrainVoyager.Documents.setParent(a)
+</dl><h3 id="setparent"><a title="setparent" href="#setparent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>setParent</h3><pre><code>document_list.setParent(a)
 </code></pre><dl>
 <dt>a : QObject</dt>
 <dd>the parent</dd>
-</dl><h3 id="setproperty"><a title="setproperty" href="#setproperty" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>setProperty</h3><pre><code>BrainVoyager.Documents.setProperty(a)
+</dl><h3 id="setproperty"><a title="setproperty" href="#setproperty" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>setProperty</h3><pre><code>document_list.setProperty(a)
 </code></pre><dl>
 <dt>a : str (?)</dt>
 <dd>the property name</dd>
 <dt>b : ?</dt>
 <dd>the property value</dd>
-</dl><h3 id="signalsblocked"><a title="signalsblocked" href="#signalsblocked" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>signalsBlocked</h3><pre><code>x = BrainVoyager.Documents.signalsBlocked()
+</dl><h3 id="signalsblocked"><a title="signalsblocked" href="#signalsblocked" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>signalsBlocked</h3><pre><code>x = document_list.signalsBlocked()
 </code></pre><dl>
 <dt>x : bool</dt>
 <dd><code>True</code> or <code>False</code></dd>
-</dl><h3 id="starttimer"><a title="starttimer" href="#starttimer" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>startTimer</h3><pre><code>x = BrainVoyager.Documents.startTimer(a)
+</dl><h3 id="starttimer"><a title="starttimer" href="#starttimer" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>startTimer</h3><pre><code>x = document_list.startTimer(a)
 </code></pre><dl>
 <dt>a : int</dt>
 <dd>the interval</dd>
@@ -223,12 +223,12 @@
 <dd>the timer type (?)</dd>
 <dt>x : int</dt>
 <dd>?</dd>
-</dl><h3 id="thread"><a title="thread" href="#thread" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>thread</h3><pre><code>BrainVoyager.Documents.thread()
-</code></pre><h3 id="timerevent"><a title="timerevent" href="#timerevent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>timerEvent</h3><pre><code>BrainVoyager.Documents.timerEvent(a)
+</dl><h3 id="thread"><a title="thread" href="#thread" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>thread</h3><pre><code>document_list.thread()
+</code></pre><h3 id="timerevent"><a title="timerevent" href="#timerevent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>timerEvent</h3><pre><code>document_list.timerEvent(a)
 </code></pre><dl>
 <dt>a : QTimerEvent (?)</dt>
 <dd>?</dd>
-</dl><h3 id="tr"><a title="tr" href="#tr" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>tr</h3><pre><code>x = BrainVoyager.Documents.tr(a, b, c)
+</dl><h3 id="tr"><a title="tr" href="#tr" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>tr</h3><pre><code>x = document_list.tr(a, b, c)
 </code></pre><dl>
 <dt>a : QByteArray (?)</dt>
 <dd>?</dd>
@@ -245,12 +245,12 @@
                 <i class="fa fa-bars"></i>
             </a>
             <ul id="toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
-                <div class="toc"><ul class="nav"><li class=""><a smoothhashscroll="" href="#pythonqtprivatedocumentlistscriptaccess">PythonQt.private.DocumentListScriptAccess</a><ul class="nav"><li><a smoothhashscroll="" href="#attributes">Attributes</a><ul class="nav"><li><a smoothhashscroll="" href="#count">Count</a></li><li><a smoothhashscroll="" href="#objectname">objectName</a></li></ul></li><li class=""><a smoothhashscroll="" href="#methods">Methods</a><ul class="nav"><li><a smoothhashscroll="" href="#item">Item</a></li><li><a smoothhashscroll="" href="#size">Size</a></li><li><a smoothhashscroll="" href="#blocksignals">blockSignals</a></li><li><a smoothhashscroll="" href="#childevent">childEvent</a></li><li><a smoothhashscroll="" href="#children">children</a></li><li><a smoothhashscroll="" href="#classname">className</a></li><li><a smoothhashscroll="" href="#connect">connect</a></li><li><a smoothhashscroll="" href="#customevent">customEvent</a></li><li><a smoothhashscroll="" href="#delete">delete</a></li><li><a smoothhashscroll="" href="#deletelater">deleteLater</a></li><li><a smoothhashscroll="" href="#destroyed">destroyed</a></li><li><a smoothhashscroll="" href="#disconnect">disconnect</a></li><li><a smoothhashscroll="" href="#dumpobjectinfo">dumpObjectInfo</a></li><li><a smoothhashscroll="" href="#dumpobjecttree">dumpObjectTree</a></li><li><a smoothhashscroll="" href="#dynamicpropertynames">dynamicPropertyNames</a></li><li><a smoothhashscroll="" href="#event">event</a></li><li><a smoothhashscroll="" href="#eventfilter">eventFilter</a></li><li><a smoothhashscroll="" href="#findchild">findChild</a></li><li><a smoothhashscroll="" href="#findchildren">findChildren</a></li><li><a smoothhashscroll="" href="#help">help</a></li><li><a smoothhashscroll="" href="#inherits">inherits</a></li><li><a smoothhashscroll="" href="#installeventfilter">installEventFilter</a></li><li><a smoothhashscroll="" href="#issignalconnected">isSignalConnected</a></li><li><a smoothhashscroll="" href="#iswidgettype">isWidgetType</a></li><li><a smoothhashscroll="" href="#iswindowtype">isWindowType</a></li><li><a smoothhashscroll="" href="#killtimer">killTimer</a></li><li><a smoothhashscroll="" href="#metaobject">metaObject</a></li><li><a smoothhashscroll="" href="#movetothread">moveToThread</a></li><li><a smoothhashscroll="" href="#objectnamechanged">objectNameChanged</a></li><li><a smoothhashscroll="" href="#parent">parent</a></li><li><a smoothhashscroll="" href="#property">property</a></li><li><a smoothhashscroll="" href="#removeeventfilter">removeEventFilter</a></li><li><a smoothhashscroll="" href="#sender">sender</a></li><li><a smoothhashscroll="" href="#sendersignalindex">senderSignalIndex</a></li><li><a smoothhashscroll="" href="#setobjectname">setObjectName</a></li><li><a smoothhashscroll="" href="#setparent">setParent</a></li><li><a smoothhashscroll="" href="#setproperty">setProperty</a></li><li><a smoothhashscroll="" href="#signalsblocked">signalsBlocked</a></li><li><a smoothhashscroll="" href="#starttimer">startTimer</a></li><li><a smoothhashscroll="" href="#thread">thread</a></li><li><a smoothhashscroll="" href="#timerevent">timerEvent</a></li><li><a smoothhashscroll="" href="#tr">tr</a></li></ul></li></ul></li></ul></div><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a>
+                <div class="toc"><ul class="nav"><li class=""><a smoothhashscroll="" href="#pythonqtprivatedocumentlistscriptaccess">PythonQt.private.DocumentListScriptAccess</a><ul class="nav"><li><a smoothhashscroll="" href="#attributes">Attributes</a><ul class="nav"><li><a smoothhashscroll="" href="#count">Count</a></li><li><a smoothhashscroll="" href="#objectname">objectName</a></li></ul></li><li><a smoothhashscroll="" href="#methods">Methods</a><ul class="nav"><li><a smoothhashscroll="" href="#item">Item</a></li><li><a smoothhashscroll="" href="#size">Size</a></li><li><a smoothhashscroll="" href="#blocksignals">blockSignals</a></li><li><a smoothhashscroll="" href="#childevent">childEvent</a></li><li><a smoothhashscroll="" href="#children">children</a></li><li><a smoothhashscroll="" href="#classname">className</a></li><li><a smoothhashscroll="" href="#connect">connect</a></li><li><a smoothhashscroll="" href="#customevent">customEvent</a></li><li><a smoothhashscroll="" href="#delete">delete</a></li><li><a smoothhashscroll="" href="#deletelater">deleteLater</a></li><li><a smoothhashscroll="" href="#destroyed">destroyed</a></li><li><a smoothhashscroll="" href="#disconnect">disconnect</a></li><li><a smoothhashscroll="" href="#dumpobjectinfo">dumpObjectInfo</a></li><li><a smoothhashscroll="" href="#dumpobjecttree">dumpObjectTree</a></li><li><a smoothhashscroll="" href="#dynamicpropertynames">dynamicPropertyNames</a></li><li><a smoothhashscroll="" href="#event">event</a></li><li><a smoothhashscroll="" href="#eventfilter">eventFilter</a></li><li><a smoothhashscroll="" href="#findchild">findChild</a></li><li><a smoothhashscroll="" href="#findchildren">findChildren</a></li><li><a smoothhashscroll="" href="#help">help</a></li><li><a smoothhashscroll="" href="#inherits">inherits</a></li><li><a smoothhashscroll="" href="#installeventfilter">installEventFilter</a></li><li><a smoothhashscroll="" href="#issignalconnected">isSignalConnected</a></li><li><a smoothhashscroll="" href="#iswidgettype">isWidgetType</a></li><li><a smoothhashscroll="" href="#iswindowtype">isWindowType</a></li><li><a smoothhashscroll="" href="#killtimer">killTimer</a></li><li><a smoothhashscroll="" href="#metaobject">metaObject</a></li><li><a smoothhashscroll="" href="#movetothread">moveToThread</a></li><li><a smoothhashscroll="" href="#objectnamechanged">objectNameChanged</a></li><li><a smoothhashscroll="" href="#parent">parent</a></li><li><a smoothhashscroll="" href="#property">property</a></li><li><a smoothhashscroll="" href="#removeeventfilter">removeEventFilter</a></li><li><a smoothhashscroll="" href="#sender">sender</a></li><li><a smoothhashscroll="" href="#sendersignalindex">senderSignalIndex</a></li><li><a smoothhashscroll="" href="#setobjectname">setObjectName</a></li><li><a smoothhashscroll="" href="#setparent">setParent</a></li><li><a smoothhashscroll="" href="#setproperty">setProperty</a></li><li><a smoothhashscroll="" href="#signalsblocked">signalsBlocked</a></li><li><a smoothhashscroll="" href="#starttimer">startTimer</a></li><li><a smoothhashscroll="" href="#thread">thread</a></li><li><a smoothhashscroll="" href="#timerevent">timerEvent</a></li><li><a smoothhashscroll="" href="#tr">tr</a></li></ul></li></ul></li></ul></div><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a>
             </ul>
         </div>
     </div>
     <div id="toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
-        <div class="toc"><ul class="nav"><li class=""><a smoothhashscroll="" href="#pythonqtprivatedocumentlistscriptaccess">PythonQt.private.DocumentListScriptAccess</a><ul class="nav"><li><a smoothhashscroll="" href="#attributes">Attributes</a><ul class="nav"><li><a smoothhashscroll="" href="#count">Count</a></li><li><a smoothhashscroll="" href="#objectname">objectName</a></li></ul></li><li class=""><a smoothhashscroll="" href="#methods">Methods</a><ul class="nav"><li><a smoothhashscroll="" href="#item">Item</a></li><li><a smoothhashscroll="" href="#size">Size</a></li><li><a smoothhashscroll="" href="#blocksignals">blockSignals</a></li><li><a smoothhashscroll="" href="#childevent">childEvent</a></li><li><a smoothhashscroll="" href="#children">children</a></li><li><a smoothhashscroll="" href="#classname">className</a></li><li><a smoothhashscroll="" href="#connect">connect</a></li><li><a smoothhashscroll="" href="#customevent">customEvent</a></li><li><a smoothhashscroll="" href="#delete">delete</a></li><li><a smoothhashscroll="" href="#deletelater">deleteLater</a></li><li><a smoothhashscroll="" href="#destroyed">destroyed</a></li><li><a smoothhashscroll="" href="#disconnect">disconnect</a></li><li><a smoothhashscroll="" href="#dumpobjectinfo">dumpObjectInfo</a></li><li><a smoothhashscroll="" href="#dumpobjecttree">dumpObjectTree</a></li><li><a smoothhashscroll="" href="#dynamicpropertynames">dynamicPropertyNames</a></li><li><a smoothhashscroll="" href="#event">event</a></li><li><a smoothhashscroll="" href="#eventfilter">eventFilter</a></li><li><a smoothhashscroll="" href="#findchild">findChild</a></li><li><a smoothhashscroll="" href="#findchildren">findChildren</a></li><li><a smoothhashscroll="" href="#help">help</a></li><li><a smoothhashscroll="" href="#inherits">inherits</a></li><li><a smoothhashscroll="" href="#installeventfilter">installEventFilter</a></li><li><a smoothhashscroll="" href="#issignalconnected">isSignalConnected</a></li><li><a smoothhashscroll="" href="#iswidgettype">isWidgetType</a></li><li><a smoothhashscroll="" href="#iswindowtype">isWindowType</a></li><li><a smoothhashscroll="" href="#killtimer">killTimer</a></li><li><a smoothhashscroll="" href="#metaobject">metaObject</a></li><li><a smoothhashscroll="" href="#movetothread">moveToThread</a></li><li><a smoothhashscroll="" href="#objectnamechanged">objectNameChanged</a></li><li><a smoothhashscroll="" href="#parent">parent</a></li><li><a smoothhashscroll="" href="#property">property</a></li><li><a smoothhashscroll="" href="#removeeventfilter">removeEventFilter</a></li><li><a smoothhashscroll="" href="#sender">sender</a></li><li><a smoothhashscroll="" href="#sendersignalindex">senderSignalIndex</a></li><li><a smoothhashscroll="" href="#setobjectname">setObjectName</a></li><li><a smoothhashscroll="" href="#setparent">setParent</a></li><li><a smoothhashscroll="" href="#setproperty">setProperty</a></li><li><a smoothhashscroll="" href="#signalsblocked">signalsBlocked</a></li><li><a smoothhashscroll="" href="#starttimer">startTimer</a></li><li><a smoothhashscroll="" href="#thread">thread</a></li><li><a smoothhashscroll="" href="#timerevent">timerEvent</a></li><li><a smoothhashscroll="" href="#tr">tr</a></li></ul></li></ul></li></ul></div><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a>
+        <div class="toc"><ul class="nav"><li class=""><a smoothhashscroll="" href="#pythonqtprivatedocumentlistscriptaccess">PythonQt.private.DocumentListScriptAccess</a><ul class="nav"><li><a smoothhashscroll="" href="#attributes">Attributes</a><ul class="nav"><li><a smoothhashscroll="" href="#count">Count</a></li><li><a smoothhashscroll="" href="#objectname">objectName</a></li></ul></li><li><a smoothhashscroll="" href="#methods">Methods</a><ul class="nav"><li><a smoothhashscroll="" href="#item">Item</a></li><li><a smoothhashscroll="" href="#size">Size</a></li><li><a smoothhashscroll="" href="#blocksignals">blockSignals</a></li><li><a smoothhashscroll="" href="#childevent">childEvent</a></li><li><a smoothhashscroll="" href="#children">children</a></li><li><a smoothhashscroll="" href="#classname">className</a></li><li><a smoothhashscroll="" href="#connect">connect</a></li><li><a smoothhashscroll="" href="#customevent">customEvent</a></li><li><a smoothhashscroll="" href="#delete">delete</a></li><li><a smoothhashscroll="" href="#deletelater">deleteLater</a></li><li><a smoothhashscroll="" href="#destroyed">destroyed</a></li><li><a smoothhashscroll="" href="#disconnect">disconnect</a></li><li><a smoothhashscroll="" href="#dumpobjectinfo">dumpObjectInfo</a></li><li><a smoothhashscroll="" href="#dumpobjecttree">dumpObjectTree</a></li><li><a smoothhashscroll="" href="#dynamicpropertynames">dynamicPropertyNames</a></li><li><a smoothhashscroll="" href="#event">event</a></li><li><a smoothhashscroll="" href="#eventfilter">eventFilter</a></li><li><a smoothhashscroll="" href="#findchild">findChild</a></li><li><a smoothhashscroll="" href="#findchildren">findChildren</a></li><li><a smoothhashscroll="" href="#help">help</a></li><li><a smoothhashscroll="" href="#inherits">inherits</a></li><li><a smoothhashscroll="" href="#installeventfilter">installEventFilter</a></li><li><a smoothhashscroll="" href="#issignalconnected">isSignalConnected</a></li><li><a smoothhashscroll="" href="#iswidgettype">isWidgetType</a></li><li><a smoothhashscroll="" href="#iswindowtype">isWindowType</a></li><li><a smoothhashscroll="" href="#killtimer">killTimer</a></li><li><a smoothhashscroll="" href="#metaobject">metaObject</a></li><li><a smoothhashscroll="" href="#movetothread">moveToThread</a></li><li><a smoothhashscroll="" href="#objectnamechanged">objectNameChanged</a></li><li><a smoothhashscroll="" href="#parent">parent</a></li><li><a smoothhashscroll="" href="#property">property</a></li><li><a smoothhashscroll="" href="#removeeventfilter">removeEventFilter</a></li><li><a smoothhashscroll="" href="#sender">sender</a></li><li><a smoothhashscroll="" href="#sendersignalindex">senderSignalIndex</a></li><li><a smoothhashscroll="" href="#setobjectname">setObjectName</a></li><li><a smoothhashscroll="" href="#setparent">setParent</a></li><li><a smoothhashscroll="" href="#setproperty">setProperty</a></li><li><a smoothhashscroll="" href="#signalsblocked">signalsBlocked</a></li><li><a smoothhashscroll="" href="#starttimer">startTimer</a></li><li><a smoothhashscroll="" href="#thread">thread</a></li><li><a smoothhashscroll="" href="#timerevent">timerEvent</a></li><li><a smoothhashscroll="" href="#tr">tr</a></li></ul></li></ul></li></ul></div><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" defer></script>

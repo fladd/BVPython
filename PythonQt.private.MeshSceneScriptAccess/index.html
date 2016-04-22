@@ -34,196 +34,284 @@
 </head>
 
 <body>
-    <div id="doc" class="markdown-body container-fluid"><h1 id="meshscenescriptaccess"><a title="meshscenescriptaccess" href="#meshscenescriptaccess" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>MeshSceneScriptAccess</h1><p>For example: <code>mesh_scene = BrainVoyager.ActiveDocument.MeshScene</code>.</p><h2 id="attributes"><a title="attributes" href="#attributes" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Attributes</h2><p>TODO:</p><pre><code>Count 0
-SphereResolutionCBA 1
-CurrentMesh MeshScriptAccess (QObject 0x7f96d90cf960)
-ViewpointPositionX -450.0
-ViewpointPositionY 0.0
-ViewpointPositionZ 0.0
-ViewpointRotationY 180.0
-ViewpointRotationX 0.0
-ViewpointRotationZ 0.0
-objectName 
-</code></pre><h2 id="methods"><a title="methods" href="#methods" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Methods</h2><p>TODO:</p><pre><code>AddCurvatureFileForGroupCBA = &lt;unbound qt slot AddCurvatureFileForGrou...
- |      X.AddCurvatureFileForGroupCBA(a) -&gt; bool
- |  
- |  AddMesh = &lt;unbound qt slot AddMesh of MeshSceneScriptAccess type&gt;
- |      X.AddMesh(a) -&gt; bool
- |  
- |  ClearGroupCBACurvatureFiles = &lt;unbound qt slot ClearGroupCBACurvatureF...
- |      X.ClearGroupCBACurvatureFiles()
- |  
- |  CreateAverageCurvatureGroupMap = &lt;unbound qt slot CreateAverageCurvatu...
- |      X.CreateAverageCurvatureGroupMap() -&gt; bool
- |  
- |  CreateAverageFoldedGroupMesh = &lt;unbound qt slot CreateAverageFoldedGro...
- |      X.CreateAverageFoldedGroupMesh() -&gt; bool
- |  
- |  CreateStandardSphereMesh = &lt;unbound qt slot CreateStandardSphereMesh o...
- |      X.CreateStandardSphereMesh() -&gt; str
- |  
- |  Item = &lt;unbound qt slot Item of MeshSceneScriptAccess type&gt;
- |      X.Item(a) -&gt; PythonQt.private.MeshScriptAccess
- |  
- |  LoadMesh = &lt;unbound qt slot LoadMesh of MeshSceneScriptAccess type&gt;
- |      X.LoadMesh(a) -&gt; bool
- |  
- |  MapSphereMeshFromStandardSphere = &lt;unbound qt slot MapSphereMeshFromSt...
- |      X.MapSphereMeshFromStandardSphere() -&gt; str
- |  
- |  MergeMeshesInScene = &lt;unbound qt slot MergeMeshesInScene of MeshSceneS...
- |      X.MergeMeshesInScene() -&gt; str
- |  
- |  RunCBA = &lt;unbound qt slot RunCBA of MeshSceneScriptAccess type&gt;
- |      X.RunCBA() -&gt; bool
- |  
- |  RunRigidCBA = &lt;unbound qt slot RunRigidCBA of MeshSceneScriptAccess ty...
- |      X.RunRigidCBA(a) -&gt; bool
- |  
- |  SaveSnapshotOfSurfaceWindow = &lt;unbound qt slot SaveSnapshotOfSurfaceWi...
- |      X.SaveSnapshotOfSurfaceWindow(a) -&gt; bool
- |  
- |  SetStandardSphereToFoldedMesh = &lt;unbound qt slot SetStandardSphereToFo...
- |      X.SetStandardSphereToFoldedMesh(a) -&gt; str
- |  
- |  UpdateSurfaceWindow = &lt;unbound qt slot UpdateSurfaceWindow of MeshScen...
- |      X.UpdateSurfaceWindow(a)
- |  
- |  blockSignals = &lt;unbound qt slot blockSignals of MeshSceneScriptAccess ...
- |      X.blockSignals(a, b) -&gt; bool
- |  
- |  childEvent = &lt;unbound qt slot childEvent of MeshSceneScriptAccess type...
- |      X.childEvent(a, b)
- |  
- |  children = &lt;unbound qt slot children of MeshSceneScriptAccess type&gt;
- |      X.children(a) -&gt; tuple
- |  
- |  className = &lt;built-in method className of PythonQt.PythonQtClassWrappe...
- |      Return the classname of the object
- |  
- |  connect = &lt;unbound qt slot connect of MeshSceneScriptAccess type&gt;
- |      X.connect(a, b, c, d, e) -&gt; bool
- |  
- |  customEvent = &lt;unbound qt slot customEvent of MeshSceneScriptAccess ty...
- |      X.customEvent(a, b)
- |  
- |  delete = &lt;built-in method delete of PythonQt.PythonQtClassWrapper obje...
- |      Deletes the given C++ object
- |  
- |  deleteLater = &lt;unbound qt slot deleteLater of MeshSceneScriptAccess ty...
- |      X.deleteLater()
- |  
- |  destroyed = &lt;unbound qt signal destroyed of MeshSceneScriptAccess type...
- |  
- |  
- |  disconnect = &lt;unbound qt slot disconnect of MeshSceneScriptAccess type...
- |      X.disconnect(a, b, c, d) -&gt; bool
- |  
- |  dumpObjectInfo = &lt;unbound qt slot dumpObjectInfo of MeshSceneScriptAcc...
- |      X.dumpObjectInfo(a)
- |  
- |  dumpObjectTree = &lt;unbound qt slot dumpObjectTree of MeshSceneScriptAcc...
- |      X.dumpObjectTree(a)
- |  
- |  dynamicPropertyNames = &lt;unbound qt slot dynamicPropertyNames of MeshSc...
- |      X.dynamicPropertyNames(a)
- |  
- |  event = &lt;unbound qt slot event of MeshSceneScriptAccess type&gt;
- |      X.event(a, b) -&gt; bool
- |  
- |  eventFilter = &lt;unbound qt slot eventFilter of MeshSceneScriptAccess ty...
- |      X.eventFilter(a, b, c) -&gt; bool
- |  
- |  findChild = &lt;unbound qt slot findChild of MeshSceneScriptAccess type&gt;
- |      X.findChild(a, b, c) -&gt; PythonQt.private.QObject
- |  
- |  findChildren = &lt;unbound qt slot findChildren of MeshSceneScriptAccess ...
- |      X.findChildren(a, b, c) -&gt; tuple
- |  
- |  help = &lt;built-in method help of PythonQt.PythonQtClassWrapper object&gt;
- |      Shows the help of available methods for this class
- |  
- |  inherits = &lt;built-in method inherits of PythonQt.PythonQtClassWrapper ...
- |      Returns if the class inherits or is of given type name
- |  
- |  installEventFilter = &lt;unbound qt slot installEventFilter of MeshSceneS...
- |      X.installEventFilter(a, b)
- |  
- |  isSignalConnected = &lt;unbound qt slot isSignalConnected of MeshSceneScr...
- |      X.isSignalConnected(a, b) -&gt; bool
- |  
- |  isWidgetType = &lt;unbound qt slot isWidgetType of MeshSceneScriptAccess ...
- |      X.isWidgetType(a) -&gt; bool
- |  
- |  isWindowType = &lt;unbound qt slot isWindowType of MeshSceneScriptAccess ...
- |      X.isWindowType(a) -&gt; bool
- |  
- |  killTimer = &lt;unbound qt slot killTimer of MeshSceneScriptAccess type&gt;
- |      X.killTimer(a, b)
- |  
- |  metaObject = &lt;unbound qt slot metaObject of MeshSceneScriptAccess type...
- |      X.metaObject(a) -&gt; PythonQt.QtCore.QMetaObject
- |  
- |  moveToThread = &lt;unbound qt slot moveToThread of MeshSceneScriptAccess ...
- |      X.moveToThread(a, b)
- |  
- |  objectName = None
- |  
- |  objectNameChanged = &lt;unbound qt signal objectNameChanged of MeshSceneS...
- |  
- |  
- |  parent = &lt;unbound qt slot parent of MeshSceneScriptAccess type&gt;
- |      X.parent(a) -&gt; PythonQt.private.QObject
- |  
- |  property = &lt;unbound qt slot property of MeshSceneScriptAccess type&gt;
- |      X.property(a, b) -&gt; object
- |  
- |  removeEventFilter = &lt;unbound qt slot removeEventFilter of MeshSceneScr...
- |      X.removeEventFilter(a, b)
- |  
- |  sender = &lt;unbound qt slot sender of MeshSceneScriptAccess type&gt;
- |      X.sender(a) -&gt; PythonQt.private.QObject
- |  
- |  senderSignalIndex = &lt;unbound qt slot senderSignalIndex of MeshSceneScr...
- |      X.senderSignalIndex(a) -&gt; int
- |  
- |  setObjectName = &lt;unbound qt slot setObjectName of MeshSceneScriptAcces...
- |      X.setObjectName(a, b)
- |  
- |  setParent = &lt;unbound qt slot setParent of MeshSceneScriptAccess type&gt;
- |      X.setParent(a, b)
- |  
- |  setProperty = &lt;unbound qt slot setProperty of MeshSceneScriptAccess ty...
- |      X.setProperty(a, b, c) -&gt; bool
- |  
- |  signalsBlocked = &lt;unbound qt slot signalsBlocked of MeshSceneScriptAcc...
- |      X.signalsBlocked(a) -&gt; bool
- |  
- |  startTimer = &lt;unbound qt slot startTimer of MeshSceneScriptAccess type...
- |      X.startTimer(a, b, c) -&gt; int
- |  
- |  thread = &lt;unbound qt slot thread of MeshSceneScriptAccess type&gt;
- |      X.thread(a)
- |  
- |  timerEvent = &lt;unbound qt slot timerEvent of MeshSceneScriptAccess type...
- |      X.timerEvent(a, b)
- |  
- |  tr = &lt;unbound qt slot tr of MeshSceneScriptAccess type&gt;
- |      X.tr(a, b, c, d) -&gt; str
- |  
-</code></pre></div>
+    <div id="doc" class="markdown-body container-fluid"><h1 id="meshscenescriptaccess"><a title="meshscenescriptaccess" href="#meshscenescriptaccess" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>MeshSceneScriptAccess</h1><p>For example: <code>mesh_scene = BrainVoyager.ActiveDocument.MeshScene</code>.</p><h2 id="attributes"><a title="attributes" href="#attributes" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Attributes</h2><h3 id="count"><a title="count" href="#count" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Count</h3><p>This is an int.</p><h3 id="currentmesh"><a title="currentmesh" href="#currentmesh" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>CurrentMesh</h3><p>This is a <a target="_blank" href="/BVPython/PythonQt.private.MeshScriptAccess">PythonQt.private.MeshScriptAccess</a></p><h3 id="sphereresolutioncba"><a title="sphereresolutioncba" href="#sphereresolutioncba" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>SphereResolutionCBA</h3><p>This is an int.</p><h3 id="viewpointpositionx"><a title="viewpointpositionx" href="#viewpointpositionx" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>ViewpointPositionX</h3><p>This is a float.</p><h3 id="viewpointpositiony"><a title="viewpointpositiony" href="#viewpointpositiony" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>ViewpointPositionY</h3><p>This is a float.</p><h3 id="viewpointpositionz"><a title="viewpointpositionz" href="#viewpointpositionz" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>ViewpointPositionZ</h3><p>This is a float.</p><h3 id="viewpointrotationy"><a title="viewpointrotationy" href="#viewpointrotationy" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>ViewpointRotationY</h3><p>This is a float.</p><h3 id="viewpointrotationx"><a title="viewpointrotationx" href="#viewpointrotationx" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>ViewpointRotationX</h3><p>This is a float.</p><h3 id="viewpointrotationz"><a title="viewpointrotationz" href="#viewpointrotationz" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>ViewpointRotationZ</h3><p>This is a float.</p><h3 id="objectname"><a title="objectname" href="#objectname" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>objectName</h3><p>This is a str.</p><h2 id="methods"><a title="methods" href="#methods" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Methods</h2><h3 id="addcurvaturefileforgroupcba"><a title="addcurvaturefileforgroupcba" href="#addcurvaturefileforgroupcba" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>AddCurvatureFileForGroupCBA</h3><pre><code>x = mesh_scene.AddCurvatureFileForGroupCBA(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the curvature SMP file name</dd>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="addmesh"><a title="addmesh" href="#addmesh" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>AddMesh</h3><pre><code>x = mesh_scene.AddMesh(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the file name</dd>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="cleargroupcbacurvaturefiles"><a title="cleargroupcbacurvaturefiles" href="#cleargroupcbacurvaturefiles" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>ClearGroupCBACurvatureFiles</h3><pre><code>mesh_scene.ClearGroupCBACurvatureFiles()
+</code></pre><h3 id="createaveragecurvaturegroupmap"><a title="createaveragecurvaturegroupmap" href="#createaveragecurvaturegroupmap" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>CreateAverageCurvatureGroupMap</h3><pre><code>x = mesh_scene.CreateAverageCurvatureGroupMap()
+</code></pre><dl>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="createaveragefoldedgroupmesh"><a title="createaveragefoldedgroupmesh" href="#createaveragefoldedgroupmesh" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>CreateAverageFoldedGroupMesh</h3><pre><code>x = mesh_scene.CreateAverageFoldedGroupMesh()
+</code></pre><dl>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="createstandardspheremesh"><a title="createstandardspheremesh" href="#createstandardspheremesh" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>CreateStandardSphereMesh</h3><pre><code>x = mesh_scene.CreateStandardSphereMesh()
+</code></pre><dl>
+<dt>x : str</dt>
+<dd>the full path file SRF name</dd>
+</dl><h3 id="item"><a title="item" href="#item" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Item</h3><pre><code>x = mesh_scene.Item(a)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the index</dd>
+<dt>x : <a target="_blank" href="/BVPython/PythonQt.private.MeshSceneScriptAccess">PythonQt.private.MeshSceneScriptAccess</a></dt>
+<dd>the item</dd>
+</dl><h3 id="loadmesh"><a title="loadmesh" href="#loadmesh" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>LoadMesh</h3><pre><code>x = mesh_scene.LoadMesh(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the file name</dd>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="mapspheremeshfromstandardsphere"><a title="mapspheremeshfromstandardsphere" href="#mapspheremeshfromstandardsphere" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>MapSphereMeshFromStandardSphere</h3><pre><code>x = mesh_scene.MapSphereMeshFromStandardSphere()
+</code></pre><dl>
+<dt>x : str</dt>
+<dd>the full path SSM file name</dd>
+</dl><h3 id="mergemeshesinscene"><a title="mergemeshesinscene" href="#mergemeshesinscene" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>MergeMeshesInScene</h3><pre><code>x = mesh_scene.MergeMeshesInScene()
+</code></pre><dl>
+<dt>x : str</dt>
+<dd>the full path SRF file name</dd>
+</dl><h3 id="runcba"><a title="runcba" href="#runcba" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>RunCBA</h3><pre><code>x = mesh_scene.RunCBA()
+</code></pre><dl>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="runrigidcba"><a title="runrigidcba" href="#runrigidcba" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>RunRigidCBA</h3><pre><code>x = mesh_scene.RunRigidCBA(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the target PMP file name</dd>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="savesnapshotofsurfacewindow"><a title="savesnapshotofsurfacewindow" href="#savesnapshotofsurfacewindow" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>SaveSnapshotOfSurfaceWindow</h3><pre><code>x = mesh_scene.SaveSnapshotOfSurfaceWindow()
+</code></pre><dl>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="setstandardspheretofoldedmesh"><a title="setstandardspheretofoldedmesh" href="#setstandardspheretofoldedmesh" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>SetStandardSphereToFoldedMesh</h3><pre><code>x = mesh_scene.SetStandardSphereToFoldedMesh(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the folded mesh file name</dd>
+<dt>x : str</dt>
+<dd>the full path SRF file name</dd>
+</dl><h3 id="updatesurfacewindow"><a title="updatesurfacewindow" href="#updatesurfacewindow" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>UpdateSurfaceWindow</h3><pre><code>mesh_scene.UpdateSurfaceWindow(a)
+</code></pre><dl>
+<dt>a : bool (optional)</dt>
+<dd>process events (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="blocksignals"><a title="blocksignals" href="#blocksignals" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>blockSignals</h3><pre><code>x = mesh_scene.blockSignals(a)
+</code></pre><dl>
+<dt>a : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+<dt>x : bool</dt>
+<dd>state before change (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="childevent"><a title="childevent" href="#childevent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>childEvent</h3><pre><code>mesh_scene.childEvent(a, b)
+</code></pre><dl>
+<dt>a : QChildEvent</dt>
+<dd>?</dd>
+<dt>b : ?</dt>
+<dd>?</dd>
+</dl><h3 id="children"><a title="children" href="#children" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>children</h3><pre><code>x = mesh_scene.children()
+</code></pre><dl>
+<dt>x : tuple</dt>
+<dd>?</dd>
+</dl><h3 id="classname"><a title="classname" href="#classname" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>className</h3><pre><code>x = mesh_scene.className()
+</code></pre><dl>
+<dt>x : str</dt>
+<dd><code>'MeshSceneScriptAccess'</code></dd>
+</dl><h3 id="connect"><a title="connect" href="#connect" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>connect</h3><pre><code>x = mesh_scene.connect(a, b, c, d, e)
+</code></pre><dl>
+<dt>a : QObject (?)</dt>
+<dd>the sender</dd>
+<dt>b : QByteArray (?)</dt>
+<dd>the signal</dd>
+<dt>c : QObject (?)</dt>
+<dd>the receiver</dd>
+<dt>d : QByteArray (?)</dt>
+<dd>the slot</dd>
+<dt>e : Qt::ConnectionType (?)</dt>
+<dd>the connection type</dd>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="customevent"><a title="customevent" href="#customevent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>customEvent</h3><pre><code>mesh_scene.customEvent(a, b)
+</code></pre><dl>
+<dt>a : QEvent</dt>
+<dd>?</dd>
+<dt>b : ?</dt>
+<dd>?</dd>
+</dl><h3 id="delete"><a title="delete" href="#delete" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>delete</h3><pre><code>mesh_scene.delete()
+</code></pre><h3 id="deletelater"><a title="deletelater" href="#deletelater" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>deleteLater</h3><pre><code>mesh_scene.deleteLater()
+</code></pre><h3 id="destroyed"><a title="destroyed" href="#destroyed" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>destroyed</h3><pre><code>mesh_scene.distroyed()
+</code></pre><h3 id="disconnect"><a title="disconnect" href="#disconnect" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>disconnect</h3><pre><code>x = mesh_scene.disconnect(a, b, c, d)
+</code></pre><dl>
+<dt>a : QObject (?)</dt>
+<dd>the sender (?)</dd>
+<dt>b : QByteArray (?)</dt>
+<dd>the signal (?)</dd>
+<dt>c : QObject (?)</dt>
+<dd>the receiver (?)</dd>
+<dt>d : QByteArray (?)</dt>
+<dd>the slot (?)</dd>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="dumpobjectinfo"><a title="dumpobjectinfo" href="#dumpobjectinfo" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>dumpObjectInfo</h3><pre><code>mesh_scene.dumpObjectInfo(a)
+</code></pre><dl>
+<dt>a : ?</dt>
+<dd>?</dd>
+</dl><h3 id="dumpobjecttree"><a title="dumpobjecttree" href="#dumpobjecttree" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>dumpObjectTree</h3><pre><code>mesh_scene.dumpObjectTree(a)
+</code></pre><dl>
+<dt>a : ?</dt>
+<dd>?</dd>
+</dl><h3 id="dynamicpropertynames"><a title="dynamicpropertynames" href="#dynamicpropertynames" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>dynamicPropertyNames</h3><pre><code>mesh_scene.dynamicPropertyNames(a)
+</code></pre><dl>
+<dt>a : ?</dt>
+<dd>?</dd>
+</dl><h3 id="event"><a title="event" href="#event" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>event</h3><pre><code>x = mesh_scene.event(a)
+</code></pre><dl>
+<dt>a : QEvent (?)</dt>
+<dd>the event</dd>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="eventfilter"><a title="eventfilter" href="#eventfilter" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>eventFilter</h3><pre><code>x = mesh_scene.eventFilter(a, b)
+</code></pre><dl>
+<dt>a : QObject (?)</dt>
+<dd>?</dd>
+<dt>b : QEvent (?)</dt>
+<dd>the event</dd>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="findchild"><a title="findchild" href="#findchild" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>findChild</h3><pre><code>x = mesh_scene.findChild(a, b)
+</code></pre><dl>
+<dt>a : PyObject (?)</dt>
+<dd>?</dd>
+<dt>b : str</dt>
+<dd>the name (?)</dd>
+<dt>x : QObject (?)</dt>
+<dd>the child</dd>
+</dl><h3 id="findchildren"><a title="findchildren" href="#findchildren" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>findChildren</h3><pre><code>x = mesh_scene.findChildren(a, b)
+</code></pre><dl>
+<dt>a : PyObject (?)</dt>
+<dd>?</dd>
+<dt>b : str</dt>
+<dd>the name (?)</dd>
+<dt>x : tuple</dt>
+<dd>the children</dd>
+</dl><h3 id="help"><a title="help" href="#help" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>help</h3><pre><code>mesh_scene.help()
+</code></pre><h3 id="inherits"><a title="inherits" href="#inherits" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>inherits</h3><pre><code>mesh_scene.inherits()
+</code></pre><h3 id="installeventfilter"><a title="installeventfilter" href="#installeventfilter" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>installEventFilter</h3><pre><code>mesh_scene.installEventFilter(a)
+</code></pre><dl>
+<dt>a : QObject (?)</dt>
+<dd>?</dd>
+</dl><h3 id="issignalconnected"><a title="issignalconnected" href="#issignalconnected" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>isSignalConnected</h3><pre><code>x = mesh_scene.isSignalConnected(a)
+</code></pre><dl>
+<dt>a : QMethodSignal (?)</dt>
+<dd>the signal</dd>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="iswidgettype"><a title="iswidgettype" href="#iswidgettype" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>isWidgetType</h3><pre><code>x = mesh_scene.isWidgetType()
+</code></pre><dl>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="iswindowtype"><a title="iswindowtype" href="#iswindowtype" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>isWindowType</h3><pre><code>x = mesh_scene.isWindowType()
+</code></pre><dl>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="killtimer"><a title="killtimer" href="#killtimer" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>killTimer</h3><pre><code>mesh_scene.killTimer(a)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the id</dd>
+</dl><h3 id="metaobject"><a title="metaobject" href="#metaobject" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>metaObject</h3><pre><code>x = mesh_scene.metaObject()
+</code></pre><dl>
+<dt>x : PythonQt.QtCore.QMetaObject (?)</dt>
+<dd>?</dd>
+</dl><h3 id="movetothread"><a title="movetothread" href="#movetothread" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>moveToThread</h3><pre><code>mesh_scene.moveToThread(a)
+</code></pre><dl>
+<dt>a : QThread</dt>
+<dd>the thread</dd>
+</dl><h3 id="objectnamechanged"><a title="objectnamechanged" href="#objectnamechanged" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>objectNameChanged</h3><pre><code>mesh_scene.objectNameChanged(a)
+</code></pre><dl>
+<dt>a : str (?)</dt>
+<dd>?</dd>
+</dl><h3 id="parent"><a title="parent" href="#parent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>parent</h3><pre><code>x = mesh_scene.parent()
+</code></pre><dl>
+<dt>x : PythonQt.private.QObject (?)</dt>
+<dd>?</dd>
+</dl><h3 id="property"><a title="property" href="#property" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>property</h3><pre><code>x = mesh_scene.property(a)
+</code></pre><dl>
+<dt>a : str (?)</dt>
+<dd>the name</dd>
+<dt>x : ?</dt>
+<dd>?</dd>
+</dl><h3 id="removeeventfilter"><a title="removeeventfilter" href="#removeeventfilter" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>removeEventFilter</h3><pre><code>mesh_scene.removeEventFilter(a)
+</code></pre><dl>
+<dt>a : QObject (?)</dt>
+<dd>?</dd>
+</dl><h3 id="sender"><a title="sender" href="#sender" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>sender</h3><pre><code>mesh_scene.sender()
+</code></pre><dl>
+<dt>x : PythonQt.private.QObject (?)</dt>
+<dd>?</dd>
+</dl><h3 id="sendersignalindex"><a title="sendersignalindex" href="#sendersignalindex" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>senderSignalIndex</h3><pre><code>mesh_scene.senderSignalIndex()
+</code></pre><dl>
+<dt>x : int</dt>
+<dd>the index</dd>
+</dl><h3 id="setobjectname"><a title="setobjectname" href="#setobjectname" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>setObjectName</h3><pre><code>mesh_scene.setObjectName(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the name</dd>
+</dl><h3 id="setparent"><a title="setparent" href="#setparent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>setParent</h3><pre><code>mesh_scene.setParent(a)
+</code></pre><dl>
+<dt>a : QObject</dt>
+<dd>the parent</dd>
+</dl><h3 id="setproperty"><a title="setproperty" href="#setproperty" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>setProperty</h3><pre><code>mesh_scene.setProperty(a)
+</code></pre><dl>
+<dt>a : str (?)</dt>
+<dd>the property name</dd>
+<dt>b : ?</dt>
+<dd>the property value</dd>
+</dl><h3 id="signalsblocked"><a title="signalsblocked" href="#signalsblocked" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>signalsBlocked</h3><pre><code>x = mesh_scene.signalsBlocked()
+</code></pre><dl>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="starttimer"><a title="starttimer" href="#starttimer" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>startTimer</h3><pre><code>x = mesh_scene.startTimer(a)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the interval</dd>
+<dt>b : QT::TimeType (?)</dt>
+<dd>the timer type (?)</dd>
+<dt>x : int</dt>
+<dd>?</dd>
+</dl><h3 id="thread"><a title="thread" href="#thread" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>thread</h3><pre><code>mesh_scene.thread()
+</code></pre><h3 id="timerevent"><a title="timerevent" href="#timerevent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>timerEvent</h3><pre><code>mesh_scene.timerEvent(a)
+</code></pre><dl>
+<dt>a : QTimerEvent (?)</dt>
+<dd>?</dd>
+</dl><h3 id="tr"><a title="tr" href="#tr" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>tr</h3><pre><code>x = mesh_scene.tr(a, b, c)
+</code></pre><dl>
+<dt>a : QByteArray (?)</dt>
+<dd>?</dd>
+<dt>b : QByteArray (?)</dt>
+<dd>?</dd>
+<dt>c : int</dt>
+<dd>?</dd>
+<dt>x : str</dt>
+<dd>?</dd>
+</dl></div>
     <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
         <div class="pull-right dropdown">
             <a id="tocLabel" class="ui-toc-label btn btn-default" data-target="#" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
                 <i class="fa fa-bars"></i>
             </a>
             <ul id="toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
-                <div class="toc"><ul class="nav"><li class=""><a smoothhashscroll="" href="#meshscenescriptaccess">MeshSceneScriptAccess</a><ul class="nav"><li><a smoothhashscroll="" href="#attributes">Attributes</a></li><li><a smoothhashscroll="" href="#methods">Methods</a></li></ul></li></ul></div><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a>
+                <div class="toc"><ul class="nav"><li class=""><a smoothhashscroll="" href="#meshscenescriptaccess">MeshSceneScriptAccess</a><ul class="nav"><li><a smoothhashscroll="" href="#attributes">Attributes</a><ul class="nav"><li><a smoothhashscroll="" href="#count">Count</a></li><li><a smoothhashscroll="" href="#currentmesh">CurrentMesh</a></li><li><a smoothhashscroll="" href="#sphereresolutioncba">SphereResolutionCBA</a></li><li><a smoothhashscroll="" href="#viewpointpositionx">ViewpointPositionX</a></li><li><a smoothhashscroll="" href="#viewpointpositiony">ViewpointPositionY</a></li><li><a smoothhashscroll="" href="#viewpointpositionz">ViewpointPositionZ</a></li><li><a smoothhashscroll="" href="#viewpointrotationy">ViewpointRotationY</a></li><li><a smoothhashscroll="" href="#viewpointrotationx">ViewpointRotationX</a></li><li><a smoothhashscroll="" href="#viewpointrotationz">ViewpointRotationZ</a></li><li><a smoothhashscroll="" href="#objectname">objectName</a></li></ul></li><li class=""><a smoothhashscroll="" href="#methods">Methods</a><ul class="nav"><li><a smoothhashscroll="" href="#addcurvaturefileforgroupcba">AddCurvatureFileForGroupCBA</a></li><li><a smoothhashscroll="" href="#addmesh">AddMesh</a></li><li><a smoothhashscroll="" href="#cleargroupcbacurvaturefiles">ClearGroupCBACurvatureFiles</a></li><li><a smoothhashscroll="" href="#createaveragecurvaturegroupmap">CreateAverageCurvatureGroupMap</a></li><li><a smoothhashscroll="" href="#createaveragefoldedgroupmesh">CreateAverageFoldedGroupMesh</a></li><li><a smoothhashscroll="" href="#createstandardspheremesh">CreateStandardSphereMesh</a></li><li><a smoothhashscroll="" href="#item">Item</a></li><li><a smoothhashscroll="" href="#loadmesh">LoadMesh</a></li><li><a smoothhashscroll="" href="#mapspheremeshfromstandardsphere">MapSphereMeshFromStandardSphere</a></li><li><a smoothhashscroll="" href="#mergemeshesinscene">MergeMeshesInScene</a></li><li class=""><a smoothhashscroll="" href="#runcba">RunCBA</a></li><li><a smoothhashscroll="" href="#runrigidcba">RunRigidCBA</a></li><li><a smoothhashscroll="" href="#savesnapshotofsurfacewindow">SaveSnapshotOfSurfaceWindow</a></li><li><a smoothhashscroll="" href="#setstandardspheretofoldedmesh">SetStandardSphereToFoldedMesh</a></li><li><a smoothhashscroll="" href="#updatesurfacewindow">UpdateSurfaceWindow</a></li><li><a smoothhashscroll="" href="#blocksignals">blockSignals</a></li><li><a smoothhashscroll="" href="#childevent">childEvent</a></li><li><a smoothhashscroll="" href="#children">children</a></li><li class=""><a smoothhashscroll="" href="#classname">className</a></li><li><a smoothhashscroll="" href="#connect">connect</a></li><li><a smoothhashscroll="" href="#customevent">customEvent</a></li><li><a smoothhashscroll="" href="#delete">delete</a></li><li><a smoothhashscroll="" href="#deletelater">deleteLater</a></li><li class=""><a smoothhashscroll="" href="#destroyed">destroyed</a></li><li><a smoothhashscroll="" href="#disconnect">disconnect</a></li><li class=""><a smoothhashscroll="" href="#dumpobjectinfo">dumpObjectInfo</a></li><li><a smoothhashscroll="" href="#dumpobjecttree">dumpObjectTree</a></li><li><a smoothhashscroll="" href="#dynamicpropertynames">dynamicPropertyNames</a></li><li class=""><a smoothhashscroll="" href="#event">event</a></li><li class=""><a smoothhashscroll="" href="#eventfilter">eventFilter</a></li><li><a smoothhashscroll="" href="#findchild">findChild</a></li><li class=""><a smoothhashscroll="" href="#findchildren">findChildren</a></li><li><a smoothhashscroll="" href="#help">help</a></li><li><a smoothhashscroll="" href="#inherits">inherits</a></li><li><a smoothhashscroll="" href="#installeventfilter">installEventFilter</a></li><li class=""><a smoothhashscroll="" href="#issignalconnected">isSignalConnected</a></li><li><a smoothhashscroll="" href="#iswidgettype">isWidgetType</a></li><li><a smoothhashscroll="" href="#iswindowtype">isWindowType</a></li><li class=""><a smoothhashscroll="" href="#killtimer">killTimer</a></li><li><a smoothhashscroll="" href="#metaobject">metaObject</a></li><li><a smoothhashscroll="" href="#movetothread">moveToThread</a></li><li><a smoothhashscroll="" href="#objectnamechanged">objectNameChanged</a></li><li><a smoothhashscroll="" href="#parent">parent</a></li><li><a smoothhashscroll="" href="#property">property</a></li><li><a smoothhashscroll="" href="#removeeventfilter">removeEventFilter</a></li><li><a smoothhashscroll="" href="#sender">sender</a></li><li><a smoothhashscroll="" href="#sendersignalindex">senderSignalIndex</a></li><li><a smoothhashscroll="" href="#setobjectname">setObjectName</a></li><li><a smoothhashscroll="" href="#setparent">setParent</a></li><li><a smoothhashscroll="" href="#setproperty">setProperty</a></li><li><a smoothhashscroll="" href="#signalsblocked">signalsBlocked</a></li><li><a smoothhashscroll="" href="#starttimer">startTimer</a></li><li><a smoothhashscroll="" href="#thread">thread</a></li><li><a smoothhashscroll="" href="#timerevent">timerEvent</a></li><li class=""><a smoothhashscroll="" href="#tr">tr</a></li></ul></li></ul></li></ul></div><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a>
             </ul>
         </div>
     </div>
     <div id="toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
-        <div class="toc"><ul class="nav"><li class=""><a smoothhashscroll="" href="#meshscenescriptaccess">MeshSceneScriptAccess</a><ul class="nav"><li><a smoothhashscroll="" href="#attributes">Attributes</a></li><li><a smoothhashscroll="" href="#methods">Methods</a></li></ul></li></ul></div><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a>
+        <div class="toc"><ul class="nav"><li class=""><a smoothhashscroll="" href="#meshscenescriptaccess">MeshSceneScriptAccess</a><ul class="nav"><li><a smoothhashscroll="" href="#attributes">Attributes</a><ul class="nav"><li><a smoothhashscroll="" href="#count">Count</a></li><li><a smoothhashscroll="" href="#currentmesh">CurrentMesh</a></li><li><a smoothhashscroll="" href="#sphereresolutioncba">SphereResolutionCBA</a></li><li><a smoothhashscroll="" href="#viewpointpositionx">ViewpointPositionX</a></li><li><a smoothhashscroll="" href="#viewpointpositiony">ViewpointPositionY</a></li><li><a smoothhashscroll="" href="#viewpointpositionz">ViewpointPositionZ</a></li><li><a smoothhashscroll="" href="#viewpointrotationy">ViewpointRotationY</a></li><li><a smoothhashscroll="" href="#viewpointrotationx">ViewpointRotationX</a></li><li><a smoothhashscroll="" href="#viewpointrotationz">ViewpointRotationZ</a></li><li><a smoothhashscroll="" href="#objectname">objectName</a></li></ul></li><li class=""><a smoothhashscroll="" href="#methods">Methods</a><ul class="nav"><li><a smoothhashscroll="" href="#addcurvaturefileforgroupcba">AddCurvatureFileForGroupCBA</a></li><li><a smoothhashscroll="" href="#addmesh">AddMesh</a></li><li><a smoothhashscroll="" href="#cleargroupcbacurvaturefiles">ClearGroupCBACurvatureFiles</a></li><li><a smoothhashscroll="" href="#createaveragecurvaturegroupmap">CreateAverageCurvatureGroupMap</a></li><li><a smoothhashscroll="" href="#createaveragefoldedgroupmesh">CreateAverageFoldedGroupMesh</a></li><li><a smoothhashscroll="" href="#createstandardspheremesh">CreateStandardSphereMesh</a></li><li><a smoothhashscroll="" href="#item">Item</a></li><li><a smoothhashscroll="" href="#loadmesh">LoadMesh</a></li><li><a smoothhashscroll="" href="#mapspheremeshfromstandardsphere">MapSphereMeshFromStandardSphere</a></li><li><a smoothhashscroll="" href="#mergemeshesinscene">MergeMeshesInScene</a></li><li class=""><a smoothhashscroll="" href="#runcba">RunCBA</a></li><li><a smoothhashscroll="" href="#runrigidcba">RunRigidCBA</a></li><li><a smoothhashscroll="" href="#savesnapshotofsurfacewindow">SaveSnapshotOfSurfaceWindow</a></li><li><a smoothhashscroll="" href="#setstandardspheretofoldedmesh">SetStandardSphereToFoldedMesh</a></li><li><a smoothhashscroll="" href="#updatesurfacewindow">UpdateSurfaceWindow</a></li><li><a smoothhashscroll="" href="#blocksignals">blockSignals</a></li><li><a smoothhashscroll="" href="#childevent">childEvent</a></li><li><a smoothhashscroll="" href="#children">children</a></li><li class=""><a smoothhashscroll="" href="#classname">className</a></li><li><a smoothhashscroll="" href="#connect">connect</a></li><li><a smoothhashscroll="" href="#customevent">customEvent</a></li><li><a smoothhashscroll="" href="#delete">delete</a></li><li><a smoothhashscroll="" href="#deletelater">deleteLater</a></li><li class=""><a smoothhashscroll="" href="#destroyed">destroyed</a></li><li><a smoothhashscroll="" href="#disconnect">disconnect</a></li><li class=""><a smoothhashscroll="" href="#dumpobjectinfo">dumpObjectInfo</a></li><li><a smoothhashscroll="" href="#dumpobjecttree">dumpObjectTree</a></li><li><a smoothhashscroll="" href="#dynamicpropertynames">dynamicPropertyNames</a></li><li class=""><a smoothhashscroll="" href="#event">event</a></li><li class=""><a smoothhashscroll="" href="#eventfilter">eventFilter</a></li><li><a smoothhashscroll="" href="#findchild">findChild</a></li><li class=""><a smoothhashscroll="" href="#findchildren">findChildren</a></li><li><a smoothhashscroll="" href="#help">help</a></li><li><a smoothhashscroll="" href="#inherits">inherits</a></li><li><a smoothhashscroll="" href="#installeventfilter">installEventFilter</a></li><li class=""><a smoothhashscroll="" href="#issignalconnected">isSignalConnected</a></li><li><a smoothhashscroll="" href="#iswidgettype">isWidgetType</a></li><li><a smoothhashscroll="" href="#iswindowtype">isWindowType</a></li><li class=""><a smoothhashscroll="" href="#killtimer">killTimer</a></li><li><a smoothhashscroll="" href="#metaobject">metaObject</a></li><li><a smoothhashscroll="" href="#movetothread">moveToThread</a></li><li><a smoothhashscroll="" href="#objectnamechanged">objectNameChanged</a></li><li><a smoothhashscroll="" href="#parent">parent</a></li><li><a smoothhashscroll="" href="#property">property</a></li><li><a smoothhashscroll="" href="#removeeventfilter">removeEventFilter</a></li><li><a smoothhashscroll="" href="#sender">sender</a></li><li><a smoothhashscroll="" href="#sendersignalindex">senderSignalIndex</a></li><li><a smoothhashscroll="" href="#setobjectname">setObjectName</a></li><li><a smoothhashscroll="" href="#setparent">setParent</a></li><li><a smoothhashscroll="" href="#setproperty">setProperty</a></li><li><a smoothhashscroll="" href="#signalsblocked">signalsBlocked</a></li><li><a smoothhashscroll="" href="#starttimer">startTimer</a></li><li><a smoothhashscroll="" href="#thread">thread</a></li><li><a smoothhashscroll="" href="#timerevent">timerEvent</a></li><li class=""><a smoothhashscroll="" href="#tr">tr</a></li></ul></li></ul></li></ul></div><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" defer></script>

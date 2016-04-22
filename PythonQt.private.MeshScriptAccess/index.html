@@ -34,264 +34,400 @@
 </head>
 
 <body>
-    <div id="doc" class="markdown-body container-fluid"><h1 id="meshscriptaccess"><a title="meshscriptaccess" href="#meshscriptaccess" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>MeshScriptAccess</h1><p>For example, <code>mesh = BrainVoyager.ActiveDocument.CurrentMesh</code>.</p><h2 id="attributes"><a title="attributes" href="#attributes" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Attributes</h2><p>TODO:</p><pre><code>CorrectForSerialCorrelations -1
-MorphingUpdateInterval -1
-FileNameOfPreprocessdMTC 
-FileName untitled.srf
-NrOfMTCVolumes 0
-MeshScene None
-NrOfVertices 0
-NrOfSurfaceMaps 0
-objectName 
-</code></pre><h2 id="methods"><a title="methods" href="#methods" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Methods</h2><p>TODO:</p><pre><code>AddStudyAndDesignMatrixAndCortexMapping = &lt;unbound qt slot AddStudyAnd...
- |      X.AddStudyAndDesignMatrixAndCortexMapping(a, b, c)
- |  
- |  CalculateCurvature = &lt;unbound qt slot CalculateCurvature of MeshScript...
- |      X.CalculateCurvature()
- |  
- |  CalculateCurvatureCBA = &lt;unbound qt slot CalculateCurvatureCBA of Mesh...
- |      X.CalculateCurvatureCBA()
- |  
- |  ClearDesignMatrix = &lt;unbound qt slot ClearDesignMatrix of MeshScriptAc...
- |      X.ClearDesignMatrix()
- |  
- |  ClearMultiStudyGLMDefinition = &lt;unbound qt slot ClearMultiStudyGLMDefi...
- |      X.ClearMultiStudyGLMDefinition()
- |  
- |  ComputeMultiStudyGLM = &lt;unbound qt slot ComputeMultiStudyGLM of MeshSc...
- |      X.ComputeMultiStudyGLM()
- |  
- |  ComputeRFXGLM = &lt;unbound qt slot ComputeRFXGLM of MeshScriptAccess typ...
- |      X.ComputeRFXGLM()
- |  
- |  ComputeSingleStudyGLM = &lt;unbound qt slot ComputeSingleStudyGLM of Mesh...
- |      X.ComputeSingleStudyGLM()
- |  
- |  CorrectInflatedSphereMesh = &lt;unbound qt slot CorrectInflatedSphereMesh...
- |      X.CorrectInflatedSphereMesh(a) -&gt; bool
- |  
- |  CreateMTCFromVTC = &lt;unbound qt slot CreateMTCFromVTC of MeshScriptAcce...
- |      X.CreateMTCFromVTC(a, b, c) -&gt; bool
- |  
- |  CreateMultiScaleCurvatureMap = &lt;unbound qt slot CreateMultiScaleCurvat...
- |      X.CreateMultiScaleCurvatureMap(a, b, c, d) -&gt; str
- |  
- |  CreateSphericalCoordinatesMapFromSMP = &lt;unbound qt slot CreateSpherica...
- |      X.CreateSphericalCoordinatesMapFromSMP(a) -&gt; str
- |  
- |  GetNameOfSurfaceMap = &lt;unbound qt slot GetNameOfSurfaceMap of MeshScri...
- |      X.GetNameOfSurfaceMap(a) -&gt; str
- |  
- |  InflateMesh = &lt;unbound qt slot InflateMesh of MeshScriptAccess type&gt;
- |      X.InflateMesh(a, b, c) -&gt; bool
- |  
- |  InflateMeshToSphere = &lt;unbound qt slot InflateMeshToSphere of MeshScri...
- |      X.InflateMeshToSphere(a) -&gt; bool
- |  
- |  LinearTrendRemoval = &lt;unbound qt slot LinearTrendRemoval of MeshScript...
- |      X.LinearTrendRemoval() -&gt; bool
- |  
- |  LinkMTC = &lt;unbound qt slot LinkMTC of MeshScriptAccess type&gt;
- |      X.LinkMTC(a) -&gt; bool
- |  
- |  LoadGLM = &lt;unbound qt slot LoadGLM of MeshScriptAccess type&gt;
- |      X.LoadGLM(a) -&gt; bool
- |  
- |  LoadMultiStudyGLMDefinitionFile = &lt;unbound qt slot LoadMultiStudyGLMDe...
- |      X.LoadMultiStudyGLMDefinitionFile(a) -&gt; bool
- |  
- |  LoadSingleStudyGLMDesignMatrix = &lt;unbound qt slot LoadSingleStudyGLMDe...
- |      X.LoadSingleStudyGLMDesignMatrix(a) -&gt; bool
- |  
- |  LoadSurfaceMaps = &lt;unbound qt slot LoadSurfaceMaps of MeshScriptAccess...
- |      X.LoadSurfaceMaps(a) -&gt; bool
- |  
- |  Save = &lt;unbound qt slot Save of MeshScriptAccess type&gt;
- |      X.Save()
- |  
- |  SaveAs = &lt;unbound qt slot SaveAs of MeshScriptAccess type&gt;
- |      X.SaveAs(a)
- |  
- |  SaveGLM = &lt;unbound qt slot SaveGLM of MeshScriptAccess type&gt;
- |      X.SaveGLM(a)
- |  
- |  SaveMTC = &lt;unbound qt slot SaveMTC of MeshScriptAccess type&gt;
- |      X.SaveMTC(a) -&gt; bool
- |  
- |  SaveMultiStudyGLMDefinitionFile = &lt;unbound qt slot SaveMultiStudyGLMDe...
- |      X.SaveMultiStudyGLMDefinitionFile(a)
- |  
- |  SaveSingleStudyGLMDesignMatrix = &lt;unbound qt slot SaveSingleStudyGLMDe...
- |      X.SaveSingleStudyGLMDesignMatrix(a)
- |  
- |  SaveSurfaceMaps = &lt;unbound qt slot SaveSurfaceMaps of MeshScriptAccess...
- |      X.SaveSurfaceMaps(a)
- |  
- |  ShowGLM = &lt;unbound qt slot ShowGLM of MeshScriptAccess type&gt;
- |      X.ShowGLM()
- |  
- |  ShowSurfaceMap = &lt;unbound qt slot ShowSurfaceMap of MeshScriptAccess t...
- |      X.ShowSurfaceMap(a)
- |  
- |  SimplifyMesh = &lt;unbound qt slot SimplifyMesh of MeshScriptAccess type&gt;
- |      X.SimplifyMesh(a) -&gt; str
- |  
- |  SmoothCurrentMap = &lt;unbound qt slot SmoothCurrentMap of MeshScriptAcce...
- |      X.SmoothCurrentMap(a)
- |  
- |  SmoothMesh = &lt;unbound qt slot SmoothMesh of MeshScriptAccess type&gt;
- |      X.SmoothMesh(a, b) -&gt; bool
- |  
- |  SmoothRecoMesh = &lt;unbound qt slot SmoothRecoMesh of MeshScriptAccess t...
- |      X.SmoothRecoMesh(a, b) -&gt; bool
- |  
- |  SpatialSmoothing = &lt;unbound qt slot SpatialSmoothing of MeshScriptAcce...
- |      X.SpatialSmoothing(a) -&gt; bool
- |  
- |  TemporalGaussianSmoothing = &lt;unbound qt slot TemporalGaussianSmoothing...
- |      X.TemporalGaussianSmoothing(a, b) -&gt; bool
- |  
- |  TemporalHighPassFilterFFT = &lt;unbound qt slot TemporalHighPassFilterFFT...
- |      X.TemporalHighPassFilterFFT(a) -&gt; bool
- |  
- |  UpdateAppearance = &lt;unbound qt slot UpdateAppearance of MeshScriptAcce...
- |      X.UpdateAppearance(a)
- |  
- |  blockSignals = &lt;unbound qt slot blockSignals of MeshScriptAccess type&gt;
- |      X.blockSignals(a, b) -&gt; bool
- |  
- |  childEvent = &lt;unbound qt slot childEvent of MeshScriptAccess type&gt;
- |      X.childEvent(a, b)
- |  
- |  children = &lt;unbound qt slot children of MeshScriptAccess type&gt;
- |      X.children(a) -&gt; tuple
- |  
- |  className = &lt;built-in method className of PythonQt.PythonQtClassWrappe...
- |      Return the classname of the object
- |  
- |  connect = &lt;unbound qt slot connect of MeshScriptAccess type&gt;
- |      X.connect(a, b, c, d, e) -&gt; bool
- |  
- |  customEvent = &lt;unbound qt slot customEvent of MeshScriptAccess type&gt;
- |      X.customEvent(a, b)
- |  
- |  delete = &lt;built-in method delete of PythonQt.PythonQtClassWrapper obje...
- |      Deletes the given C++ object
- |  
- |  deleteLater = &lt;unbound qt slot deleteLater of MeshScriptAccess type&gt;
- |      X.deleteLater()
- |  
- |  destroyed = &lt;unbound qt signal destroyed of MeshScriptAccess type&gt;
- |  
- |  
- |  disconnect = &lt;unbound qt slot disconnect of MeshScriptAccess type&gt;
- |      X.disconnect(a, b, c, d) -&gt; bool
- |  
- |  dumpObjectInfo = &lt;unbound qt slot dumpObjectInfo of MeshScriptAccess t...
- |      X.dumpObjectInfo(a)
- |  
- |  dumpObjectTree = &lt;unbound qt slot dumpObjectTree of MeshScriptAccess t...
- |      X.dumpObjectTree(a)
- |  
- |  dynamicPropertyNames = &lt;unbound qt slot dynamicPropertyNames of MeshSc...
- |      X.dynamicPropertyNames(a)
- |  
- |  event = &lt;unbound qt slot event of MeshScriptAccess type&gt;
- |      X.event(a, b) -&gt; bool
- |  
- |  eventFilter = &lt;unbound qt slot eventFilter of MeshScriptAccess type&gt;
- |      X.eventFilter(a, b, c) -&gt; bool
- |  
- |  findChild = &lt;unbound qt slot findChild of MeshScriptAccess type&gt;
- |      X.findChild(a, b, c) -&gt; PythonQt.private.QObject
- |  
- |  findChildren = &lt;unbound qt slot findChildren of MeshScriptAccess type&gt;
- |      X.findChildren(a, b, c) -&gt; tuple
- |  
- |  help = &lt;built-in method help of PythonQt.PythonQtClassWrapper object&gt;
- |      Shows the help of available methods for this class
- |  
- |  inherits = &lt;built-in method inherits of PythonQt.PythonQtClassWrapper ...
- |      Returns if the class inherits or is of given type name
- |  
- |  installEventFilter = &lt;unbound qt slot installEventFilter of MeshScript...
- |      X.installEventFilter(a, b)
- |  
- |  isSignalConnected = &lt;unbound qt slot isSignalConnected of MeshScriptAc...
- |      X.isSignalConnected(a, b) -&gt; bool
- |  
- |  isWidgetType = &lt;unbound qt slot isWidgetType of MeshScriptAccess type&gt;
- |      X.isWidgetType(a) -&gt; bool
- |  
- |  isWindowType = &lt;unbound qt slot isWindowType of MeshScriptAccess type&gt;
- |      X.isWindowType(a) -&gt; bool
- |  
- |  killTimer = &lt;unbound qt slot killTimer of MeshScriptAccess type&gt;
- |      X.killTimer(a, b)
- |  
- |  metaObject = &lt;unbound qt slot metaObject of MeshScriptAccess type&gt;
- |      X.metaObject(a) -&gt; PythonQt.QtCore.QMetaObject
- |  
- |  moveToThread = &lt;unbound qt slot moveToThread of MeshScriptAccess type&gt;
- |      X.moveToThread(a, b)
- |  
- |  objectName = None
- |  
- |  objectNameChanged = &lt;unbound qt signal objectNameChanged of MeshScript...
- |  
- |  
- |  parent = &lt;unbound qt slot parent of MeshScriptAccess type&gt;
- |      X.parent(a) -&gt; PythonQt.private.QObject
- |  
- |  property = &lt;unbound qt slot property of MeshScriptAccess type&gt;
- |      X.property(a, b) -&gt; object
- |  
- |  removeEventFilter = &lt;unbound qt slot removeEventFilter of MeshScriptAc...
- |      X.removeEventFilter(a, b)
- |  
- |  sender = &lt;unbound qt slot sender of MeshScriptAccess type&gt;
- |      X.sender(a) -&gt; PythonQt.private.QObject
- |  
- |  senderSignalIndex = &lt;unbound qt slot senderSignalIndex of MeshScriptAc...
- |      X.senderSignalIndex(a) -&gt; int
- |  
- |  setObjectName = &lt;unbound qt slot setObjectName of MeshScriptAccess typ...
- |      X.setObjectName(a, b)
- |  
- |  setParent = &lt;unbound qt slot setParent of MeshScriptAccess type&gt;
- |      X.setParent(a, b)
- |  
- |  setProperty = &lt;unbound qt slot setProperty of MeshScriptAccess type&gt;
- |      X.setProperty(a, b, c) -&gt; bool
- |  
- |  signalsBlocked = &lt;unbound qt slot signalsBlocked of MeshScriptAccess t...
- |      X.signalsBlocked(a) -&gt; bool
- |  
- |  startTimer = &lt;unbound qt slot startTimer of MeshScriptAccess type&gt;
- |      X.startTimer(a, b, c) -&gt; int
- |  
- |  thread = &lt;unbound qt slot thread of MeshScriptAccess type&gt;
- |      X.thread(a)
- |  
- |  timerEvent = &lt;unbound qt slot timerEvent of MeshScriptAccess type&gt;
- |      X.timerEvent(a, b)
- |  
- |  tr = &lt;unbound qt slot tr of MeshScriptAccess type&gt;
- |      X.tr(a, b, c, d) -&gt; str
- |  
-</code></pre></div>
+    <div id="doc" class="markdown-body container-fluid"><h1 id="meshscriptaccess"><a title="meshscriptaccess" href="#meshscriptaccess" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>MeshScriptAccess</h1><p>For example, <code>mesh = BrainVoyager.ActiveDocument.CurrentMesh</code>.</p><h2 id="attributes"><a title="attributes" href="#attributes" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Attributes</h2><h3 id="correctforserialcorrelations"><a title="correctforserialcorrelations" href="#correctforserialcorrelations" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>CorrectForSerialCorrelations</h3><p>This is an int.</p><h3 id="filename"><a title="filename" href="#filename" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>FileName</h3><p>This is a str.</p><h3 id="filenameofpreprocessdmtc"><a title="filenameofpreprocessdmtc" href="#filenameofpreprocessdmtc" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>FileNameOfPreprocessdMTC</h3><p>This is a str.</p><h3 id="meshscene"><a title="meshscene" href="#meshscene" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>MeshScene</h3><p>This is a <a target="_blank" href="/BVPython/PythonQt.private.MeschSceneScriptAccess">PythonQt.private.MeschSceneScriptAccess</a></p><h3 id="morphingupdateinterval"><a title="morphingupdateinterval" href="#morphingupdateinterval" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>MorphingUpdateInterval</h3><p>This is an int.</p><h3 id="nrofmtcvolumes"><a title="nrofmtcvolumes" href="#nrofmtcvolumes" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>NrOfMTCVolumes</h3><p>This is an int.</p><h3 id="nrofsurfacemaps"><a title="nrofsurfacemaps" href="#nrofsurfacemaps" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>NrOfSurfaceMaps</h3><p>This is an int.</p><h3 id="nrofvertices"><a title="nrofvertices" href="#nrofvertices" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>NrOfVertices</h3><p>This is an int.</p><h3 id="objectname"><a title="objectname" href="#objectname" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>objectName</h3><p>This is a str.</p><h2 id="methods"><a title="methods" href="#methods" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Methods</h2><h3 id="addstudyanddesignmatrixandcortexmapping"><a title="addstudyanddesignmatrixandcortexmapping" href="#addstudyanddesignmatrixandcortexmapping" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>AddStudyAndDesignMatrixAndCortexMapping</h3><pre><code>mesh.AddStudyAndDesignMatrixAndCortexMapping(a, b, c)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the functional file name</dd>
+<dt>b : str</dt>
+<dd>the design matrix file name</dd>
+<dt>c : str</dt>
+<dd>the SSM file name</dd>
+</dl><h3 id="calculatecurvature"><a title="calculatecurvature" href="#calculatecurvature" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>CalculateCurvature</h3><pre><code>mesh.CalculateCurvature()
+</code></pre><h3 id="calculatecurvaturecba"><a title="calculatecurvaturecba" href="#calculatecurvaturecba" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>CalculateCurvatureCBA</h3><pre><code>mesh.CalculateCurvatureCBA()
+</code></pre><h3 id="cleardesignmatrix"><a title="cleardesignmatrix" href="#cleardesignmatrix" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>ClearDesignMatrix</h3><pre><code>mesh.ClearDesignMatrix()
+</code></pre><h3 id="clearmultistudyglmdefinition"><a title="clearmultistudyglmdefinition" href="#clearmultistudyglmdefinition" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>ClearMultiStudyGLMDefinition</h3><pre><code>mesh.ClearMultiStudyGLMDefinition()
+</code></pre><h3 id="computemultistudyglm"><a title="computemultistudyglm" href="#computemultistudyglm" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>ComputeMultiStudyGLM</h3><pre><code>mesh.ComputeMultiStudyGLM()
+</code></pre><h3 id="computerfxglm"><a title="computerfxglm" href="#computerfxglm" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>ComputeRFXGLM</h3><pre><code>mesh.ComputeRFXGLM()
+</code></pre><h3 id="computesinglestudyglm"><a title="computesinglestudyglm" href="#computesinglestudyglm" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>ComputeSingleStudyGLM</h3><pre><code>mesh.ComputeSingleStudyGLM()
+</code></pre><h3 id="correctinflatedspheremesh"><a title="correctinflatedspheremesh" href="#correctinflatedspheremesh" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>CorrectInflatedSphereMesh</h3><pre><code>x = mesh.CorrectInflatedSphereMesh(a)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the number of cycles</dd>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="createmtcfromvtc"><a title="createmtcfromvtc" href="#createmtcfromvtc" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>CreateMTCFromVTC</h3><pre><code>x = mesh.CreateMTCFromVTC(a, b, c)
+</code></pre><dl>
+<dt>a : float</dt>
+<dd>the starting normal position</dd>
+<dt>b : float</dt>
+<dd>the ending normal position</dd>
+<dt>c : str</dt>
+<dd>the resulting MTC file name</dd>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="createmultiscalecurvaturemap"><a title="createmultiscalecurvaturemap" href="#createmultiscalecurvaturemap" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>CreateMultiScaleCurvatureMap</h3><pre><code>x = mesh.CreateMultiScaleCurvatureMap(a, b, c, d)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the first smoothing level</dd>
+<dt>b : int</dt>
+<dd>the second smooting level</dd>
+<dt>c : int</dt>
+<dd>the third smoothing level</dd>
+<dt>d : int</dt>
+<dd>the fourth smoothing level</dd>
+<dt>x : str</dt>
+<dd>the file name (?)</dd>
+</dl><h3 id="createsphericalcoordinatesmapfromsmp"><a title="createsphericalcoordinatesmapfromsmp" href="#createsphericalcoordinatesmapfromsmp" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>CreateSphericalCoordinatesMapFromSMP</h3><pre><code>x = mesh.CreateSphericalCoordinatesMapFromSMP(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the SMP on sphere file name</dd>
+<dt>x : str</dt>
+<dd>the file name (?)</dd>
+</dl><h3 id="getnameofsurfacemap"><a title="getnameofsurfacemap" href="#getnameofsurfacemap" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>GetNameOfSurfaceMap</h3><pre><code>x = mesh.GetNameOfSurfaceMap(a)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the index</dd>
+<dt>x : str</dt>
+<dd>the name</dd>
+</dl><h3 id="inflatemesh"><a title="inflatemesh" href="#inflatemesh" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>InflateMesh</h3><pre><code>x = mesh.InflateMesh(a, b, c)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the number of cycles</dd>
+<dt>b : float</dt>
+<dd>the smoothing force</dd>
+<dt>c : str</dt>
+<dd>the area reference mesh</dd>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="inflatemeshtosphere"><a title="inflatemeshtosphere" href="#inflatemeshtosphere" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>InflateMeshToSphere</h3><pre><code>x = mesh.InflateMeshToSphere(a)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the number of cycles</dd>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="lineartrendremoval"><a title="lineartrendremoval" href="#lineartrendremoval" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>LinearTrendRemoval</h3><pre><code>x = mesh.LinearTrendRemoval()
+</code></pre><dl>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="linkmtc"><a title="linkmtc" href="#linkmtc" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>LinkMTC</h3><pre><code>x = mesh.LinkMTC(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the MTC file name</dd>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="loadglm"><a title="loadglm" href="#loadglm" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>LoadGLM</h3><pre><code>x = mesh.LoadGLM(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the file name</dd>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="loadmultistudyglmdefinitionfile"><a title="loadmultistudyglmdefinitionfile" href="#loadmultistudyglmdefinitionfile" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>LoadMultiStudyGLMDefinitionFile</h3><pre><code>x = mesh.LoadMultiStudyGLMDefinitionFile(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the file name</dd>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="loadsinglestudyglmdesignmatrix"><a title="loadsinglestudyglmdesignmatrix" href="#loadsinglestudyglmdesignmatrix" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>LoadSingleStudyGLMDesignMatrix</h3><pre><code>x = mesh.LoadSingleStudyGLMDesignMatrix(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the file name</dd>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="loadsurfacemaps"><a title="loadsurfacemaps" href="#loadsurfacemaps" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>LoadSurfaceMaps</h3><pre><code>x = mesh.LoadSurfaceMaps(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the file name</dd>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="save"><a title="save" href="#save" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>Save</h3><pre><code>mesh.Save()
+</code></pre><h3 id="saveas"><a title="saveas" href="#saveas" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>SaveAs</h3><pre><code>mesh.SaveAs(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the file name</dd>
+</dl><h3 id="saveglm"><a title="saveglm" href="#saveglm" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>SaveGLM</h3><pre><code>mesh.SaveGLM(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the file name</dd>
+</dl><h3 id="savemtc"><a title="savemtc" href="#savemtc" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>SaveMTC</h3><pre><code>mesh.SaveMTC(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the file name</dd>
+</dl><h3 id="savemultistudyglmdefinitionfile"><a title="savemultistudyglmdefinitionfile" href="#savemultistudyglmdefinitionfile" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>SaveMultiStudyGLMDefinitionFile</h3><pre><code>mesh.SaveMultiStudyGLMDefinitionFile(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the file name</dd>
+</dl><h3 id="savesinglestudyglmdesignmatrix"><a title="savesinglestudyglmdesignmatrix" href="#savesinglestudyglmdesignmatrix" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>SaveSingleStudyGLMDesignMatrix</h3><pre><code>mesh.SaveSingleStudyGLMDesignMatrix(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the file name</dd>
+</dl><h3 id="savesurfacemaps"><a title="savesurfacemaps" href="#savesurfacemaps" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>SaveSurfaceMaps</h3><pre><code>mesh.SaveSurfaceMaps(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the file name</dd>
+</dl><h3 id="showglm"><a title="showglm" href="#showglm" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>ShowGLM</h3><pre><code>mesh.ShowGLM()
+</code></pre><h3 id="showsurfacemap"><a title="showsurfacemap" href="#showsurfacemap" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>ShowSurfaceMap</h3><pre><code>mesh.ShowSurfaceMap(a)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the index</dd>
+</dl><h3 id="simplifymesh"><a title="simplifymesh" href="#simplifymesh" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>SimplifyMesh</h3><pre><code>x = mesh.SimplifyMesh(a)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the number of target vertices</dd>
+<dt>x : str</dt>
+<dd>the file name (?)</dd>
+</dl><h3 id="smoothcurrentmap"><a title="smoothcurrentmap" href="#smoothcurrentmap" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>SmoothCurrentMap</h3><pre><code>mesh.SmoothCurrentMap(a)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the number of cycles</dd>
+</dl><h3 id="smoothmesh"><a title="smoothmesh" href="#smoothmesh" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>SmoothMesh</h3><pre><code>x = mesh.SmoothMesh(a, b)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the number of cycles</dd>
+<dt>b : float</dt>
+<dd>the smoothing force</dd>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="smoothrecomesh"><a title="smoothrecomesh" href="#smoothrecomesh" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>SmoothRecoMesh</h3><pre><code>x = mesh.SmoothRecoMesh(a, b)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the number of cycles</dd>
+<dt>b : float</dt>
+<dd>the smoothing force</dd>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="spatialsmoothing"><a title="spatialsmoothing" href="#spatialsmoothing" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>SpatialSmoothing</h3><pre><code>x = mesh.SpatialSmoothing(a)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the number of cycles</dd>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="temporalgaussiansmoothing"><a title="temporalgaussiansmoothing" href="#temporalgaussiansmoothing" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>TemporalGaussianSmoothing</h3><pre><code>x = mesh.TemporalGaussianSmoothing(a, b)
+</code></pre><dl>
+<dt>a : float</dt>
+<dd>the FWHM value</dd>
+<dt>b : str</dt>
+<dd>the unit of the FWHM value (“mm” or “px”)</dd>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="temporalhighpassfilterfft"><a title="temporalhighpassfilterfft" href="#temporalhighpassfilterfft" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>TemporalHighPassFilterFFT</h3><pre><code>x = mesh.TemporalHighPassFilterFFT(a)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the number of cycles in time course</dd>
+<dt>x : bool</dt>
+<dd>success (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="updateappearance"><a title="updateappearance" href="#updateappearance" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>UpdateAppearance</h3><pre><code>mesh.UpdateAppearance(a)
+</code></pre><dl>
+<dt>a : bool</dt>
+<dd>process events (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="blocksignals"><a title="blocksignals" href="#blocksignals" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>blockSignals</h3><pre><code>x = mesh.blockSignals(a)
+</code></pre><dl>
+<dt>a : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+<dt>x : bool</dt>
+<dd>state before change (<code>True</code> or <code>False</code>)</dd>
+</dl><h3 id="childevent"><a title="childevent" href="#childevent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>childEvent</h3><pre><code>mesh.childEvent(a, b)
+</code></pre><dl>
+<dt>a : QChildEvent</dt>
+<dd>?</dd>
+<dt>b : ?</dt>
+<dd>?</dd>
+</dl><h3 id="children"><a title="children" href="#children" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>children</h3><pre><code>x = mesh.children()
+</code></pre><dl>
+<dt>x : tuple</dt>
+<dd>?</dd>
+</dl><h3 id="classname"><a title="classname" href="#classname" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>className</h3><pre><code>x = mesh.className()
+</code></pre><dl>
+<dt>x : str</dt>
+<dd><code>'mesh.criptAccess'</code></dd>
+</dl><h3 id="connect"><a title="connect" href="#connect" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>connect</h3><pre><code>x = mesh.connect(a, b, c, d, e)
+</code></pre><dl>
+<dt>a : QObject (?)</dt>
+<dd>the sender</dd>
+<dt>b : QByteArray (?)</dt>
+<dd>the signal</dd>
+<dt>c : QObject (?)</dt>
+<dd>the receiver</dd>
+<dt>d : QByteArray (?)</dt>
+<dd>the slot</dd>
+<dt>e : Qt::ConnectionType (?)</dt>
+<dd>the connection type</dd>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="customevent"><a title="customevent" href="#customevent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>customEvent</h3><pre><code>mesh.customEvent(a, b)
+</code></pre><dl>
+<dt>a : QEvent</dt>
+<dd>?</dd>
+<dt>b : ?</dt>
+<dd>?</dd>
+</dl><h3 id="delete"><a title="delete" href="#delete" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>delete</h3><pre><code>mesh.delete()
+</code></pre><h3 id="deletelater"><a title="deletelater" href="#deletelater" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>deleteLater</h3><pre><code>mesh.deleteLater()
+</code></pre><h3 id="destroyed"><a title="destroyed" href="#destroyed" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>destroyed</h3><pre><code>mesh.distroyed()
+</code></pre><h3 id="disconnect"><a title="disconnect" href="#disconnect" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>disconnect</h3><pre><code>x = mesh.disconnect(a, b, c, d)
+</code></pre><dl>
+<dt>a : QObject (?)</dt>
+<dd>the sender (?)</dd>
+<dt>b : QByteArray (?)</dt>
+<dd>the signal (?)</dd>
+<dt>c : QObject (?)</dt>
+<dd>the receiver (?)</dd>
+<dt>d : QByteArray (?)</dt>
+<dd>the slot (?)</dd>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="dumpobjectinfo"><a title="dumpobjectinfo" href="#dumpobjectinfo" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>dumpObjectInfo</h3><pre><code>mesh.dumpObjectInfo(a)
+</code></pre><dl>
+<dt>a : ?</dt>
+<dd>?</dd>
+</dl><h3 id="dumpobjecttree"><a title="dumpobjecttree" href="#dumpobjecttree" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>dumpObjectTree</h3><pre><code>mesh.dumpObjectTree(a)
+</code></pre><dl>
+<dt>a : ?</dt>
+<dd>?</dd>
+</dl><h3 id="dynamicpropertynames"><a title="dynamicpropertynames" href="#dynamicpropertynames" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>dynamicPropertyNames</h3><pre><code>mesh.dynamicPropertyNames(a)
+</code></pre><dl>
+<dt>a : ?</dt>
+<dd>?</dd>
+</dl><h3 id="event"><a title="event" href="#event" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>event</h3><pre><code>x = mesh.event(a)
+</code></pre><dl>
+<dt>a : QEvent (?)</dt>
+<dd>the event</dd>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="eventfilter"><a title="eventfilter" href="#eventfilter" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>eventFilter</h3><pre><code>x = mesh.eventFilter(a, b)
+</code></pre><dl>
+<dt>a : QObject (?)</dt>
+<dd>?</dd>
+<dt>b : QEvent (?)</dt>
+<dd>the event</dd>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="findchild"><a title="findchild" href="#findchild" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>findChild</h3><pre><code>x = mesh.findChild(a, b)
+</code></pre><dl>
+<dt>a : PyObject (?)</dt>
+<dd>?</dd>
+<dt>b : str</dt>
+<dd>the name (?)</dd>
+<dt>x : QObject (?)</dt>
+<dd>the child</dd>
+</dl><h3 id="findchildren"><a title="findchildren" href="#findchildren" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>findChildren</h3><pre><code>x = mesh.findChildren(a, b)
+</code></pre><dl>
+<dt>a : PyObject (?)</dt>
+<dd>?</dd>
+<dt>b : str</dt>
+<dd>the name (?)</dd>
+<dt>x : tuple</dt>
+<dd>the children</dd>
+</dl><h3 id="help"><a title="help" href="#help" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>help</h3><pre><code>mesh.help()
+</code></pre><h3 id="inherits"><a title="inherits" href="#inherits" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>inherits</h3><pre><code>mesh.inherits()
+</code></pre><h3 id="installeventfilter"><a title="installeventfilter" href="#installeventfilter" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>installEventFilter</h3><pre><code>mesh.installEventFilter(a)
+</code></pre><dl>
+<dt>a : QObject (?)</dt>
+<dd>?</dd>
+</dl><h3 id="issignalconnected"><a title="issignalconnected" href="#issignalconnected" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>isSignalConnected</h3><pre><code>x = mesh.isSignalConnected(a)
+</code></pre><dl>
+<dt>a : QMethodSignal (?)</dt>
+<dd>the signal</dd>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="iswidgettype"><a title="iswidgettype" href="#iswidgettype" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>isWidgetType</h3><pre><code>x = mesh.isWidgetType()
+</code></pre><dl>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="iswindowtype"><a title="iswindowtype" href="#iswindowtype" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>isWindowType</h3><pre><code>x = mesh.isWindowType()
+</code></pre><dl>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="killtimer"><a title="killtimer" href="#killtimer" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>killTimer</h3><pre><code>mesh.killTimer(a)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the id</dd>
+</dl><h3 id="metaobject"><a title="metaobject" href="#metaobject" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>metaObject</h3><pre><code>x = mesh.metaObject()
+</code></pre><dl>
+<dt>x : PythonQt.QtCore.QMetaObject (?)</dt>
+<dd>?</dd>
+</dl><h3 id="movetothread"><a title="movetothread" href="#movetothread" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>moveToThread</h3><pre><code>mesh.moveToThread(a)
+</code></pre><dl>
+<dt>a : QThread</dt>
+<dd>the thread</dd>
+</dl><h3 id="objectnamechanged"><a title="objectnamechanged" href="#objectnamechanged" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>objectNameChanged</h3><pre><code>mesh.objectNameChanged(a)
+</code></pre><dl>
+<dt>a : str (?)</dt>
+<dd>?</dd>
+</dl><h3 id="parent"><a title="parent" href="#parent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>parent</h3><pre><code>x = mesh.parent()
+</code></pre><dl>
+<dt>x : PythonQt.private.QObject (?)</dt>
+<dd>?</dd>
+</dl><h3 id="property"><a title="property" href="#property" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>property</h3><pre><code>x = mesh.property(a)
+</code></pre><dl>
+<dt>a : str (?)</dt>
+<dd>the name</dd>
+<dt>x : ?</dt>
+<dd>?</dd>
+</dl><h3 id="removeeventfilter"><a title="removeeventfilter" href="#removeeventfilter" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>removeEventFilter</h3><pre><code>mesh.removeEventFilter(a)
+</code></pre><dl>
+<dt>a : QObject (?)</dt>
+<dd>?</dd>
+</dl><h3 id="sender"><a title="sender" href="#sender" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>sender</h3><pre><code>mesh.sender()
+</code></pre><dl>
+<dt>x : PythonQt.private.QObject (?)</dt>
+<dd>?</dd>
+</dl><h3 id="sendersignalindex"><a title="sendersignalindex" href="#sendersignalindex" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>senderSignalIndex</h3><pre><code>mesh.senderSignalIndex()
+</code></pre><dl>
+<dt>x : int</dt>
+<dd>the index</dd>
+</dl><h3 id="setobjectname"><a title="setobjectname" href="#setobjectname" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>setObjectName</h3><pre><code>mesh.setObjectName(a)
+</code></pre><dl>
+<dt>a : str</dt>
+<dd>the name</dd>
+</dl><h3 id="setparent"><a title="setparent" href="#setparent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>setParent</h3><pre><code>mesh.setParent(a)
+</code></pre><dl>
+<dt>a : QObject</dt>
+<dd>the parent</dd>
+</dl><h3 id="setproperty"><a title="setproperty" href="#setproperty" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>setProperty</h3><pre><code>mesh.setProperty(a)
+</code></pre><dl>
+<dt>a : str (?)</dt>
+<dd>the property name</dd>
+<dt>b : ?</dt>
+<dd>the property value</dd>
+</dl><h3 id="signalsblocked"><a title="signalsblocked" href="#signalsblocked" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>signalsBlocked</h3><pre><code>x = mesh.signalsBlocked()
+</code></pre><dl>
+<dt>x : bool</dt>
+<dd><code>True</code> or <code>False</code></dd>
+</dl><h3 id="starttimer"><a title="starttimer" href="#starttimer" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>startTimer</h3><pre><code>x = mesh.startTimer(a)
+</code></pre><dl>
+<dt>a : int</dt>
+<dd>the interval</dd>
+<dt>b : QT::TimeType (?)</dt>
+<dd>the timer type (?)</dd>
+<dt>x : int</dt>
+<dd>?</dd>
+</dl><h3 id="thread"><a title="thread" href="#thread" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>thread</h3><pre><code>mesh.thread()
+</code></pre><h3 id="timerevent"><a title="timerevent" href="#timerevent" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>timerEvent</h3><pre><code>mesh.timerEvent(a)
+</code></pre><dl>
+<dt>a : QTimerEvent (?)</dt>
+<dd>?</dd>
+</dl><h3 id="tr"><a title="tr" href="#tr" class="anchor hidden-xs"><span class="octicon octicon-link"></span></a>tr</h3><pre><code>x = mesh.tr(a, b, c)
+</code></pre><dl>
+<dt>a : QByteArray (?)</dt>
+<dd>?</dd>
+<dt>b : QByteArray (?)</dt>
+<dd>?</dd>
+<dt>c : int</dt>
+<dd>?</dd>
+<dt>x : str</dt>
+<dd>?</dd>
+</dl></div>
     <div class="ui-toc dropup unselectable hidden-print" style="display:none;">
         <div class="pull-right dropdown">
             <a id="tocLabel" class="ui-toc-label btn btn-default" data-target="#" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Table of content">
                 <i class="fa fa-bars"></i>
             </a>
             <ul id="toc" class="ui-toc-dropdown dropdown-menu" aria-labelledby="tocLabel">
-                <div class="toc"><ul class="nav"><li class=""><a smoothhashscroll="" href="#meshscriptaccess">MeshScriptAccess</a><ul class="nav"><li><a smoothhashscroll="" href="#attributes">Attributes</a></li><li><a smoothhashscroll="" href="#methods">Methods</a></li></ul></li></ul></div><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a>
+                <div class="toc"><ul class="nav"><li class=""><a smoothhashscroll="" href="#meshscriptaccess">MeshScriptAccess</a><ul class="nav"><li><a smoothhashscroll="" href="#attributes">Attributes</a><ul class="nav"><li><a smoothhashscroll="" href="#correctforserialcorrelations">CorrectForSerialCorrelations</a></li><li><a smoothhashscroll="" href="#filename">FileName</a></li><li><a smoothhashscroll="" href="#filenameofpreprocessdmtc">FileNameOfPreprocessdMTC</a></li><li><a smoothhashscroll="" href="#meshscene">MeshScene</a></li><li><a smoothhashscroll="" href="#morphingupdateinterval">MorphingUpdateInterval</a></li><li><a smoothhashscroll="" href="#nrofmtcvolumes">NrOfMTCVolumes</a></li><li><a smoothhashscroll="" href="#nrofsurfacemaps">NrOfSurfaceMaps</a></li><li><a smoothhashscroll="" href="#nrofvertices">NrOfVertices</a></li><li><a smoothhashscroll="" href="#objectname">objectName</a></li></ul></li><li class=""><a smoothhashscroll="" href="#methods">Methods</a><ul class="nav"><li><a smoothhashscroll="" href="#addstudyanddesignmatrixandcortexmapping">AddStudyAndDesignMatrixAndCortexMapping</a></li><li><a smoothhashscroll="" href="#calculatecurvature">CalculateCurvature</a></li><li><a smoothhashscroll="" href="#calculatecurvaturecba">CalculateCurvatureCBA</a></li><li><a smoothhashscroll="" href="#cleardesignmatrix">ClearDesignMatrix</a></li><li><a smoothhashscroll="" href="#clearmultistudyglmdefinition">ClearMultiStudyGLMDefinition</a></li><li><a smoothhashscroll="" href="#computemultistudyglm">ComputeMultiStudyGLM</a></li><li><a smoothhashscroll="" href="#computerfxglm">ComputeRFXGLM</a></li><li><a smoothhashscroll="" href="#computesinglestudyglm">ComputeSingleStudyGLM</a></li><li><a smoothhashscroll="" href="#correctinflatedspheremesh">CorrectInflatedSphereMesh</a></li><li><a smoothhashscroll="" href="#createmtcfromvtc">CreateMTCFromVTC</a></li><li><a smoothhashscroll="" href="#createmultiscalecurvaturemap">CreateMultiScaleCurvatureMap</a></li><li><a smoothhashscroll="" href="#createsphericalcoordinatesmapfromsmp">CreateSphericalCoordinatesMapFromSMP</a></li><li><a smoothhashscroll="" href="#getnameofsurfacemap">GetNameOfSurfaceMap</a></li><li><a smoothhashscroll="" href="#inflatemesh">InflateMesh</a></li><li><a smoothhashscroll="" href="#inflatemeshtosphere">InflateMeshToSphere</a></li><li><a smoothhashscroll="" href="#lineartrendremoval">LinearTrendRemoval</a></li><li><a smoothhashscroll="" href="#linkmtc">LinkMTC</a></li><li><a smoothhashscroll="" href="#loadglm">LoadGLM</a></li><li><a smoothhashscroll="" href="#loadmultistudyglmdefinitionfile">LoadMultiStudyGLMDefinitionFile</a></li><li><a smoothhashscroll="" href="#loadsinglestudyglmdesignmatrix">LoadSingleStudyGLMDesignMatrix</a></li><li><a smoothhashscroll="" href="#loadsurfacemaps">LoadSurfaceMaps</a></li><li><a smoothhashscroll="" href="#save">Save</a></li><li class=""><a smoothhashscroll="" href="#saveas">SaveAs</a></li><li><a smoothhashscroll="" href="#saveglm">SaveGLM</a></li><li><a smoothhashscroll="" href="#savemtc">SaveMTC</a></li><li><a smoothhashscroll="" href="#savemultistudyglmdefinitionfile">SaveMultiStudyGLMDefinitionFile</a></li><li><a smoothhashscroll="" href="#savesinglestudyglmdesignmatrix">SaveSingleStudyGLMDesignMatrix</a></li><li><a smoothhashscroll="" href="#savesurfacemaps">SaveSurfaceMaps</a></li><li><a smoothhashscroll="" href="#showglm">ShowGLM</a></li><li><a smoothhashscroll="" href="#showsurfacemap">ShowSurfaceMap</a></li><li><a smoothhashscroll="" href="#simplifymesh">SimplifyMesh</a></li><li><a smoothhashscroll="" href="#smoothcurrentmap">SmoothCurrentMap</a></li><li><a smoothhashscroll="" href="#smoothmesh">SmoothMesh</a></li><li class=""><a smoothhashscroll="" href="#smoothrecomesh">SmoothRecoMesh</a></li><li><a smoothhashscroll="" href="#spatialsmoothing">SpatialSmoothing</a></li><li><a smoothhashscroll="" href="#temporalgaussiansmoothing">TemporalGaussianSmoothing</a></li><li><a smoothhashscroll="" href="#temporalhighpassfilterfft">TemporalHighPassFilterFFT</a></li><li><a smoothhashscroll="" href="#updateappearance">UpdateAppearance</a></li><li><a smoothhashscroll="" href="#blocksignals">blockSignals</a></li><li><a smoothhashscroll="" href="#childevent">childEvent</a></li><li><a smoothhashscroll="" href="#children">children</a></li><li><a smoothhashscroll="" href="#classname">className</a></li><li class=""><a smoothhashscroll="" href="#connect">connect</a></li><li><a smoothhashscroll="" href="#customevent">customEvent</a></li><li><a smoothhashscroll="" href="#delete">delete</a></li><li><a smoothhashscroll="" href="#deletelater">deleteLater</a></li><li><a smoothhashscroll="" href="#destroyed">destroyed</a></li><li class=""><a smoothhashscroll="" href="#disconnect">disconnect</a></li><li><a smoothhashscroll="" href="#dumpobjectinfo">dumpObjectInfo</a></li><li><a smoothhashscroll="" href="#dumpobjecttree">dumpObjectTree</a></li><li><a smoothhashscroll="" href="#dynamicpropertynames">dynamicPropertyNames</a></li><li><a smoothhashscroll="" href="#event">event</a></li><li><a smoothhashscroll="" href="#eventfilter">eventFilter</a></li><li class=""><a smoothhashscroll="" href="#findchild">findChild</a></li><li><a smoothhashscroll="" href="#findchildren">findChildren</a></li><li><a smoothhashscroll="" href="#help">help</a></li><li><a smoothhashscroll="" href="#inherits">inherits</a></li><li><a smoothhashscroll="" href="#installeventfilter">installEventFilter</a></li><li class=""><a smoothhashscroll="" href="#issignalconnected">isSignalConnected</a></li><li><a smoothhashscroll="" href="#iswidgettype">isWidgetType</a></li><li><a smoothhashscroll="" href="#iswindowtype">isWindowType</a></li><li><a smoothhashscroll="" href="#killtimer">killTimer</a></li><li><a smoothhashscroll="" href="#metaobject">metaObject</a></li><li><a smoothhashscroll="" href="#movetothread">moveToThread</a></li><li><a smoothhashscroll="" href="#objectnamechanged">objectNameChanged</a></li><li class=""><a smoothhashscroll="" href="#parent">parent</a></li><li><a smoothhashscroll="" href="#property">property</a></li><li><a smoothhashscroll="" href="#removeeventfilter">removeEventFilter</a></li><li><a smoothhashscroll="" href="#sender">sender</a></li><li><a smoothhashscroll="" href="#sendersignalindex">senderSignalIndex</a></li><li><a smoothhashscroll="" href="#setobjectname">setObjectName</a></li><li><a smoothhashscroll="" href="#setparent">setParent</a></li><li class=""><a smoothhashscroll="" href="#setproperty">setProperty</a></li><li><a smoothhashscroll="" href="#signalsblocked">signalsBlocked</a></li><li><a smoothhashscroll="" href="#starttimer">startTimer</a></li><li class=""><a smoothhashscroll="" href="#thread">thread</a></li><li><a smoothhashscroll="" href="#timerevent">timerEvent</a></li><li><a smoothhashscroll="" href="#tr">tr</a></li></ul></li></ul></li></ul></div><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a>
             </ul>
         </div>
     </div>
     <div id="toc-affix" class="ui-affix-toc ui-toc-dropdown unselectable hidden-print" data-spy="affix" style="top:17px;display:none;"  >
-        <div class="toc"><ul class="nav"><li class=""><a smoothhashscroll="" href="#meshscriptaccess">MeshScriptAccess</a><ul class="nav"><li><a smoothhashscroll="" href="#attributes">Attributes</a></li><li><a smoothhashscroll="" href="#methods">Methods</a></li></ul></li></ul></div><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a>
+        <div class="toc"><ul class="nav"><li class=""><a smoothhashscroll="" href="#meshscriptaccess">MeshScriptAccess</a><ul class="nav"><li><a smoothhashscroll="" href="#attributes">Attributes</a><ul class="nav"><li><a smoothhashscroll="" href="#correctforserialcorrelations">CorrectForSerialCorrelations</a></li><li><a smoothhashscroll="" href="#filename">FileName</a></li><li><a smoothhashscroll="" href="#filenameofpreprocessdmtc">FileNameOfPreprocessdMTC</a></li><li><a smoothhashscroll="" href="#meshscene">MeshScene</a></li><li><a smoothhashscroll="" href="#morphingupdateinterval">MorphingUpdateInterval</a></li><li><a smoothhashscroll="" href="#nrofmtcvolumes">NrOfMTCVolumes</a></li><li><a smoothhashscroll="" href="#nrofsurfacemaps">NrOfSurfaceMaps</a></li><li><a smoothhashscroll="" href="#nrofvertices">NrOfVertices</a></li><li><a smoothhashscroll="" href="#objectname">objectName</a></li></ul></li><li class=""><a smoothhashscroll="" href="#methods">Methods</a><ul class="nav"><li><a smoothhashscroll="" href="#addstudyanddesignmatrixandcortexmapping">AddStudyAndDesignMatrixAndCortexMapping</a></li><li><a smoothhashscroll="" href="#calculatecurvature">CalculateCurvature</a></li><li><a smoothhashscroll="" href="#calculatecurvaturecba">CalculateCurvatureCBA</a></li><li><a smoothhashscroll="" href="#cleardesignmatrix">ClearDesignMatrix</a></li><li><a smoothhashscroll="" href="#clearmultistudyglmdefinition">ClearMultiStudyGLMDefinition</a></li><li><a smoothhashscroll="" href="#computemultistudyglm">ComputeMultiStudyGLM</a></li><li><a smoothhashscroll="" href="#computerfxglm">ComputeRFXGLM</a></li><li><a smoothhashscroll="" href="#computesinglestudyglm">ComputeSingleStudyGLM</a></li><li><a smoothhashscroll="" href="#correctinflatedspheremesh">CorrectInflatedSphereMesh</a></li><li><a smoothhashscroll="" href="#createmtcfromvtc">CreateMTCFromVTC</a></li><li><a smoothhashscroll="" href="#createmultiscalecurvaturemap">CreateMultiScaleCurvatureMap</a></li><li><a smoothhashscroll="" href="#createsphericalcoordinatesmapfromsmp">CreateSphericalCoordinatesMapFromSMP</a></li><li><a smoothhashscroll="" href="#getnameofsurfacemap">GetNameOfSurfaceMap</a></li><li><a smoothhashscroll="" href="#inflatemesh">InflateMesh</a></li><li><a smoothhashscroll="" href="#inflatemeshtosphere">InflateMeshToSphere</a></li><li><a smoothhashscroll="" href="#lineartrendremoval">LinearTrendRemoval</a></li><li><a smoothhashscroll="" href="#linkmtc">LinkMTC</a></li><li><a smoothhashscroll="" href="#loadglm">LoadGLM</a></li><li><a smoothhashscroll="" href="#loadmultistudyglmdefinitionfile">LoadMultiStudyGLMDefinitionFile</a></li><li><a smoothhashscroll="" href="#loadsinglestudyglmdesignmatrix">LoadSingleStudyGLMDesignMatrix</a></li><li><a smoothhashscroll="" href="#loadsurfacemaps">LoadSurfaceMaps</a></li><li><a smoothhashscroll="" href="#save">Save</a></li><li class=""><a smoothhashscroll="" href="#saveas">SaveAs</a></li><li><a smoothhashscroll="" href="#saveglm">SaveGLM</a></li><li><a smoothhashscroll="" href="#savemtc">SaveMTC</a></li><li><a smoothhashscroll="" href="#savemultistudyglmdefinitionfile">SaveMultiStudyGLMDefinitionFile</a></li><li><a smoothhashscroll="" href="#savesinglestudyglmdesignmatrix">SaveSingleStudyGLMDesignMatrix</a></li><li><a smoothhashscroll="" href="#savesurfacemaps">SaveSurfaceMaps</a></li><li><a smoothhashscroll="" href="#showglm">ShowGLM</a></li><li><a smoothhashscroll="" href="#showsurfacemap">ShowSurfaceMap</a></li><li><a smoothhashscroll="" href="#simplifymesh">SimplifyMesh</a></li><li><a smoothhashscroll="" href="#smoothcurrentmap">SmoothCurrentMap</a></li><li><a smoothhashscroll="" href="#smoothmesh">SmoothMesh</a></li><li class=""><a smoothhashscroll="" href="#smoothrecomesh">SmoothRecoMesh</a></li><li><a smoothhashscroll="" href="#spatialsmoothing">SpatialSmoothing</a></li><li><a smoothhashscroll="" href="#temporalgaussiansmoothing">TemporalGaussianSmoothing</a></li><li><a smoothhashscroll="" href="#temporalhighpassfilterfft">TemporalHighPassFilterFFT</a></li><li><a smoothhashscroll="" href="#updateappearance">UpdateAppearance</a></li><li><a smoothhashscroll="" href="#blocksignals">blockSignals</a></li><li><a smoothhashscroll="" href="#childevent">childEvent</a></li><li><a smoothhashscroll="" href="#children">children</a></li><li><a smoothhashscroll="" href="#classname">className</a></li><li class=""><a smoothhashscroll="" href="#connect">connect</a></li><li><a smoothhashscroll="" href="#customevent">customEvent</a></li><li><a smoothhashscroll="" href="#delete">delete</a></li><li><a smoothhashscroll="" href="#deletelater">deleteLater</a></li><li><a smoothhashscroll="" href="#destroyed">destroyed</a></li><li class=""><a smoothhashscroll="" href="#disconnect">disconnect</a></li><li><a smoothhashscroll="" href="#dumpobjectinfo">dumpObjectInfo</a></li><li><a smoothhashscroll="" href="#dumpobjecttree">dumpObjectTree</a></li><li><a smoothhashscroll="" href="#dynamicpropertynames">dynamicPropertyNames</a></li><li><a smoothhashscroll="" href="#event">event</a></li><li><a smoothhashscroll="" href="#eventfilter">eventFilter</a></li><li class=""><a smoothhashscroll="" href="#findchild">findChild</a></li><li><a smoothhashscroll="" href="#findchildren">findChildren</a></li><li><a smoothhashscroll="" href="#help">help</a></li><li><a smoothhashscroll="" href="#inherits">inherits</a></li><li><a smoothhashscroll="" href="#installeventfilter">installEventFilter</a></li><li class=""><a smoothhashscroll="" href="#issignalconnected">isSignalConnected</a></li><li><a smoothhashscroll="" href="#iswidgettype">isWidgetType</a></li><li><a smoothhashscroll="" href="#iswindowtype">isWindowType</a></li><li><a smoothhashscroll="" href="#killtimer">killTimer</a></li><li><a smoothhashscroll="" href="#metaobject">metaObject</a></li><li><a smoothhashscroll="" href="#movetothread">moveToThread</a></li><li><a smoothhashscroll="" href="#objectnamechanged">objectNameChanged</a></li><li class=""><a smoothhashscroll="" href="#parent">parent</a></li><li><a smoothhashscroll="" href="#property">property</a></li><li><a smoothhashscroll="" href="#removeeventfilter">removeEventFilter</a></li><li><a smoothhashscroll="" href="#sender">sender</a></li><li><a smoothhashscroll="" href="#sendersignalindex">senderSignalIndex</a></li><li><a smoothhashscroll="" href="#setobjectname">setObjectName</a></li><li><a smoothhashscroll="" href="#setparent">setParent</a></li><li class=""><a smoothhashscroll="" href="#setproperty">setProperty</a></li><li><a smoothhashscroll="" href="#signalsblocked">signalsBlocked</a></li><li><a smoothhashscroll="" href="#starttimer">startTimer</a></li><li class=""><a smoothhashscroll="" href="#thread">thread</a></li><li><a smoothhashscroll="" href="#timerevent">timerEvent</a></li><li><a smoothhashscroll="" href="#tr">tr</a></li></ul></li></ul></li></ul></div><a class="back-to-top" href="#">Back to top</a><a class="go-to-bottom" href="#">Go to bottom</a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" defer></script>
