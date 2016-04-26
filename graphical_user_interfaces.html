@@ -6,10 +6,12 @@ isHome: false
 ---
 
 <section class="bs-docs-section">
-{% markdown graphical_user_interfaces.md %}
+{% capture my-include1 %}{% include graphical_user_interfaces.md %}{% endcapture %}
+{{ my-include1 | markdownify }}
 </section>
 
 <section class="bs-docs-section">
-{% markdown PythonQt.Qt.md %}
+{% capture my-include2 %}{% include PythonQt.Qt.md %}{% endcapture %}
+{{ my-include2 | markdownify }}
 </section>
 
