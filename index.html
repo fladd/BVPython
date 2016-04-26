@@ -6,6 +6,7 @@ isHome: true
 ---
 
 <section class="bs-docs-section">
-{% markdown index.md %}
+{% capture my-include %}{% include index.md %}{% endcapture %}
+{{ my-include | markdownify }}
 </section>
 
