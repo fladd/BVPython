@@ -6,10 +6,12 @@ isHome: false
 ---
 
 <section class="bs-docs-section">
-{% markdown array_data.md %}
+{% capture my-include1 %}{% include array_data.md %}{% endcapture %}
+{{ my-include1 | markdownify }}
 </section>
 
 <section class="bs-docs-section">
-{% markdown bv.md %}
+{% capture my-include2 %}{% include bv.md %}{% endcapture %}
+{{ my-include2 | markdownify }}
 </section>
 
