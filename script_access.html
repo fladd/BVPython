@@ -6,25 +6,31 @@ isHome: false
 ---
 
 <section class="bs-docs-section">
-{% markdown script_access.md %}
+{% capture my-include1 %}{% include script_access.md %}{% endcapture %}
+{{ my-include1 | markdownify }}
 </section>
 
 <section class="bs-docs-section">
-{% markdown BrainVoyagerScriptAccess.md %}
+{% capture my-include2 %}{% include BrainVoyagerScriptAccess.md %}{% endcapture %}
+{{ my-include2 | markdownify }}
 </section>
 
 <section class="bs-docs-section">
-{% markdown DocumentScriptAccess.md %}
+{% capture my-include3 %}{% include DocumentScriptAccess.md %}{% endcapture %}
+{{ my-include3 | markdownify }}
 </section>
 
 <section class="bs-docs-section">
-{% markdown DocumentListScriptAccess.md %}
+{% capture my-include4 %}{% include DocumentListScriptAccess.md %}{% endcapture %}
+{{ my-include4 | markdownify }}
 </section>
 
 <section class="bs-docs-section">
-{% markdown MeshScriptAccess.md %}
+{% capture my-include5 %}{% include MeshScriptAccess.md %}{% endcapture %}
+{{ my-include5 | markdownify }}
 </section>
 
 <section class="bs-docs-section">
-{% markdown MeshSceneScriptAccess.md %}
+{% capture my-include6 %}{% include MeshSceneScriptAccess.md %}{% endcapture %}
+{{ my-include6 | markdownify }}
 </section>
