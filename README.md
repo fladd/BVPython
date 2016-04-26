@@ -1,4 +1,4 @@
-Documentatio for using Python in BrainVoyager
-=============================================
+Documentation for using Python in BrainVoyager
+==============================================
 
-fladd.github.io/BVPython
+This is the repository of the website [fladd.github.io/BVPython](fladd.github.io/BVPython)
