@@ -1,7 +1,7 @@
 DocumentScriptAccess
 =====================================
 
-Opened AMR, DMR, FMR and VMR documentss are instances of this class.
+Opened AMR, DMR, FMR and VMR documents are instances of this class.
 For example: `document = BrainVoyager.ActiveDocument`.
 
 
