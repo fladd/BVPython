@@ -6,7 +6,7 @@ The readily available object `BrainVoyager` is an instance of this class.
 
 ### ActiveDocument ###
 
-This is a [DocumentScriptAccess](./scrip_access.html#documentscriptaccess).
+This is a [DocumentScriptAccess](./script_access.html#documentscriptaccess).
 
 
 ### BrowseDirectory ###
