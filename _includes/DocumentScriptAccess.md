@@ -560,6 +560,42 @@ x : bool
 :	success (`True` or `False`)
 
 
+### CreateVTCInMNISpace ###
+
+```
+x = document.CreateVTCInMNISpace(a, b, c, d, e, f, g, h, i)
+```
+
+a : str
+:	the FMR file name
+
+b : str
+:	the IA file name
+
+c : str
+:	the FA file name
+
+d : str
+:   the TRF file name
+
+e : str
+:	the resulting VTC file name
+
+f : int
+:	the data type (1: integer 2-byte format, 2: float format)
+
+g : int
+:	the resolution (1, 2 or 3; e.g. 1: 1 x 1 x 1 mm)
+
+h : int
+:	the interpolation method (0: nearest neighbor, 1: trilinear, 2: sinc)
+
+i : int
+:	the bounding box intensity threshold (default = 100)
+
+x : bool
+:	success (`True` or `False`)
+
 ### CreateVTCInTALSpace ###
 
 ```
