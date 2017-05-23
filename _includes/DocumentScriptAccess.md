@@ -221,7 +221,7 @@ a : str
 :   the FMR file name
 
 b : int
-:   use original FMR volume (0) or AMR (1; recommended)
+:   use original FMR volume (0), "pseudo" AMR (1; recommended), AMR (2)
 
 x : bool
 :   success
