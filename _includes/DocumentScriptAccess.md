@@ -211,6 +211,35 @@ document.ComputeSingleStudyGLMForVOI()
 ```
 
 
+### CoregisterFMRToVMR ###
+
+```
+x = document.CoregisterFMRToVMR(a, b)
+```
+
+a : str
+:   the FMR file name
+
+b : int
+:   use original FMR volume (0) or AMR (1; recommended)
+
+x : bool
+:   success
+
+
+### CoregisterFMRToVMRUsingBBR ###
+
+```
+x = document.CoregisterFMRToVMRUsingBBR(a)
+```
+
+a : str
+:   the FMR file name
+
+x : bool
+:   success
+
+
 ### CorrectForSerialCorrelations ###
 
 This is an int.
@@ -1068,6 +1097,13 @@ x = document.MotionCorrection3D()
 
 x : bool
 :	success (`True` or `False`)
+
+
+### NormalizeToMNISpace ###
+
+```
+document.NormalizeToMNISpace()
+```
 
 
 ### NrOfPredictorsInSingleStudyDM ###
